@@ -1,0 +1,176 @@
+:root {
+  --ink: #173443;
+  --ink-soft: #53676f;
+  --paper: #f7f1e5;
+  --card: #fffdf7;
+  --blue: #315d73;
+  --green: #28705c;
+  --amber: #8a531f;
+  --line: #d7cdbb;
+  --measure: 72rem;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 4%, rgba(255, 255, 255, 0.95), transparent 34rem),
+    radial-gradient(circle at 88% 86%, rgba(49, 93, 115, 0.08), transparent 34rem),
+    var(--paper);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+main, footer {
+  width: min(var(--measure), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+main { padding: 4rem 0 6rem; }
+
+.hero { max-width: 54rem; margin-bottom: 3rem; }
+
+h1, h2, h3 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  line-height: 1.15;
+}
+
+h1 {
+  max-width: 15ch;
+  margin: 0.3rem 0 1.25rem;
+  font-size: clamp(2.5rem, 8vw, 5.4rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+h2 { margin: 0 0 1rem; font-size: clamp(1.75rem, 4vw, 2.6rem); }
+h3 { margin: 0 0 0.35rem; font-size: 1.35rem; }
+
+p, ul, dl, blockquote { margin: 0 0 1.2rem; }
+
+a {
+  color: var(--blue);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+a:hover { color: var(--amber); }
+a:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+
+.eyebrow, .number {
+  color: var(--amber);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.lead {
+  max-width: 44rem;
+  color: var(--ink-soft);
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+}
+
+.boundary {
+  max-width: 52rem;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid var(--amber);
+  background: rgba(255, 253, 247, 0.68);
+}
+
+section { margin: 5rem 0; }
+section > p { max-width: 48rem; }
+
+.case-map {
+  margin: 3rem 0 5rem;
+  padding: 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--card);
+  box-shadow: 0 1rem 3rem rgba(23, 52, 67, 0.08);
+}
+
+.case-map img { display: block; width: 100%; height: auto; border-radius: 0.7rem; }
+.case-map figcaption { padding: 0.8rem 0.65rem 0.25rem; color: var(--ink-soft); font-size: 0.88rem; }
+
+blockquote {
+  max-width: 44rem;
+  padding: 1.1rem 1.4rem;
+  border-left: 4px solid var(--green);
+  color: var(--green);
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 1.3rem;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.level-grid article, .translation > div {
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: rgba(255, 253, 247, 0.78);
+}
+
+.level-grid p:last-child { margin: 0; color: var(--ink-soft); }
+
+.unknown {
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  border: 2px dashed var(--amber);
+  border-radius: 1rem;
+  background: #fff6d8;
+}
+
+.unknown p:last-child { margin-bottom: 0; }
+
+.translation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.8rem;
+}
+
+.translation dt { margin-bottom: 0.35rem; font-weight: 750; color: var(--green); }
+.translation dd { margin: 0; color: var(--ink-soft); }
+
+.doors { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+.doors a {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--blue);
+  border-radius: 999px;
+  background: var(--card);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.digest { overflow-wrap: anywhere; }
+code { font-size: 0.84em; }
+.small { color: var(--ink-soft); font-size: 0.88rem; }
+.sources { max-width: 56rem; padding-left: 1.25rem; }
+.sources li { margin-bottom: 0.5rem; }
+
+footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
+@media (max-width: 36rem) {
+  main { padding-top: 2.2rem; }
+  .case-map { margin-inline: -0.5rem; }
+  .doors { align-items: stretch; flex-direction: column; }
+  .doors a { text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}

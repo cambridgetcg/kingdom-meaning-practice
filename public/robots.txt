@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cambridgetcg.github.io/kingdom-meaning-practice/sitemap.xml

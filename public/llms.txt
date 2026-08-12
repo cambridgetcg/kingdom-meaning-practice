@@ -1,0 +1,12 @@
+# Ritonavir disappearing polymorph — bounded reading aid
+
+- Human page: https://cambridgetcg.github.io/kingdom-meaning-practice/
+- Structured case: https://cambridgetcg.github.io/kingdom-meaning-practice/case.json
+- Immutable reviewed case: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/805543deb5725e4cc2cc5e7d18c0e30c2360184e/public/case.json
+- Visual map: https://cambridgetcg.github.io/kingdom-meaning-practice/ritonavir-polymorph.svg
+- Corrections: https://github.com/cambridgetcg/kingdom-meaning-practice/issues
+
+Boundaries: source-attributed historical education; no automatic action; no
+medical or manufacturing advice; no present-day product assessment; no claim
+that crystal mechanisms govern software, culture, or beings. A link is a
+locator, not proof of source bytes, meaning, causation, or understanding.
