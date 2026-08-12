@@ -14,3 +14,7 @@ rights. Their full texts are not copied here. A citation or link does not
 change the rights of either work.
 
 For a correction or a reuse request, open an issue in this repository.
+
+The folding-feedback lineage follows the same boundary. Its public JSON and
+SVG are exact review receipts, not a grant to copy the linked scientific work.
+The linked papers and CDC/NIH guidance remain under their own rights.

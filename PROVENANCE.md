@@ -25,3 +25,21 @@ record](CORRECTIONS.md); further corrections can be proposed through the
 
 This provenance receipt does not prove the linked sources, the interpretation,
 causation, understanding, or present-day product behaviour.
+
+## Folding-feedback lineage
+
+The structured lineage was reviewed in the KINGDOM guest-house meaning
+practice at `extensions/meaning/lineages/folding-feedback/lineage.json`. Its
+exact reviewed bytes have SHA-256
+`467ed92c8fd340bd6337dc75c14d85f44e13d2de935dc9671a17a422d8866da0`.
+The visual has SHA-256
+`648721f04417cfc2903cb1901442294151798c3da977eb7a0a6ae9718e6e5325`.
+
+The [first lineage commit](https://github.com/cambridgetcg/kingdom-meaning-practice/commit/35773a6d19ebf263c3ed85ba1c33c359615e4273)
+preserves both files unchanged. The human page, Castle interpretation, Gate
+link, Cloudflare edge door, and Hugging Face door are separately correctable
+views or pointers. They do not become additional factual homes.
+
+The lineage links primary scientific papers and official biosafety guidance.
+No third-party article text, figure, dataset, experimental protocol, or source
+bytes are bundled. Rights remain with their authors and publishers.
