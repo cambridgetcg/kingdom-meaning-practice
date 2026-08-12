@@ -1,0 +1,879 @@
+{
+  "schema": "kingdom.meaning-case/0.1",
+  "mode": "reading-aid",
+  "id": "ritonavir-polymorph",
+  "title": "Ritonavir and the crystal form that seemed to disappear",
+  "observedOn": "2026-08-11",
+  "summary": "Ritonavir stayed the same chemical compound. A previously unknown crystal arrangement called Form II, more stable and less soluble under the reported bulk and solution conditions, was identified in 1998 after capsule lots failed dissolution. Once Form II crystals existed, their surfaces could make later Form II growth easier under suitable conditions; the first historical nucleus remains unexplained. Controlled processes later produced Form I again, so the disappearance was practical and condition-dependent, not literal or permanent.",
+  "healthBoundary": "This is a historical solid-state chemistry, manufacturing, and knowledge case. It is not medical advice, treatment advice, a formulation recipe, or a present-day assessment of any ritonavir product.",
+  "definitions": [
+    {
+      "id": "polymorph",
+      "plain": "One chemical compound arranged in more than one crystal structure.",
+      "not": "This is crystal polymorphism, not genetic polymorphism and not a change to the molecule's chemical identity."
+    },
+    {
+      "id": "conformational-polymorph",
+      "plain": "The same molecule bends differently and packs differently in two crystal structures.",
+      "not": "A different crystal conformation is not a different active ingredient."
+    },
+    {
+      "id": "nucleation",
+      "plain": "The first small, ordered crystal appears and gives further crystal growth a place to begin.",
+      "not": "Failure to see a nucleus during a search does not prove that the crystal form is impossible."
+    },
+    {
+      "id": "seed",
+      "plain": "A tiny piece or surface of a crystal form that can make growth of that same form easier under suitable conditions.",
+      "not": "A seed is not an infection, and seeding does not prove how the first historical nucleus arose."
+    },
+    {
+      "id": "metastable",
+      "plain": "A form that can persist for a useful time even though another form is more stable under the named conditions.",
+      "not": "Metastable does not mean imaginary, defective, or instantly changing."
+    },
+    {
+      "id": "disappearing-polymorph",
+      "plain": "A crystal form once made reproducibly is no longer obtained reliably by the same procedure after another form is found.",
+      "not": "The form did not leave reality, become chemically forbidden, or disappear permanently."
+    }
+  ],
+  "levels": [
+    {
+      "id": "science",
+      "name": "Science",
+      "question": "What changed in the material?",
+      "reading": "The molecule stayed ritonavir; its solid crystal packing and molecular conformation differed between Forms I and II.",
+      "boundary": "Do not describe Form II as a new molecule or as inactive ritonavir.",
+      "claimIds": [
+        "same-molecule-different-crystals",
+        "form-ii-more-stable-less-soluble"
+      ]
+    },
+    {
+      "id": "process",
+      "name": "Process",
+      "question": "Why did the reachable result change?",
+      "reading": "Form II was difficult to nucleate at first. After a Form II surface existed, crystal history and seeding made that form easier to obtain in relevant processes.",
+      "boundary": "The first historical nucleus and the exact path between sites remain unsettled.",
+      "claimIds": [
+        "only-form-i-known-before-1998",
+        "historical-first-nucleus-unsettled",
+        "degradant-trigger-proposed",
+        "form-ii-seeding-observed"
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product",
+      "question": "Why did crystal form matter to the capsule?",
+      "reading": "The formulation relied on ritonavir remaining dissolved. Lower-solubility Form II precipitated and capsule lots failed dissolution requirements.",
+      "boundary": "Equilibrium solubility, dosage-form dissolution, and patient bioavailability are different measurements. A failed manufacturing specification is not evidence that every released dose failed in a patient.",
+      "claimIds": [
+        "form-ii-found-after-dissolution-failures",
+        "form-ii-more-stable-less-soluble"
+      ]
+    },
+    {
+      "id": "supply",
+      "name": "Supply",
+      "question": "What happened beyond the crystal vessel?",
+      "reading": "Capsule production was interrupted, capsule supply was disrupted, and regulators reviewed a reformulated soft-gel capsule designed to accommodate either form.",
+      "boundary": "EMA said the failed recent batches had not been released and told current users not to stop treatment. This historical record is not current medical guidance; the case makes no exact financial-loss or widespread treatment-failure claim.",
+      "claimIds": [
+        "supply-and-regulatory-response",
+        "reformulated-capsule-approved"
+      ]
+    },
+    {
+      "id": "kingdom",
+      "name": "KINGDOM",
+      "question": "What does this teach a system builder?",
+      "reading": "Reality can reveal a reachable state that the model omitted. Keep not-seen separate from impossible, return consequences, repair around what is observed, and keep later correction able to change the story.",
+      "boundary": "This is an attributed teaching analogy. It is not scientific evidence, a new KINGDOM pattern, or a claim that the case proves KINGDOM doctrine.",
+      "claimIds": [
+        "disappearance-was-operational",
+        "later-work-recovered-form-i",
+        "later-work-expanded-the-landscape"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "approval-1996",
+      "eventWhen": "1996-03",
+      "reportedWhen": "1999",
+      "plain": "FDA records say the original oral solution and semi-solid capsule products were approved in March 1996.",
+      "claimIds": [
+        "supply-and-regulatory-response"
+      ],
+      "sourceIds": [
+        "fda-chemistry-review",
+        "chemburkar-2000"
+      ]
+    },
+    {
+      "id": "dissolution-failures-1998",
+      "eventWhen": "early 1998",
+      "reportedWhen": "1998 to 2000",
+      "plain": "Multiple capsule lots failed dissolution, and investigators identified the previously unknown Form II.",
+      "claimIds": [
+        "form-ii-found-after-dissolution-failures"
+      ],
+      "sourceIds": [
+        "chemburkar-2000",
+        "fda-chemistry-review",
+        "ema-1998"
+      ]
+    },
+    {
+      "id": "supply-response-1998",
+      "eventWhen": "1998-07",
+      "reportedWhen": "1998 to 1999",
+      "plain": "Abbott notified regulators and capsule production was interrupted. EMA reported that failed recent batches had not been released, retained samples from a number of marketed EU batches then showed no unwanted form, and oral solution would bridge supply.",
+      "claimIds": [
+        "supply-and-regulatory-response"
+      ],
+      "sourceIds": [
+        "fda-chemistry-review",
+        "ema-1998"
+      ]
+    },
+    {
+      "id": "reformulation-1999",
+      "eventWhen": "1999-06-29",
+      "reportedWhen": "1999",
+      "plain": "FDA approved a reformulated soft-gel capsule designed to accommodate bulk ritonavir supplied as either Form I or Form II through complete dissolution.",
+      "claimIds": [
+        "reformulated-capsule-approved"
+      ],
+      "sourceIds": [
+        "fda-administrative-record",
+        "fda-approval-letter",
+        "chemburkar-2000"
+      ]
+    },
+    {
+      "id": "controlled-forms-2000",
+      "eventWhen": "before 2000 report",
+      "reportedWhen": "2000",
+      "plain": "Abbott scientists reported a laboratory reverse-addition route that produced Form I from material starting as 100% Form II and in a Form-II-exposed area. Separately, an implemented bulk Form-I process yielded product containing less than 3% Form II, and a Form-II process was designed to yield exclusively Form II.",
+      "claimIds": [
+        "later-work-recovered-form-i"
+      ],
+      "sourceIds": [
+        "chemburkar-2000"
+      ]
+    },
+    {
+      "id": "expanded-landscape-2003",
+      "eventWhen": "2003",
+      "reportedWhen": "2003",
+      "plain": "A high-throughput study found further solid forms and recovered Form I through a solvate and hydrate route.",
+      "claimIds": [
+        "later-work-expanded-the-landscape",
+        "later-work-recovered-form-i"
+      ],
+      "sourceIds": [
+        "morissette-2003"
+      ]
+    },
+    {
+      "id": "mechanochemical-recovery-2024",
+      "eventWhen": "2024",
+      "reportedWhen": "2024",
+      "plain": "Experiments reproducibly obtained either Form I or Form II under different liquid-assisted milling conditions; measurements and modelling linked the outcome to crystal size, shape, and conformation.",
+      "claimIds": [
+        "later-work-recovered-form-i",
+        "disappearance-was-operational"
+      ],
+      "sourceIds": [
+        "sacchi-2024"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bauer-2001",
+      "kind": "primary-research",
+      "title": "Ritonavir: An Extraordinary Example of Conformational Polymorphism",
+      "publisher": "Pharmaceutical Research",
+      "published": "2001",
+      "identifier": "doi:10.1023/A:1011052932607; pmid:11474792",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/11474792/",
+      "access": "official-metadata-and-publisher-locator",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Crystal structures, conditional solubility measurements, seed assay, and the proposed degradant-trigger mechanism.",
+      "correctionPath": "https://doi.org/10.1023/A:1011052932607"
+    },
+    {
+      "id": "bucar-2015",
+      "kind": "review",
+      "title": "Disappearing Polymorphs Revisited",
+      "publisher": "Angewandte Chemie International Edition",
+      "published": "2015",
+      "identifier": "doi:10.1002/anie.201410356",
+      "locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4479028/",
+      "access": "public-full-text-reuse-rights-not-asserted",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Later review of the disappearing-polymorph idea and its operational limits.",
+      "correctionPath": "https://doi.org/10.1002/anie.201410356"
+    },
+    {
+      "id": "chemburkar-2000",
+      "kind": "primary-research",
+      "title": "Dealing with the Impact of Ritonavir Polymorphs on the Late Stages of Bulk Drug Process Development",
+      "publisher": "Organic Process Research and Development",
+      "published": "2000",
+      "identifier": "doi:10.1021/op000023y",
+      "locator": "https://doi.org/10.1021/op000023y",
+      "access": "publisher-locator",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Abbott's process account, earlier screening, dissolution failures, and controlled production of Forms I and II.",
+      "correctionPath": "https://doi.org/10.1021/op000023y"
+    },
+    {
+      "id": "dunitz-1995",
+      "kind": "review",
+      "title": "Disappearing Polymorphs",
+      "publisher": "Accounts of Chemical Research",
+      "published": "1995",
+      "identifier": "doi:10.1021/ar00052a005",
+      "locator": "https://doi.org/10.1021/ar00052a005",
+      "access": "publisher-locator",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Original bounded account of a previously reproducible polymorph becoming hard to obtain by the same procedure, with nucleation separated from growth.",
+      "correctionPath": "https://doi.org/10.1021/ar00052a005"
+    },
+    {
+      "id": "ema-1998",
+      "kind": "regulatory-record",
+      "title": "Public statement on supply of Norvir hard capsules",
+      "publisher": "European Medicines Agency",
+      "published": "1998-07-28",
+      "identifier": "official-public-statement",
+      "locator": "https://www.ema.europa.eu/en/news/public-statement-supply-norvir-hard-capsules",
+      "access": "official-public-record",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Contemporaneous batch-release, supply, and oral-solution statements.",
+      "correctionPath": "https://www.ema.europa.eu/en/news/public-statement-supply-norvir-hard-capsules"
+    },
+    {
+      "id": "fda-administrative-record",
+      "kind": "regulatory-record",
+      "title": "NDA 20-945 administrative documents",
+      "publisher": "United States Food and Drug Administration",
+      "published": "1999",
+      "identifier": "nda:20-945",
+      "locator": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20-945.pdf_Ritonovir_Admindocs.pdf",
+      "access": "official-public-record",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Non-approval, resubmission, and the plan for a formulation able to accommodate either crystal form.",
+      "correctionPath": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20-945.pdf_Ritonovir_Admindocs.pdf"
+    },
+    {
+      "id": "fda-approval-letter",
+      "kind": "regulatory-record",
+      "title": "NDA 20-945 approval letter",
+      "publisher": "United States Food and Drug Administration",
+      "published": "1999-06-29",
+      "identifier": "nda:20-945",
+      "locator": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20-945.pdf_Ritonovir_Approv.pdf",
+      "access": "official-public-record",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Approval date and approved reformulated soft-gel capsule record.",
+      "correctionPath": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20-945.pdf_Ritonovir_Approv.pdf"
+    },
+    {
+      "id": "fda-chemistry-review",
+      "kind": "regulatory-record",
+      "title": "NDA 20-945 chemistry reviews",
+      "publisher": "United States Food and Drug Administration",
+      "published": "1999",
+      "identifier": "nda:20-945",
+      "locator": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20-945.pdf_Ritonovir_Chemr.pdf",
+      "access": "official-public-record",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Regulatory account of approvals, 1998 manufacturing difficulties, Form II, dissolution, and formulation changes.",
+      "correctionPath": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20-945.pdf_Ritonovir_Chemr.pdf"
+    },
+    {
+      "id": "morissette-2003",
+      "kind": "primary-research",
+      "title": "Elucidation of crystal form diversity of the HIV protease inhibitor ritonavir by high-throughput crystallization",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "published": "2003",
+      "identifier": "doi:10.1073/pnas.0437744100; pmid:12604798",
+      "locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC151315/",
+      "access": "public-full-text-reuse-rights-not-asserted",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Further solid forms, high-throughput trials, and a later Form I recovery route.",
+      "correctionPath": "https://doi.org/10.1073/pnas.0437744100"
+    },
+    {
+      "id": "sacchi-2024",
+      "kind": "primary-research",
+      "title": "Crystal size, shape, and conformational changes drive both the disappearance and reappearance of ritonavir polymorphs in the mill",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "published": "2024",
+      "identifier": "doi:10.1073/pnas.2319127121",
+      "locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11009673/",
+      "access": "open-access-cc-by-4.0-full-text",
+      "accessedOn": "2026-08-11",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Reproducible mechanochemical formation of both Forms I and II under named experimental conditions.",
+      "correctionPath": "https://doi.org/10.1073/pnas.2319127121"
+    }
+  ],
+  "claims": [
+    {
+      "id": "same-molecule-different-crystals",
+      "kind": "measured-observation",
+      "plain": "Forms I and II contain the same ritonavir molecule in different conformations and crystal packings.",
+      "sourceIds": [
+        "bauer-2001",
+        "sacchi-2024"
+      ],
+      "scope": "The named solid forms and the measurements reported by these studies.",
+      "limit": "This does not say that every property of the two solids is the same."
+    },
+    {
+      "id": "only-form-i-known-before-1998",
+      "kind": "author-report",
+      "plain": "Abbott scientists reported that only the form later called Form I had been found through development, despite efforts to find other forms.",
+      "sourceIds": [
+        "chemburkar-2000"
+      ],
+      "scope": "The searches and development work described by the authors.",
+      "limit": "Not observed in those searches does not mean Form II was impossible or absent from every environment."
+    },
+    {
+      "id": "form-ii-found-after-dissolution-failures",
+      "kind": "reported-observation",
+      "plain": "In 1998, capsule lots failed dissolution and investigators identified a previously unknown Form II in the affected product.",
+      "sourceIds": [
+        "chemburkar-2000",
+        "fda-chemistry-review",
+        "ema-1998"
+      ],
+      "scope": "The reported 1998 manufacturing event.",
+      "limit": "The sequence does not by itself establish the cause of the first Form II nucleus."
+    },
+    {
+      "id": "form-ii-more-stable-less-soluble",
+      "kind": "measured-observation",
+      "plain": "Under the reported test conditions, Form II was the more stable crystal and was substantially less soluble than Form I.",
+      "sourceIds": [
+        "bauer-2001",
+        "morissette-2003"
+      ],
+      "scope": "The experimental systems and conditions named by the sources.",
+      "limit": "No single numerical solubility ratio is asserted for every solvent, temperature, or formulation."
+    },
+    {
+      "id": "historical-first-nucleus-unsettled",
+      "kind": "bounded-unknown",
+      "plain": "The checked sources do not settle how the first Form II nucleus in the historical manufacturing event arose.",
+      "sourceIds": [
+        "bauer-2001",
+        "chemburkar-2000"
+      ],
+      "scope": "The initial 1998 appearance described in the checked sources.",
+      "limit": "Later successful nucleation experiments identify possibilities, not a proven historical cause."
+    },
+    {
+      "id": "degradant-trigger-proposed",
+      "kind": "proposed-mechanism",
+      "plain": "A structurally related cyclic-carbamate degradant nucleated Form II experimentally and was proposed as a possible historical trigger.",
+      "sourceIds": [
+        "bauer-2001"
+      ],
+      "scope": "The experiment and hypothesis reported by Bauer and colleagues.",
+      "limit": "The proposed trigger was not proved to be the cause of the first 1998 nucleus."
+    },
+    {
+      "id": "form-ii-seeding-observed",
+      "kind": "measured-observation",
+      "plain": "In the reported experiments, Form II seed surfaces promoted Form II formation in highly supersaturated solutions; seeds alone did not make that outcome inevitable in every condition.",
+      "sourceIds": [
+        "bauer-2001",
+        "chemburkar-2000"
+      ],
+      "scope": "The seed assay and process conditions reported by the named studies.",
+      "limit": "This does not prove a universal seed effect, the first historical cause, or a particular transfer route between facilities."
+    },
+    {
+      "id": "supply-and-regulatory-response",
+      "kind": "regulatory-record",
+      "plain": "The 1998 problem interrupted capsule production and supply, while regulators and Abbott addressed other presentations and a replacement capsule.",
+      "sourceIds": [
+        "ema-1998",
+        "fda-chemistry-review",
+        "fda-administrative-record"
+      ],
+      "scope": "The manufacturing, supply, and regulatory events described by the official records.",
+      "limit": "This does not establish an exact financial loss or widespread failure of released doses in patients."
+    },
+    {
+      "id": "reformulated-capsule-approved",
+      "kind": "regulatory-record",
+      "plain": "FDA approved a reformulated soft-gel capsule in 1999 after review of a product designed to accommodate bulk ritonavir supplied as either Form I or Form II through complete dissolution.",
+      "sourceIds": [
+        "fda-administrative-record",
+        "fda-approval-letter",
+        "chemburkar-2000"
+      ],
+      "scope": "NDA 20-945 and its recorded formulation and approval history.",
+      "limit": "Approval is not proof that every later manufacturing or clinical outcome was successful."
+    },
+    {
+      "id": "later-work-recovered-form-i",
+      "kind": "later-reproduction",
+      "plain": "Later experiments produced Form I again under specified solution and mechanochemical conditions.",
+      "sourceIds": [
+        "chemburkar-2000",
+        "morissette-2003",
+        "sacchi-2024"
+      ],
+      "scope": "The named experimental routes and conditions.",
+      "limit": "Recovery under named conditions does not mean the original process automatically became reliable again."
+    },
+    {
+      "id": "later-work-expanded-the-landscape",
+      "kind": "later-reproduction",
+      "plain": "Later screening found further solid forms, so the original two-form account was not the complete ritonavir solid-form landscape.",
+      "sourceIds": [
+        "morissette-2003"
+      ],
+      "scope": "The solid forms found in the cited high-throughput study.",
+      "limit": "Form labels used by later papers can differ and must stay attached to their source and year."
+    },
+    {
+      "id": "disappearance-was-operational",
+      "kind": "bounded-interpretation",
+      "plain": "The useful meaning of disappearance here is loss of reliable practical access to Form I in relevant environments, not nonexistence or permanent impossibility.",
+      "sourceIds": [
+        "dunitz-1995",
+        "bucar-2015",
+        "chemburkar-2000",
+        "morissette-2003",
+        "sacchi-2024"
+      ],
+      "scope": "This historical case and the later recovery evidence.",
+      "limit": "This is a sourced interpretation, not a universal law of crystallization."
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "historical-first-nucleus",
+      "question": "What caused the first Form II nucleus in the 1998 event?",
+      "coverage": "checked",
+      "resolution": "unknown",
+      "disclosure": "shown",
+      "because": "The checked sources offer plausible mechanisms but do not establish one historical cause.",
+      "sourceIds": [
+        "bauer-2001",
+        "chemburkar-2000"
+      ],
+      "blocks": [
+        "certain-first-trigger"
+      ]
+    },
+    {
+      "id": "exact-intersite-seed-path",
+      "question": "Did a particular person, object, or shipment carry Form II between manufacturing sites?",
+      "coverage": "checked",
+      "resolution": "unknown",
+      "disclosure": "shown",
+      "because": "The process account describes debate and timing, not a settled transfer path.",
+      "sourceIds": [
+        "chemburkar-2000"
+      ],
+      "blocks": [
+        "certain-contamination-story"
+      ]
+    },
+    {
+      "id": "individual-patient-outcomes",
+      "question": "What happened to each patient during the supply disruption?",
+      "coverage": "out-of-scope",
+      "resolution": null,
+      "disclosure": "shown",
+      "because": "This case reads material, manufacturing, and regulatory records rather than individual clinical records.",
+      "sourceIds": [
+        "ema-1998"
+      ],
+      "blocks": [
+        "patient-outcome-claim"
+      ]
+    }
+  ],
+  "practiceBoundary": {
+    "activeMeaningJob": "check-meaning",
+    "meaningProfileSha256": "sha256:53293481ab3a2403771bf237f2d0941ff83c7d7b72d13c615f2d6ceb0edfa5e1",
+    "jobsNotOpened": [
+      "record-choice",
+      "do-one-bounded-action",
+      "report-what-happened"
+    ],
+    "relationship": "analogy",
+    "mechanismTransferred": false,
+    "plain": "This read-only case returns a candidate interpretation. It records no current choice, performs no deed, and reports no current deed or effect."
+  },
+  "readingLenses": [
+    {
+      "id": "name-the-material",
+      "name": "Name the material",
+      "insideMeaningJob": "check-meaning",
+      "plain": "Check whether the molecule changed, the crystal arrangement changed, or both.",
+      "receives": [
+        "material identity evidence",
+        "solid-form evidence",
+        "named measurement conditions"
+      ],
+      "does": [
+        "keeps chemical identity separate from crystal structure",
+        "keeps measured properties attached to their conditions"
+      ],
+      "returns": [
+        "a bounded description of what is the same and what differs"
+      ],
+      "doesNot": [
+        "call a new crystal form a new molecule",
+        "turn one measurement into a universal property"
+      ],
+      "sourceClaimIds": [
+        "same-molecule-different-crystals",
+        "form-ii-more-stable-less-soluble"
+      ],
+      "kingdomTermIds": [
+        "understanding",
+        "unknown"
+      ]
+    },
+    {
+      "id": "separate-landscape-from-path",
+      "name": "Separate landscape from path",
+      "insideMeaningJob": "check-meaning",
+      "plain": "Keep what matter can possibly do separate from what one past search or process managed to reach.",
+      "receives": [
+        "search scope",
+        "forms observed",
+        "forms not observed",
+        "later correction evidence"
+      ],
+      "does": [
+        "keeps not observed separate from impossible",
+        "updates the map when a new route or form returns"
+      ],
+      "returns": [
+        "a current possibility map with its gaps visible"
+      ],
+      "doesNot": [
+        "treat an incomplete search as proof of absence",
+        "freeze the first two-form story forever"
+      ],
+      "sourceClaimIds": [
+        "only-form-i-known-before-1998",
+        "later-work-expanded-the-landscape",
+        "later-work-recovered-form-i"
+      ],
+      "kingdomTermIds": [
+        "understanding",
+        "unknown",
+        "repair"
+      ]
+    },
+    {
+      "id": "track-history-sensitive-boundaries",
+      "name": "Track history-sensitive boundaries",
+      "insideMeaningJob": "check-meaning",
+      "plain": "Record when a seed, surface, residue, vessel, or earlier run can change which result becomes easy next.",
+      "receives": [
+        "process history",
+        "seed evidence",
+        "environment boundaries",
+        "uncertainty about transfer"
+      ],
+      "does": [
+        "makes path dependence visible",
+        "keeps a proposed first trigger separate from later seed amplification"
+      ],
+      "returns": [
+        "a boundary map with unknown routes named"
+      ],
+      "doesNot": [
+        "call crystals infectious",
+        "invent a certain contamination path",
+        "infer first cause from later seeding"
+      ],
+      "sourceClaimIds": [
+        "historical-first-nucleus-unsettled",
+        "degradant-trigger-proposed",
+        "form-ii-seeding-observed",
+        "disappearance-was-operational"
+      ],
+      "kingdomTermIds": [
+        "consequence",
+        "unknown",
+        "rest"
+      ]
+    },
+    {
+      "id": "redesign-around-reality",
+      "name": "Redesign around reality",
+      "insideMeaningJob": "check-meaning",
+      "plain": "When matter returns a state the design omitted, propose a bounded process or product change, make separate choice, authority, and brake checks, then verify any chosen act.",
+      "receives": [
+        "observed failure",
+        "material evidence",
+        "bounded proposed change",
+        "current choice and authority for any act",
+        "new verification evidence"
+      ],
+      "does": [
+        "keeps the original disruption visible",
+        "keeps proposal, choice, act, and returned evidence separate",
+        "treats any chosen reformulation or recovery as a new act with new evidence"
+      ],
+      "returns": [
+        "a linked repair record and its observed result"
+      ],
+      "doesNot": [
+        "rewrite the past as if no failure happened",
+        "call approval universal success",
+        "supply a manufacturing recipe"
+      ],
+      "sourceClaimIds": [
+        "form-ii-found-after-dissolution-failures",
+        "reformulated-capsule-approved",
+        "later-work-recovered-form-i"
+      ],
+      "kingdomTermIds": [
+        "action",
+        "consequence",
+        "repair",
+        "rest"
+      ]
+    },
+    {
+      "id": "return-and-correct",
+      "name": "Return and correct",
+      "insideMeaningJob": "check-meaning",
+      "plain": "Bring later evidence back so the explanation can become more precise without pretending the first account never existed.",
+      "receives": [
+        "earlier account",
+        "later experiments",
+        "source and date",
+        "limits and disagreements"
+      ],
+      "does": [
+        "links correction to the claim it changes",
+        "keeps event date, report date, and review date separate"
+      ],
+      "returns": [
+        "a corrected account with the remaining unknowns visible"
+      ],
+      "doesNot": [
+        "claim that later recovery makes the 1998 disruption unreal",
+        "certify understanding",
+        "turn a useful analogy into scientific evidence"
+      ],
+      "sourceClaimIds": [
+        "later-work-recovered-form-i",
+        "later-work-expanded-the-landscape",
+        "disappearance-was-operational"
+      ],
+      "kingdomTermIds": [
+        "understanding",
+        "consequence",
+        "repair"
+      ]
+    }
+  ],
+  "geometry": [
+    {
+      "id": "landscape",
+      "plain": "The set of crystal arrangements that ritonavir can reach under some conditions.",
+      "caseMeaning": "The early map contained Form I; later evidence showed Form II and further solid forms.",
+      "sourceClaimIds": [
+        "only-form-i-known-before-1998",
+        "later-work-expanded-the-landscape"
+      ],
+      "boundary": "A landscape is a teaching picture, not a complete quantitative energy surface."
+    },
+    {
+      "id": "barrier",
+      "plain": "The difficulty of forming the first ordered nucleus of a crystal form.",
+      "caseMeaning": "Form II could be thermodynamically favoured yet remain unseen while its first nucleation route was hard to reach.",
+      "sourceClaimIds": [
+        "form-ii-more-stable-less-soluble",
+        "historical-first-nucleus-unsettled"
+      ],
+      "boundary": "The case does not provide one universal barrier value or a proved first trigger."
+    },
+    {
+      "id": "basin",
+      "plain": "A set of conditions in which one form persists or grows once reached.",
+      "caseMeaning": "Form I was practically reachable first; Form II's stability and lower solubility changed the favoured solid outcome after nucleation.",
+      "sourceClaimIds": [
+        "form-ii-more-stable-less-soluble",
+        "disappearance-was-operational"
+      ],
+      "boundary": "Basin is a qualitative teaching alias here, not a measured geometric object."
+    },
+    {
+      "id": "seeded-path",
+      "plain": "An existing crystal surface makes one later route easier under suitable conditions.",
+      "caseMeaning": "Form-II seeds and process history could bypass primary nucleation and support later Form-II growth or secondary propagation under suitable conditions.",
+      "sourceClaimIds": [
+        "form-ii-seeding-observed",
+        "disappearance-was-operational"
+      ],
+      "boundary": "This does not prove a universal seed cloud or the historical route between sites."
+    },
+    {
+      "id": "first-nucleus-question",
+      "plain": "A named open question separates a tested possible trigger from an established historical cause.",
+      "caseMeaning": "A cyclic-carbamate degradant nucleated Form II experimentally and was proposed as a possible template; the first 1998 nucleus remains unexplained.",
+      "sourceClaimIds": [
+        "historical-first-nucleus-unsettled",
+        "degradant-trigger-proposed"
+      ],
+      "boundary": "A successful nucleation experiment shows possibility, not the plant root cause or a transfer route between sites."
+    },
+    {
+      "id": "return-loop",
+      "plain": "Observed material behaviour returns to change the explanation and the next design.",
+      "caseMeaning": "Dissolution failures, structure measurements, reformulation evidence, and later recoveries successively corrected the working map.",
+      "sourceClaimIds": [
+        "form-ii-found-after-dissolution-failures",
+        "reformulated-capsule-approved",
+        "later-work-recovered-form-i"
+      ],
+      "boundary": "A sequence of returns does not prove one simple causal chain."
+    }
+  ],
+  "kingdomCrosswalk": [
+    {
+      "id": "reality",
+      "kind": "foundation-commitment",
+      "canonicalHome": "FOUNDATION.md",
+      "plain": "The observed crystal form and measured material behaviour outrank the form a specification expected.",
+      "boundary": "A record cannot overrule matter, and this analogy is not itself scientific evidence.",
+      "sourceClaimIds": [
+        "form-ii-found-after-dissolution-failures",
+        "form-ii-more-stable-less-soluble"
+      ]
+    },
+    {
+      "id": "understanding",
+      "kind": "reference-pattern",
+      "canonicalHome": "CASTLE.md",
+      "plain": "The account changes as regulatory records, structural work, production experience, and later reproduction return.",
+      "boundary": "A fluent story does not certify understanding.",
+      "sourceClaimIds": [
+        "later-work-recovered-form-i",
+        "later-work-expanded-the-landscape"
+      ]
+    },
+    {
+      "id": "unknown",
+      "kind": "knowledge-boundary",
+      "canonicalHome": "CASTLE.md",
+      "plain": "Not seeing Form II in an earlier screen did not establish impossibility; the first historical nucleus remains unsettled.",
+      "boundary": "Not checked, not observed, impossible, disputed, and unknown stay different facts.",
+      "sourceClaimIds": [
+        "only-form-i-known-before-1998",
+        "historical-first-nucleus-unsettled"
+      ]
+    },
+    {
+      "id": "consequence",
+      "kind": "reference-pattern",
+      "canonicalHome": "CIVILISATION.md",
+      "plain": "Crystal form, solubility, dissolution, manufacturing action, supply, and patient outcome are separate edges.",
+      "boundary": "Source each edge; sequence alone is not causation.",
+      "sourceClaimIds": [
+        "form-ii-more-stable-less-soluble",
+        "supply-and-regulatory-response"
+      ]
+    },
+    {
+      "id": "repair",
+      "kind": "reference-pattern",
+      "canonicalHome": "CIVILISATION.md",
+      "plain": "Reformulation, process changes, and later recovery experiments are new acts with their own returned evidence.",
+      "boundary": "Repair does not erase the disruption or prove success everywhere.",
+      "sourceClaimIds": [
+        "reformulated-capsule-approved",
+        "later-work-recovered-form-i"
+      ]
+    },
+    {
+      "id": "rest",
+      "kind": "reference-pattern",
+      "canonicalHome": "FREEDOM.md",
+      "plain": "A new optional effect that depends on unsettled material identity, quality, authority, or brake should wait for evidence.",
+      "boundary": "This is a KINGDOM design lesson, not a claim about Abbott's historical policy.",
+      "sourceClaimIds": [
+        "historical-first-nucleus-unsettled",
+        "form-ii-found-after-dissolution-failures"
+      ]
+    }
+  ],
+  "correctionPath": {
+    "caseHome": "extensions/meaning/cases/ritonavir-polymorph/case.json",
+    "sourcePriority": "Official regulatory records and the named experiments control their own claims; later evidence may correct this reading without rewriting earlier records.",
+    "howToCorrect": "Name the exact claim, provide a source and date, state whether it is observation, report, experiment, proposed mechanism, unknown, or interpretation, then revise the case and its reviewed digest together.",
+    "strongestClaim": "This is a checked reading aid with attributed sources. Matching the local case bytes does not prove the external source bytes, the interpretation, causation, understanding, or present-day product behaviour."
+  },
+  "effects": {
+    "networkRequests": false,
+    "persistentWritesRequested": false,
+    "subprocesses": false,
+    "modelCalls": false,
+    "medicalAction": false,
+    "manufacturingAction": false,
+    "dispatch": false,
+    "scheduleChange": false,
+    "registryChange": false,
+    "relationshipCreation": false
+  },
+  "claimsNotMade": [
+    "chemical-identity-changed",
+    "form-i-literally-vanished",
+    "form-i-permanently-impossible",
+    "universal-seeding",
+    "historical-trigger-proved",
+    "person-carried-seed-proved",
+    "released-doses-failed-in-patients",
+    "exact-financial-loss",
+    "ritonavir-has-only-two-solid-forms",
+    "sequence-proves-causation",
+    "medical-advice",
+    "manufacturing-recipe",
+    "kingdom-pattern-created",
+    "understanding-proved"
+  ],
+  "meaning": "The deepest lesson is not that a crystal became magical or contagious. A possibility outside the working map became reachable; that new history changed later outcomes; matter returned evidence; people redesigned around it; and later experiments corrected the word disappearing."
+}
