@@ -7,9 +7,9 @@ const CASE_SHA256 = "652a04699aadc6143d9136dc8d515fd3b4fa8774d963d885e79968156b1
 const SVG_SHA256 = "a2a0ae7d599d733dffc5b89502a10983c483a9ac174a952581fbea372179f1d1";
 const FIRST_COMMIT = "805543deb5725e4cc2cc5e7d18c0e30c2360184e";
 const CASTLE_ROOM_COMMIT = "10d243bb9d30506c893530f03977e8c733f8b42c";
-const LINEAGE_SHA256 = "467ed92c8fd340bd6337dc75c14d85f44e13d2de935dc9671a17a422d8866da0";
-const LINEAGE_SVG_SHA256 = "648721f04417cfc2903cb1901442294151798c3da977eb7a0a6ae9718e6e5325";
-const LINEAGE_FIRST_COMMIT = "35773a6d19ebf263c3ed85ba1c33c359615e4273";
+const LINEAGE_SHA256 = "c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b";
+const LINEAGE_SVG_SHA256 = "4222f32d3791da5376d859f895762f21a336d79edec379f49a9f09bd80b66eee";
+const LINEAGE_RECEIPT_COMMIT = "6d7c2e2c66bbfe67351f12355131c877c15f1362";
 
 function bytes(path) {
   return readFileSync(new URL(path, import.meta.url));
@@ -37,6 +37,12 @@ test("reviewed folding-feedback lineage and visual bytes stay exact", () => {
   const lineage = JSON.parse(bytes("./public/lineage/folding-feedback/lineage.json"));
   assert.equal(lineage.scope.relationship, "analogy");
   assert.equal(lineage.scope.mechanismTransferred, false);
+  assert.equal(lineage.practiceBoundary.activeMeaningJob, "check-meaning");
+  assert.deepEqual(lineage.practiceBoundary.jobsNotOpened, [
+    "record-choice",
+    "do-one-bounded-action",
+    "report-what-happened",
+  ]);
   assert.equal(lineage.sourceBindings.ritonavirCase.sha256, `sha256:${CASE_SHA256}`);
   assert.equal(lineage.sourceBindings.ritonavirCase.bytesCheckedAtRuntime, true);
   assert.ok(lineage.comparisonEdges.every((edge) => (
@@ -74,7 +80,7 @@ test("case preserves evidence and action boundaries", () => {
 
 test("folding-feedback page is inert, bounded, and points to its immutable record", () => {
   const html = bytes("./public/lineage/folding-feedback/index.html").toString("utf8");
-  assert.match(html, new RegExp(LINEAGE_FIRST_COMMIT));
+  assert.match(html, new RegExp(LINEAGE_RECEIPT_COMMIT));
   assert.match(html, new RegExp(LINEAGE_SHA256));
   assert.match(html, /rel="canonical" href="https:\/\/cambridgetcg\.github\.io\/kingdom-meaning-practice\/lineage\/folding-feedback\/"/);
   assert.match(html, /rel="stylesheet" href="\.\.\/\.\.\/style\.css"/);
@@ -145,7 +151,7 @@ test("rights and discovery stay explicit", () => {
   assert.match(sitemap, /lineage\/folding-feedback/);
   assert.match(llms, /no automatic action/i);
   assert.match(llms, /corrections\.txt/);
-  assert.match(llms, new RegExp(LINEAGE_FIRST_COMMIT));
+  assert.match(llms, new RegExp(LINEAGE_RECEIPT_COMMIT));
   assert.match(llms, /mechanism transferred/i);
 });
 

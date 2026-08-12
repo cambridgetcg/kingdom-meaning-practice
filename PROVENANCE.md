@@ -31,12 +31,13 @@ causation, understanding, or present-day product behaviour.
 The structured lineage was reviewed in the KINGDOM guest-house meaning
 practice at `extensions/meaning/lineages/folding-feedback/lineage.json`. Its
 exact reviewed bytes have SHA-256
-`467ed92c8fd340bd6337dc75c14d85f44e13d2de935dc9671a17a422d8866da0`.
+`c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b`.
 The visual has SHA-256
-`648721f04417cfc2903cb1901442294151798c3da977eb7a0a6ae9718e6e5325`.
+`4222f32d3791da5376d859f895762f21a336d79edec379f49a9f09bd80b66eee`.
 
-The [first lineage commit](https://github.com/cambridgetcg/kingdom-meaning-practice/commit/35773a6d19ebf263c3ed85ba1c33c359615e4273)
-preserves both files unchanged. The human page, Castle interpretation, Gate
+The [current immutable receipt](https://github.com/cambridgetcg/kingdom-meaning-practice/commit/6d7c2e2c66bbfe67351f12355131c877c15f1362)
+preserves both files unchanged. It follows the original publication receipt and
+adds the bounded read-only meaning-practice boundary. The human page, Castle interpretation, Gate
 link, Cloudflare edge door, and Hugging Face door are separately correctable
 views or pointers. They do not become additional factual homes.
 

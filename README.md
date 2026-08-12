@@ -26,8 +26,8 @@ The separate folding-feedback lineage keeps the case unchanged and compares
 crystal packing, ordinary folding, amyloid assembly, prion propagation,
 physical feedback, and KINGDOM evidence return through explicit analogy edges.
 Its structured public receipt has SHA-256
-`467ed92c8fd340bd6337dc75c14d85f44e13d2de935dc9671a17a422d8866da0`
-and first public commit `35773a6d19ebf263c3ed85ba1c33c359615e4273`.
+`c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b`
+and immutable receipt commit `6d7c2e2c66bbfe67351f12355131c877c15f1362`.
 
 The case is a historical reading of solid-state chemistry, manufacturing, and
 knowledge. It is not medical advice, a present-day product assessment, a
