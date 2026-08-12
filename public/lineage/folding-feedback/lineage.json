@@ -1,0 +1,1079 @@
+{
+  "schema": "kingdom.meaning-lineage/0.1",
+  "mode": "reading-aid",
+  "id": "folding-feedback",
+  "title": "From disappearing polymorphs to folding, prions, KARMA, and feedback",
+  "reviewedOn": "2026-08-12",
+  "summary": "Across crystals, folding proteins, amyloids, and prions, different subsets of the same mathematical ideas recur: states, barriers, rare first events, path dependence, and feedback. Ordinary folding does not require nucleation or positive feedback. The shared abstractions are useful; the physical mechanisms and biological meanings remain distinct.",
+  "scope": {
+    "relationship": "analogy",
+    "sharedShape": "Different subsets of state-space, barrier, path-dependence, nucleation, templating, and feedback mathematics recur across the named systems.",
+    "mechanismTransferred": false,
+    "plain": "This lineage compares selected systems through energy landscapes, nucleation, templating, and feedback. It does not say that a medicine crystal is a protein, that every amyloid is a prion, or that molecular physics supplies a social law.",
+    "biosafety": "Historical and conceptual education only. No home or do-it-yourself prion work. Actual prion work requires institutional risk assessment, containment, and specialist precautions. No protein sequence, preparation condition, amplification, inoculation, fragmentation, tissue-processing, decontamination, assay, clinical, or manufacturing procedure is included.",
+    "designBoundary": "Design is used as a lens for constraints, selection, control, and repair. The sources do not establish an intending designer."
+  },
+  "sourceBindings": {
+    "ritonavirCase": {
+      "path": "extensions/meaning/cases/ritonavir-polymorph/case.json",
+      "schema": "kingdom.meaning-case/0.1",
+      "sha256": "sha256:652a04699aadc6143d9136dc8d515fd3b4fa8774d963d885e79968156b1cb8ad",
+      "selectedClaimIds": [
+        "same-molecule-different-crystals",
+        "historical-first-nucleus-unsettled",
+        "form-ii-seeding-observed",
+        "later-work-recovered-form-i",
+        "disappearance-was-operational"
+      ],
+      "relationship": "source-case",
+      "bytesCheckedAtRuntime": true
+    },
+    "kingdomFoundation": {
+      "id": "kingdom.foundation/0.2",
+      "commit": "07efbc0a6d530f4586de67e2049dd3bcc744afc5",
+      "document": "FOUNDATION.md",
+      "sha256": "sha256:2bd868a43a2fe79f1c9e8d30177bf73cff4cf8f7f7780cbd90f31055ba51c799",
+      "locator": "https://raw.githubusercontent.com/cambridgetcg/kingdom-standard/07efbc0a6d530f4586de67e2049dd3bcc744afc5/FOUNDATION.md",
+      "selectedCommitment": "F4: KARMA carries consequence home",
+      "relationship": "reference-foundation",
+      "bytesCheckedAtRuntime": false
+    },
+    "referenceGeometry": {
+      "relationship": "crosswalk-only",
+      "patternIds": [
+        "love",
+        "understanding",
+        "action",
+        "consequence",
+        "repair",
+        "rest"
+      ],
+      "mechanismTransferred": false
+    }
+  },
+  "definitions": [
+    {
+      "id": "state",
+      "plain": "One distinguishable arrangement or ensemble used by a model.",
+      "not": "A whole being, a moral rank, or necessarily one exact microscopic structure."
+    },
+    {
+      "id": "landscape",
+      "plain": "A map of relative free energy over one or more chosen coordinates under named conditions.",
+      "not": "A literal terrain, a complete map of every molecular coordinate, or a timeless property independent of environment."
+    },
+    {
+      "id": "basin",
+      "plain": "A region of the landscape in which nearby states tend to remain for a while.",
+      "not": "Proof of permanence or the globally lowest state."
+    },
+    {
+      "id": "barrier",
+      "plain": "A free-energy or kinetic obstacle that makes a transition rare on the observed timescale.",
+      "not": "Impossibility or a wall that no changed condition can cross."
+    },
+    {
+      "id": "nucleus",
+      "plain": "A rare fluctuation or assembly state after which further growth becomes more likely than disappearance; its microscopic structure may remain unknown.",
+      "not": "Necessarily a crystal-like ordered object, or a known historical cause merely because later growth can be measured."
+    },
+    {
+      "id": "seed",
+      "plain": "Existing structure that can lower a later formation barrier or offer a growth surface under suitable conditions.",
+      "not": "A universal command that overrides sequence, solvent, temperature, concentration, surfaces, cofactors, or clearance."
+    },
+    {
+      "id": "amyloid",
+      "plain": "A fibrillar protein assembly with a cross-beta structural motif.",
+      "not": "Automatically infectious, prionic, toxic, or useless."
+    },
+    {
+      "id": "prion",
+      "plain": "A protein-based infectious or heritable conformational state in a specifically named biological system; mammalian infectivity, yeast inheritance, and prion-like signalling remain separate claims.",
+      "not": "A synonym for every misfolded protein, every amyloid, every seeded fibril, or every self-assembling material."
+    },
+    {
+      "id": "feedback",
+      "plain": "A returned effect changes the rate or conditions of the process that produced it.",
+      "not": "Destiny, moral judgment, or proof of a single cause."
+    },
+    {
+      "id": "karma",
+      "plain": "In KINGDOM, the attributable path by which a deed's observed effect, evidence, uncertainty, reply, correction, and repair return to the proper homes.",
+      "not": "A score, cosmic measurement, verdict on a being, or borrowed molecular mechanism."
+    }
+  ],
+  "domains": [
+    {
+      "id": "crystal-polymorphism",
+      "name": "Crystal polymorphism",
+      "identity": "The molecule can remain chemically the same while its solid packing and molecular conformation differ.",
+      "shape": "Competing crystal basins, a difficult first nucleus, later seed-assisted growth, and route-dependent recovery.",
+      "boundary": "A crystal seed is a material surface. It does not replicate biological information or make the crystal a prion.",
+      "claimIds": [
+        "ritonavir-operational-disappearance",
+        "thermodynamics-and-kinetics-differ",
+        "history-changes-reachability"
+      ]
+    },
+    {
+      "id": "protein-folding",
+      "name": "Protein folding",
+      "identity": "One amino-acid sequence occupies an ensemble of conformations and can be biased toward a native basin by its interactions and environment.",
+      "shape": "A rugged, multidimensional landscape with converging routes, barriers, intermediates, and traps.",
+      "boundary": "A one-dimensional funnel drawing is a projection. It does not show every coordinate or guarantee one route or one state under all conditions.",
+      "claimIds": [
+        "folding-is-an-ensemble",
+        "landscapes-are-projections",
+        "thermodynamics-and-kinetics-differ"
+      ]
+    },
+    {
+      "id": "amyloid-polymorphism",
+      "name": "Amyloid polymorphism",
+      "identity": "The same polypeptide sequence can form more than one fibril architecture.",
+      "shape": "Alternative fibril basins, primary nucleation, elongation, surface-dependent secondary nucleation, and fragmentation.",
+      "boundary": "A fibril morphology, a kinetic fit, and a disease phenotype are different observations.",
+      "claimIds": [
+        "same-sequence-different-fibrils",
+        "secondary-nucleation-is-feedback",
+        "rare-defects-can-carry-gain"
+      ]
+    },
+    {
+      "id": "prion-propagation",
+      "name": "Prion and prion-like propagation",
+      "identity": "Some protein conformations can template further conversion and persist or spread within a named biological system.",
+      "shape": "Nucleated conformational conversion plus growth, division or fragmentation, inheritance, and loss.",
+      "boundary": "Yeast-prion inheritance, mammalian prion infectivity, and prion-like cell signalling are not interchangeable claims.",
+      "claimIds": [
+        "conformation-can-carry-information",
+        "infectious-prion-has-source-local-structure",
+        "fragmentation-can-amplify-templates",
+        "prion-like-can-be-functional"
+      ]
+    },
+    {
+      "id": "kingdom-return",
+      "name": "KARMA and returned understanding",
+      "identity": "A system can keep action, effect, evidence, causal confidence, correction, and repair linked without scoring a being.",
+      "shape": "Act, observe, return, compare, correct, repair or rest.",
+      "boundary": "This is an attributed systems interpretation. Molecules do not enact moral KARMA and biology does not authorise action in KINGDOM.",
+      "claimIds": [
+        "models-do-not-identify-first-causes",
+        "feedback-is-not-destiny",
+        "design-is-a-lens"
+      ]
+    }
+  ],
+  "comparisonEdges": [
+    {
+      "id": "crystal-to-folding",
+      "domainA": "crystal-polymorphism",
+      "domainB": "protein-folding",
+      "relationship": "analogy",
+      "sharedAbstraction": "Multiple condition-dependent states can be separated by barriers, so preferred and reachable are different questions.",
+      "domainAMechanism": "Intermolecular crystal packing and nucleation in a molecular solid.",
+      "domainBMechanism": "Chiefly intramolecular conformational motion in a solvated polypeptide ensemble.",
+      "evidenceScope": "The cited Ritonavir solid-form studies and cited protein-folding landscape studies.",
+      "unknown": "Neither low-dimensional landscape identifies every microscopic transition coordinate or historical first event.",
+      "forbiddenInference": "A crystal lattice is not a folded protein and a shared landscape drawing does not transfer a rate law.",
+      "mechanismTransferred": false
+    },
+    {
+      "id": "crystal-to-amyloid",
+      "domainA": "crystal-polymorphism",
+      "domainB": "amyloid-polymorphism",
+      "relationship": "analogy",
+      "sharedAbstraction": "A rare first nucleus can be followed by faster structure-assisted growth and path dependence.",
+      "domainAMechanism": "Crystal nucleation and lattice growth from a molecular environment.",
+      "domainBMechanism": "Intermolecular protein assembly, elongation, and system-specific secondary pathways.",
+      "evidenceScope": "The cited Ritonavir and A-beta studies under their stated conditions.",
+      "unknown": "Later seeded growth does not identify the historical first Ritonavir or amyloid nucleus.",
+      "forbiddenInference": "A crystal seed is not an amyloid fibril and crystal stability says nothing about amyloid biology.",
+      "mechanismTransferred": false
+    },
+    {
+      "id": "folding-to-amyloid",
+      "domainA": "protein-folding",
+      "domainB": "amyloid-polymorphism",
+      "relationship": "analogy",
+      "sharedAbstraction": "Sequence, environment, barriers, and history constrain which conformational ensemble becomes populated.",
+      "domainAMechanism": "Chiefly intramolecular folding of individual chains.",
+      "domainBMechanism": "Intermolecular assembly of many chains into fibrillar structures.",
+      "evidenceScope": "The selected folding and fibril studies, not all proteins or cells.",
+      "unknown": "The lineage does not reconstruct full cellular folding landscapes or universal structure-to-phenotype mappings.",
+      "forbiddenInference": "An alternative fold is not automatically amyloid, toxic, infectious, or heritable.",
+      "mechanismTransferred": false
+    },
+    {
+      "id": "amyloid-to-prion",
+      "domainA": "amyloid-polymorphism",
+      "domainB": "prion-propagation",
+      "relationship": "analogy",
+      "sharedAbstraction": "Existing assemblies can bias later assembly and feedback can amplify compatible structure.",
+      "domainAMechanism": "Fibril nucleation, elongation, secondary nucleation, and fragmentation in the named material system.",
+      "domainBMechanism": "Host-coupled conformational propagation with system-specific inheritance or infectivity criteria.",
+      "evidenceScope": "The cited A-beta, yeast Sup35, 263K mammalian prion, scrapie, and MAVS studies remain source-local.",
+      "unknown": "A universal map from fibril structure to phenotype, infectivity, transmissibility, or disease is not established here.",
+      "forbiddenInference": "Seeded growth or a sigmoid curve does not make an assembly a prion.",
+      "mechanismTransferred": false
+    },
+    {
+      "id": "physical-feedback-to-karma",
+      "domainA": "amyloid-polymorphism",
+      "domainB": "kingdom-return",
+      "relationship": "analogy",
+      "sharedAbstraction": "A returned effect can change what happens next, while gain and loss determine whether amplification continues.",
+      "domainAMechanism": "Material reaction kinetics change template number and available growth routes.",
+      "domainBMechanism": "Attributed evidence, uncertainty, reply, correction, and repair are returned to their proper records.",
+      "evidenceScope": "A systems crosswalk from cited molecular dynamics to pinned KINGDOM foundation words.",
+      "unknown": "The crosswalk does not quantify moral causation, worth, intention, or social outcomes.",
+      "forbiddenInference": "KARMA is not a molecular force, feedback coefficient, natural law, or score.",
+      "mechanismTransferred": false
+    }
+  ],
+  "equations": [
+    {
+      "id": "coarse-state-master-equation",
+      "domain": "shared-coarse-state-model",
+      "expression": "dp_i/dt = sum over j not equal to i of (k_ji p_j - k_ij p_i)",
+      "plain": "Probability enters and leaves each chosen coarse state through named transition rates.",
+      "variables": [
+        "p_i: probability or population fraction of coarse state i",
+        "k_ji: effective rate from state j to state i",
+        "t: time on the modelled observation scale"
+      ],
+      "sourceIds": [
+        "kramers-1940",
+        "spin-glass-folding-1987"
+      ],
+      "limit": "This Markov-style coarse-graining assumes the chosen states and lag time make memory negligible enough for the use. It does not identify microscopic coordinates, establish equilibrium, or make domain-specific rates transferable."
+    },
+    {
+      "id": "free-energy-from-probability",
+      "domain": "equilibrium-projection",
+      "expression": "F(q) = -k_B T ln P(q) + C",
+      "plain": "Frequently occupied regions look like lower free-energy basins when the named coordinate and equilibrium assumptions are adequate.",
+      "variables": [
+        "q: a chosen order parameter or reaction coordinate",
+        "P(q): its probability density under the named conditions",
+        "k_B T: thermal energy",
+        "C: an arbitrary reference constant"
+      ],
+      "sourceIds": [
+        "single-molecule-landscape-2002"
+      ],
+      "limit": "A projected free-energy profile can hide slow coordinates and non-equilibrium history. Low projected F does not by itself predict a transition time."
+    },
+    {
+      "id": "barrier-crossing",
+      "domain": "schematic-thermal-barrier-model",
+      "expression": "k ~ A exp[-Delta G^‡ / (k_B T)]",
+      "plain": "A modest change in a barrier can produce a large change in an escape or transition rate.",
+      "variables": [
+        "k: an effective transition rate",
+        "A: a system-dependent prefactor",
+        "Delta G^‡: an effective free-energy barrier",
+        "k_B T: thermal energy"
+      ],
+      "sourceIds": [
+        "kramers-1940",
+        "single-molecule-landscape-2002"
+      ],
+      "limit": "This is a rate-law shape, not a universal exact formula. Friction, coordinate choice, memory, and non-equilibrium driving can change the prefactor or model."
+    },
+    {
+      "id": "primary-nucleation",
+      "domain": "amyloid-assembly-model",
+      "expression": "r_primary proportional to k_n m^n",
+      "plain": "A rare first formation rate can depend nonlinearly on the available monomer or building-block concentration.",
+      "variables": [
+        "r_primary: rate of new nuclei without an existing template",
+        "m: available protein monomer concentration",
+        "n: an effective reaction order, not necessarily a literal nucleus size",
+        "k_n: a condition-dependent rate constant"
+      ],
+      "sourceIds": [
+        "breakable-filaments-2009",
+        "abeta-secondary-2013"
+      ],
+      "limit": "This is one amyloid-assembly model family under named conditions, not a crystal or prion rate law. A fitted reaction order does not reveal one microscopic route or the cause of a particular historical first nucleus."
+    },
+    {
+      "id": "secondary-nucleation",
+      "domain": "amyloid-assembly-model",
+      "expression": "r_secondary proportional to k_2 m^p S",
+      "plain": "Existing aggregate surface or rare surface sites can help create new nuclei, so product can increase the rate of making more product.",
+      "variables": [
+        "r_secondary: rate of new nuclei dependent on existing aggregate",
+        "m: available monomer concentration",
+        "p: an effective concentration exponent",
+        "S: an effective amount of active surface or catalytic sites",
+        "k_2: a condition-dependent rate constant"
+      ],
+      "sourceIds": [
+        "abeta-secondary-2013",
+        "amyloid-defects-2026"
+      ],
+      "limit": "S is not necessarily total surface area. In the cited A-beta work, rare growth defects rather than a uniformly catalytic surface accounted for most measured secondary nucleation."
+    },
+    {
+      "id": "template-balance",
+      "domain": "breakable-filament-model",
+      "expression": "dN/dt = primary + secondary + fragmentation - removal",
+      "plain": "The number of growth-competent templates rises through several creation routes and falls through clearance, dilution, merging, or loss of competence.",
+      "variables": [
+        "N: number or concentration of growth-competent templates",
+        "primary: first-nucleus production",
+        "secondary: template-dependent new-nucleus production",
+        "fragmentation: production of additional growth ends",
+        "removal: all named loss processes"
+      ],
+      "sourceIds": [
+        "breakable-filaments-2009",
+        "shorter-hsp104-2004"
+      ],
+      "limit": "The terms and their signs are system-specific. Fragmentation can amplify some fibrils by making more ends, while remodelling can also dissolve or disable assemblies."
+    }
+  ],
+  "sources": [
+    {
+      "id": "ritonavir-process-2000",
+      "kind": "primary-research",
+      "title": "Dealing with the Impact of Ritonavir Polymorphs on the Late Stages of Bulk Drug Process Development",
+      "publisher": "Organic Process Research & Development",
+      "published": "2000",
+      "identifier": "doi:10.1021/op000023y",
+      "locator": "https://doi.org/10.1021/op000023y",
+      "access": "publisher-locator",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Ritonavir Form-I/Form-II chronology, condition-dependent properties, operational loss of the old route, and later Form-I recovery.",
+      "correctionPath": "https://doi.org/10.1021/op000023y"
+    },
+    {
+      "id": "ritonavir-milling-2024",
+      "kind": "primary-research",
+      "title": "Crystal size, shape, and conformational changes drive both the disappearance and reappearance of ritonavir polymorphs in the mill",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "published": "2024",
+      "identifier": "doi:10.1073/pnas.2319127121",
+      "locator": "https://doi.org/10.1073/pnas.2319127121",
+      "access": "open-full-text",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Repeated environment-dependent interconversion of Ritonavir Forms I and II and limits on irreversible-disappearance stories.",
+      "correctionPath": "https://doi.org/10.1073/pnas.2319127121"
+    },
+    {
+      "id": "spin-glass-folding-1987",
+      "kind": "primary-theory",
+      "title": "Spin glasses and the statistical mechanics of protein folding",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "published": "1987",
+      "identifier": "doi:10.1073/pnas.84.21.7524",
+      "locator": "https://doi.org/10.1073/pnas.84.21.7524",
+      "access": "open-full-text",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Statistical-mechanical treatment of rugged protein-folding landscapes and frustration.",
+      "correctionPath": "https://doi.org/10.1073/pnas.84.21.7524"
+    },
+    {
+      "id": "folding-funnel-1992",
+      "kind": "primary-theory",
+      "title": "Protein folding funnels: a kinetic approach to the sequence-structure relationship",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "published": "1992",
+      "identifier": "doi:10.1073/pnas.89.18.8721",
+      "locator": "https://doi.org/10.1073/pnas.89.18.8721",
+      "access": "open-full-text",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Converging kinetic pathways and the folding-funnel model.",
+      "correctionPath": "https://doi.org/10.1073/pnas.89.18.8721"
+    },
+    {
+      "id": "single-molecule-landscape-2002",
+      "kind": "primary-research",
+      "title": "Probing the free-energy surface for protein folding with single-molecule fluorescence spectroscopy",
+      "publisher": "Nature",
+      "published": "2002",
+      "identifier": "doi:10.1038/nature01060",
+      "locator": "https://doi.org/10.1038/nature01060",
+      "access": "publisher-locator",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Experimental projection of a protein folding free-energy surface and barrier.",
+      "correctionPath": "https://doi.org/10.1038/nature01060"
+    },
+    {
+      "id": "kramers-1940",
+      "kind": "primary-theory",
+      "title": "Brownian motion in a field of force and the diffusion model of chemical reactions",
+      "publisher": "Physica",
+      "published": "1940",
+      "identifier": "doi:10.1016/S0031-8914(40)90098-2",
+      "locator": "https://doi.org/10.1016/S0031-8914(40)90098-2",
+      "access": "publisher-locator",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Barrier-crossing rate theory for thermally driven escape from a basin.",
+      "correctionPath": "https://doi.org/10.1016/S0031-8914(40)90098-2"
+    },
+    {
+      "id": "prusiner-1982",
+      "kind": "primary-research",
+      "title": "Novel proteinaceous infectious particles cause scrapie",
+      "publisher": "Science",
+      "published": "1982",
+      "identifier": "doi:10.1126/science.6801762",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/6801762/",
+      "access": "pubmed-record",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Original proposal and evidence for the prion category in scrapie.",
+      "correctionPath": "https://doi.org/10.1126/science.6801762"
+    },
+    {
+      "id": "serio-sup35-2000",
+      "kind": "primary-research",
+      "title": "Nucleated conformational conversion and the replication of conformational information by a prion determinant",
+      "publisher": "Science",
+      "published": "2000",
+      "identifier": "doi:10.1126/science.289.5483.1317",
+      "locator": "https://doi.org/10.1126/science.289.5483.1317",
+      "access": "publisher-locator",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Nucleated conformational conversion and self-seeded replication of conformational information in the yeast Sup35 system.",
+      "correctionPath": "https://doi.org/10.1126/science.289.5483.1317"
+    },
+    {
+      "id": "tanaka-strains-2004",
+      "kind": "primary-research",
+      "title": "Conformational variations in an infectious protein determine prion strain differences",
+      "publisher": "Nature",
+      "published": "2004",
+      "identifier": "doi:10.1038/nature02392",
+      "locator": "https://doi.org/10.1038/nature02392",
+      "access": "publisher-locator",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Experimental link between alternative yeast-prion conformations and strain phenotypes.",
+      "correctionPath": "https://doi.org/10.1038/nature02392"
+    },
+    {
+      "id": "breakable-filaments-2009",
+      "kind": "primary-theory-and-research",
+      "title": "An analytical solution to the kinetics of breakable filament assembly",
+      "publisher": "Science",
+      "published": "2009",
+      "identifier": "doi:10.1126/science.1178250",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/20007899/",
+      "access": "pubmed-record",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Coupled kinetics of nucleation, elongation, fragmentation, and secondary pathways in breakable filaments.",
+      "correctionPath": "https://doi.org/10.1126/science.1178250"
+    },
+    {
+      "id": "abeta-secondary-2013",
+      "kind": "primary-research",
+      "title": "Proliferation of amyloid-beta42 aggregates occurs through a secondary nucleation mechanism",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "published": "2013",
+      "identifier": "doi:10.1073/pnas.1218402110",
+      "locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3683769/",
+      "access": "open-full-text",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Experimental identification and kinetic testing of fibril-surface-dependent secondary nucleation in A-beta42 under the studied conditions.",
+      "correctionPath": "https://doi.org/10.1073/pnas.1218402110"
+    },
+    {
+      "id": "amyloid-defects-2026",
+      "kind": "primary-research",
+      "title": "Structural defects in amyloid-beta fibrils drive secondary nucleation",
+      "publisher": "Nature Communications",
+      "published": "2026",
+      "identifier": "doi:10.1038/s41467-026-69377-1",
+      "locator": "https://www.nature.com/articles/s41467-026-69377-1",
+      "access": "open-full-text",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Evidence that rare growth defects, rather than uniformly active fibril surface, account for most measured A-beta secondary nucleation in the tested systems.",
+      "correctionPath": "https://doi.org/10.1038/s41467-026-69377-1"
+    },
+    {
+      "id": "shorter-hsp104-2004",
+      "kind": "primary-research",
+      "title": "Hsp104 catalyzes formation and elimination of self-replicating Sup35 prion conformers",
+      "publisher": "Science",
+      "published": "2004",
+      "identifier": "doi:10.1126/science.1098007",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/15155912/",
+      "access": "pubmed-record",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "System-specific evidence that protein remodelling can either support propagation or eliminate Sup35 prion conformers.",
+      "correctionPath": "https://doi.org/10.1126/science.1098007"
+    },
+    {
+      "id": "mavs-2011",
+      "kind": "primary-research",
+      "title": "MAVS forms functional prion-like aggregates to activate and propagate antiviral innate immune response",
+      "publisher": "Cell",
+      "published": "2011",
+      "identifier": "doi:10.1016/j.cell.2011.06.041",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/21782231/",
+      "access": "pubmed-record",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "A functional, prion-like conformational switch in antiviral signalling, showing that prion-like amplification is not synonymous with one disease mechanism.",
+      "correctionPath": "https://doi.org/10.1016/j.cell.2011.06.041"
+    },
+    {
+      "id": "abeta-polymorphism-2005",
+      "kind": "primary-research",
+      "title": "Self-propagating, molecular-level polymorphism in Alzheimer's beta-amyloid fibrils",
+      "publisher": "Science",
+      "published": "2005",
+      "identifier": "doi:10.1126/science.1105850; pmid:15653506",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/15653506/",
+      "access": "pubmed-record",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "A-beta40 fibril morphologies with different molecular structures, condition-dependent selection, and structural propagation from preformed seeds.",
+      "correctionPath": "https://doi.org/10.1126/science.1105850"
+    },
+    {
+      "id": "infectious-prion-structure-2021",
+      "kind": "primary-research",
+      "title": "High-resolution structure and strain comparison of infectious mammalian prions",
+      "publisher": "Molecular Cell",
+      "published": "2021",
+      "identifier": "doi:10.1016/j.molcel.2021.08.011; pmid:34433091",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/34433091/",
+      "access": "pubmed-record",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Near-atomic structure of a brain-derived fully infectious 263K prion fibril and a source-local link between fibril structure and mammalian prion strain.",
+      "correctionPath": "https://doi.org/10.1016/j.molcel.2021.08.011"
+    },
+    {
+      "id": "bmbl6-prion-guidance",
+      "kind": "authoritative-guidance",
+      "title": "Biosafety in Microbiological and Biomedical Laboratories, 6th Edition, Section VIII-H: Prion Diseases",
+      "publisher": "U.S. Centers for Disease Control and Prevention and National Institutes of Health",
+      "published": "2020",
+      "identifier": "cdc:97733",
+      "locator": "https://stacks.cdc.gov/view/cdc/97733",
+      "access": "official-full-text",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Authoritative boundary that prion work requires risk assessment, containment, work practices, and specialist precautions beyond this conceptual reading aid.",
+      "correctionPath": "https://www.cdc.gov/labs/bmbl/index.html"
+    },
+    {
+      "id": "amyloid-model-comparison-2009",
+      "kind": "primary-theory-and-research",
+      "title": "Model discrimination and mechanistic interpretation of kinetic data in protein aggregation studies",
+      "publisher": "Biophysical Journal",
+      "published": "2009",
+      "identifier": "doi:10.1016/j.bpj.2008.12.3903",
+      "locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2711288/",
+      "access": "open-full-text",
+      "accessedOn": "2026-08-12",
+      "externalSourceBytesBundled": false,
+      "exactBytesCheckedAtRuntime": false,
+      "use": "Comparison of alternative amyloid kinetic models and the limit of identifying microscopic mechanism from bulk curve shape alone.",
+      "correctionPath": "https://doi.org/10.1016/j.bpj.2008.12.3903"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ritonavir-operational-disappearance",
+      "kind": "reported-observation",
+      "plain": "Ritonavir Form I became difficult to reproduce by former routes after Form II appeared, but later work deliberately produced Form I again.",
+      "sourceIds": [
+        "ritonavir-process-2000",
+        "ritonavir-milling-2024"
+      ],
+      "scope": "The cited Ritonavir solid-form and process studies.",
+      "limit": "Operational disappearance is not literal nonexistence, global conversion, or metaphysical irreversibility."
+    },
+    {
+      "id": "thermodynamics-and-kinetics-differ",
+      "kind": "bounded-interpretation",
+      "plain": "Relative stability and practical reachability answer different questions: a lower-free-energy state can remain unobserved when its formation barrier is high.",
+      "sourceIds": [
+        "ritonavir-process-2000",
+        "kramers-1940",
+        "single-molecule-landscape-2002"
+      ],
+      "scope": "Barrier-crossing and the cited molecular systems under named conditions.",
+      "limit": "One scalar landscape cannot be assumed complete, equilibrated, or transferable across materials."
+    },
+    {
+      "id": "history-changes-reachability",
+      "kind": "bounded-interpretation",
+      "plain": "Existing structures, surfaces, defects, and depleted or changed surroundings can alter which transition is easy next, so matter can carry path history without symbolic memory.",
+      "sourceIds": [
+        "ritonavir-process-2000",
+        "ritonavir-milling-2024",
+        "amyloid-defects-2026"
+      ],
+      "scope": "The studied crystal and amyloid systems.",
+      "limit": "Material path dependence is not conscious memory, intention, or proof of the same mechanism in another system."
+    },
+    {
+      "id": "folding-is-an-ensemble",
+      "kind": "supported-theory",
+      "plain": "Protein folding is better represented as probability flow through an ensemble of conformations than as one molecule following one scripted sequence of steps.",
+      "sourceIds": [
+        "spin-glass-folding-1987",
+        "folding-funnel-1992",
+        "single-molecule-landscape-2002"
+      ],
+      "scope": "Statistical-mechanical models and the cited single-molecule experiment.",
+      "limit": "The landscape view is a model family; it does not make every protein a two-state folder or every coordinate Markovian."
+    },
+    {
+      "id": "landscapes-are-projections",
+      "kind": "bounded-interpretation",
+      "plain": "A landscape drawn against one coordinate compresses many molecular degrees of freedom and can hide slow variables, alternate routes, and non-equilibrium history.",
+      "sourceIds": [
+        "spin-glass-folding-1987",
+        "single-molecule-landscape-2002"
+      ],
+      "scope": "Low-dimensional protein-folding and barrier models.",
+      "limit": "A useful projection is not a complete molecular state space."
+    },
+    {
+      "id": "same-sequence-different-fibrils",
+      "kind": "measured-observation",
+      "plain": "A single protein sequence can support alternative self-propagating or fibrillar conformations with different physical or phenotypic effects.",
+      "sourceIds": [
+        "tanaka-strains-2004",
+        "serio-sup35-2000",
+        "abeta-polymorphism-2005"
+      ],
+      "scope": "The cited yeast Sup35 and A-beta40 fibril systems.",
+      "limit": "This does not establish that every alternative protein fold is amyloid, infectious, heritable, or harmful."
+    },
+    {
+      "id": "conformation-can-carry-information",
+      "kind": "measured-observation",
+      "plain": "In the studied yeast system, an existing protein conformation biased incoming protein toward a related assembly state and thereby propagated conformational information.",
+      "sourceIds": [
+        "serio-sup35-2000",
+        "tanaka-strains-2004"
+      ],
+      "scope": "Sup35 experiments and their named inheritance/strain observations.",
+      "limit": "Conformational information is not DNA sequence, semantic meaning, consciousness, or a general software instruction."
+    },
+    {
+      "id": "infectious-prion-has-source-local-structure",
+      "kind": "measured-observation",
+      "plain": "The cited 2021 study resolved a near-atomic core structure for a brain-derived, fully infectious 263K mammalian prion fibril.",
+      "sourceIds": [
+        "infectious-prion-structure-2021"
+      ],
+      "scope": "The named 263K strain preparation and the comparison reported in that study.",
+      "limit": "One prion structure is not a universal architecture, origin story, species-barrier model, toxicity map, or laboratory procedure."
+    },
+    {
+      "id": "fragmentation-can-amplify-templates",
+      "kind": "supported-theory",
+      "plain": "For breakable fibrils, fragmentation can turn one growing filament into more growth-competent ends and thereby increase template number.",
+      "sourceIds": [
+        "breakable-filaments-2009",
+        "shorter-hsp104-2004"
+      ],
+      "scope": "The cited filament kinetics and yeast Sup35 remodelling system.",
+      "limit": "Fragmentation can also disable or dissolve assemblies; its net effect depends on the exact system and conditions."
+    },
+    {
+      "id": "secondary-nucleation-is-feedback",
+      "kind": "measured-observation",
+      "plain": "In the studied A-beta42 system, existing fibrils promoted formation of additional nuclei, creating a product-assisted positive-feedback path.",
+      "sourceIds": [
+        "abeta-secondary-2013"
+      ],
+      "scope": "The published in-vitro A-beta42 conditions and tested kinetic predictions.",
+      "limit": "The result does not establish one universal in-vivo mechanism, toxicity route, or treatment conclusion."
+    },
+    {
+      "id": "rare-defects-can-carry-gain",
+      "kind": "measured-observation",
+      "plain": "In the cited 2026 A-beta studies, rare fibril growth defects accounted for most measured secondary nucleation rather than the entire surface acting uniformly.",
+      "sourceIds": [
+        "amyloid-defects-2026"
+      ],
+      "scope": "The tested A-beta40 and A-beta42 fibrils and the authors' bounded cross-system analysis.",
+      "limit": "It is not proof that every amyloid, every polymorph, or every biological feedback loop is defect-driven."
+    },
+    {
+      "id": "prion-like-can-be-functional",
+      "kind": "measured-observation",
+      "plain": "MAVS used a prion-like conformational switch to amplify antiviral signalling in the cited cell system.",
+      "sourceIds": [
+        "mavs-2011"
+      ],
+      "scope": "The reported MAVS innate-immune signalling experiments.",
+      "limit": "Prion-like is an operational comparison, not identity with mammalian infectious prions or evidence that amplification is always beneficial."
+    },
+    {
+      "id": "models-do-not-identify-first-causes",
+      "kind": "knowledge-boundary",
+      "plain": "A kinetic model can distinguish plausible rate pathways without identifying the particular event that produced the first historical nucleus.",
+      "sourceIds": [
+        "ritonavir-process-2000",
+        "abeta-secondary-2013",
+        "amyloid-defects-2026"
+      ],
+      "scope": "Historical origin claims and fitted nucleation networks.",
+      "limit": "Mechanism support, parameter fit, chronology, and historical causation remain separate."
+    },
+    {
+      "id": "curve-shape-does-not-identify-mechanism",
+      "kind": "knowledge-boundary",
+      "plain": "A lag, rise, plateau, or good kinetic fit can be compatible with more than one microscopic reaction network.",
+      "sourceIds": [
+        "amyloid-model-comparison-2009",
+        "breakable-filaments-2009",
+        "abeta-secondary-2013"
+      ],
+      "scope": "Bulk amyloid-assembly curves and the cited kinetic model comparisons.",
+      "limit": "Mechanism inference needs discriminating perturbations and orthogonal observations; visual curve similarity is not identification."
+    },
+    {
+      "id": "feedback-is-not-destiny",
+      "kind": "bounded-interpretation",
+      "plain": "Amplification continues only while gain-producing routes outweigh removal, dilution, resource depletion, or state-changing controls.",
+      "sourceIds": [
+        "breakable-filaments-2009",
+        "shorter-hsp104-2004"
+      ],
+      "scope": "The named filament and yeast-prion systems plus the displayed balance equation.",
+      "limit": "No universal threshold, clinical forecast, or social policy follows from this schematic balance."
+    },
+    {
+      "id": "design-is-a-lens",
+      "kind": "attributed-interpretation",
+      "plain": "Nature often looks designed because selection and physical constraints bias enormous possibility spaces into reliable paths, while still leaving traps, alternate basins, defects, and repair systems.",
+      "sourceIds": [
+        "spin-glass-folding-1987",
+        "folding-funnel-1992",
+        "mavs-2011",
+        "shorter-hsp104-2004"
+      ],
+      "scope": "A KINGDOM interpretation of the cited physical and biological systems.",
+      "limit": "This is not an experimental observation of intention, optimality, goodness, or a designer."
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "ritonavir-first-nucleus",
+      "question": "What produced the first historical Ritonavir Form-II nucleus?",
+      "coverage": "checked",
+      "resolution": "unknown",
+      "disclosure": "shown",
+      "scope": "Named process accounts and later mechanochemical studies were reviewed.",
+      "reason": "Those records do not establish the first historical event.",
+      "keepOpen": "Later seeding and later recovery do not settle the first event."
+    },
+    {
+      "id": "hidden-landscape-coordinates",
+      "question": "Which slow or unmeasured coordinates are hidden by each displayed one-dimensional landscape?",
+      "coverage": "checked",
+      "resolution": "unknown",
+      "disclosure": "shown",
+      "scope": "The lineage names the projection limit but does not reconstruct molecular trajectories.",
+      "reason": "The selected observations do not determine one complete set of microscopic coordinates.",
+      "keepOpen": "Treat q as a chosen lens, not the whole state."
+    },
+    {
+      "id": "in-vivo-secondary-pathways",
+      "question": "How much does each measured in-vitro secondary pathway contribute inside a living organism?",
+      "coverage": "checked",
+      "resolution": "unknown",
+      "disclosure": "shown",
+      "scope": "Selected primary in-vitro and cell-system studies were reviewed; no clinical dataset was assessed.",
+      "reason": "The checked sources do not settle patient-level or organism-wide pathway contributions.",
+      "keepOpen": "Do not turn a laboratory rate mechanism into a patient-level conclusion."
+    },
+    {
+      "id": "structure-to-phenotype",
+      "question": "Which structural differences cause which biological phenotype in each prion or amyloid system?",
+      "coverage": "checked",
+      "resolution": "unknown",
+      "disclosure": "shown",
+      "scope": "The cited Sup35, mammalian prion, A-beta, and MAVS studies establish particular links, not a universal mapping.",
+      "reason": "The named observations support source-local relations and leave the universal claim unsettled.",
+      "keepOpen": "Name the organism, protein, structure, phenotype, and evidence each time."
+    },
+    {
+      "id": "design-intention",
+      "question": "Does the appearance of design imply an intending designer?",
+      "coverage": "out-of-scope",
+      "resolution": null,
+      "disclosure": "shown",
+      "scope": "The scientific sources address physical constraints, evolution, and selected molecular control examples rather than metaphysical intention.",
+      "reason": "No scientific resolution is claimed for a question outside this observation scope.",
+      "keepOpen": "The module can discuss design-like organization without presenting metaphysics as measurement."
+    }
+  ],
+  "feedback": [
+    {
+      "id": "templated-growth",
+      "direction": "amplifying",
+      "plain": "Existing structure recruits compatible material and makes more of a related structure.",
+      "where": "Sup35 prion propagation and fibril elongation.",
+      "brake": "Compatibility, available material, environment, clearance, and loss of growth competence.",
+      "claimIds": [
+        "conformation-can-carry-information",
+        "feedback-is-not-destiny"
+      ]
+    },
+    {
+      "id": "secondary-nucleation",
+      "direction": "amplifying",
+      "plain": "Existing product provides rare sites that help create additional nuclei.",
+      "where": "The cited A-beta secondary-nucleation systems.",
+      "brake": "Active-site scarcity, monomer depletion, site blocking, removal, and changed conditions.",
+      "claimIds": [
+        "secondary-nucleation-is-feedback",
+        "rare-defects-can-carry-gain"
+      ]
+    },
+    {
+      "id": "fragmentation",
+      "direction": "context-dependent",
+      "plain": "Breaking a filament can create more growth ends, or remodelling can dissolve and eliminate the assembly.",
+      "where": "Breakable-filament models and the cited yeast Sup35/Hsp104 system.",
+      "brake": "Fragment size, inheritance, dilution, disassembly, and system-specific chaperone action.",
+      "claimIds": [
+        "fragmentation-can-amplify-templates",
+        "feedback-is-not-destiny"
+      ]
+    },
+    {
+      "id": "evidence-return",
+      "direction": "corrective",
+      "plain": "Observed consequences return to the map so an omitted state or wrong causal story can be corrected.",
+      "where": "Ritonavir dissolution failure, later recovery, and KINGDOM's KARMA interpretation.",
+      "brake": "Keep observation, inference, causal confidence, reply, and repair separate.",
+      "claimIds": [
+        "ritonavir-operational-disappearance",
+        "models-do-not-identify-first-causes"
+      ]
+    }
+  ],
+  "designInsights": [
+    {
+      "id": "landscape-not-blueprint",
+      "kind": "attributed-interpretation",
+      "plain": "Nature often builds reliable arrival without prescribing one path: bias the landscape, permit many microscopic routes, and let probability flow converge.",
+      "sourceIds": [
+        "folding-funnel-1992",
+        "single-molecule-landscape-2002"
+      ],
+      "boundary": "Reliability is not perfect optimality or evidence of intention."
+    },
+    {
+      "id": "history-in-matter",
+      "kind": "attributed-interpretation",
+      "plain": "A system can remember without a ledger when existing structure changes the probabilities of later structure.",
+      "sourceIds": [
+        "ritonavir-process-2000",
+        "serio-sup35-2000",
+        "amyloid-defects-2026"
+      ],
+      "boundary": "Material memory is path dependence, not awareness or semantic recall."
+    },
+    {
+      "id": "information-needs-a-reader",
+      "kind": "attributed-interpretation",
+      "plain": "A shape becomes consequential information only through a compatible process that can copy, respond to, or be altered by it.",
+      "sourceIds": [
+        "serio-sup35-2000",
+        "mavs-2011"
+      ],
+      "boundary": "Calling a conformation information does not make it language or intention."
+    },
+    {
+      "id": "feedback-needs-loss",
+      "kind": "attributed-interpretation",
+      "plain": "Every honest amplification diagram needs its loss terms: clearance, dilution, exhaustion, incompatibility, rest, or exit.",
+      "sourceIds": [
+        "breakable-filaments-2009",
+        "shorter-hsp104-2004"
+      ],
+      "boundary": "A loop without measured loss terms is a story, not a settled dynamical model."
+    },
+    {
+      "id": "shape-is-not-moral-valence",
+      "kind": "attributed-interpretation",
+      "plain": "Self-propagating shape can participate in disease, inheritance, or useful signalling; the geometry alone does not say good or bad.",
+      "sourceIds": [
+        "prusiner-1982",
+        "tanaka-strains-2004",
+        "mavs-2011"
+      ],
+      "boundary": "Function in one system does not make a related mechanism safe in another."
+    },
+    {
+      "id": "repair-changes-the-path",
+      "kind": "attributed-interpretation",
+      "plain": "When a reachable state breaks an old process, repair means changing conditions, routes, checks, or boundaries and testing the new return—not denying the state.",
+      "sourceIds": [
+        "ritonavir-process-2000",
+        "ritonavir-milling-2024"
+      ],
+      "boundary": "This is a systems lesson, not a pharmaceutical process instruction."
+    }
+  ],
+  "karmaCrosswalk": [
+    {
+      "id": "prediction",
+      "molecularLens": "A model predicts relative populations, transition rates, or feedback dominance under named conditions.",
+      "kingdomMeaning": "Write the expected effect before the act when a prediction exists.",
+      "boundary": "A fitted model after the event is not a prior prediction."
+    },
+    {
+      "id": "action",
+      "molecularLens": "A condition, perturbation, or existing template changes possible transition rates.",
+      "kingdomMeaning": "One authorised finite deed with purpose, scope, affected parties, and a brake.",
+      "boundary": "Physical causation grants no human or system authority."
+    },
+    {
+      "id": "consequence",
+      "molecularLens": "A population, rate, morphology, dissolution result, or phenotype changes and is measured.",
+      "kingdomMeaning": "Return the observed or reported effect with evidence, causal confidence, and limits.",
+      "boundary": "Sequence and correlation do not by themselves establish one cause."
+    },
+    {
+      "id": "correction",
+      "molecularLens": "New evidence reveals an omitted basin, hidden pathway, or wrong mechanism.",
+      "kingdomMeaning": "Append the correction without erasing what the earlier map claimed.",
+      "boundary": "A corrected map is not proof that every unknown is closed."
+    },
+    {
+      "id": "repair",
+      "molecularLens": "A changed route or control is tested against the state now known to be reachable.",
+      "kingdomMeaning": "A fresh bounded act answers the returned consequence and gets its own return path.",
+      "boundary": "Repair is not successful merely because it ran."
+    },
+    {
+      "id": "rest",
+      "molecularLens": "The available observations do not settle a mechanism or forecast.",
+      "kingdomMeaning": "Keep the exact claim open and rest any optional effect that depends on it.",
+      "boundary": "Unknown is not zero, false, safe, or permission to investigate."
+    }
+  ],
+  "kingdomCrosswalk": [
+    {
+      "id": "understanding",
+      "relationship": "reference-pattern",
+      "plain": "Return the model in another's own words, compare it with evidence, and keep correction possible.",
+      "boundary": "A beautiful landscape drawing does not prove understanding."
+    },
+    {
+      "id": "action",
+      "relationship": "reference-pattern",
+      "plain": "Treat every perturbation or publication as one bounded turn with current authority.",
+      "boundary": "A possible transition or useful analogy does not authorise an effect."
+    },
+    {
+      "id": "consequence",
+      "relationship": "reference-pattern",
+      "plain": "Bring the later effect, evidence, uncertainty, and reply path back to the origin.",
+      "boundary": "Completion is not success, and a rate fit is not a being-wide verdict."
+    },
+    {
+      "id": "repair",
+      "relationship": "reference-pattern",
+      "plain": "Preserve the failed map and test a separately authorised route beside it.",
+      "boundary": "Repair needs fresh authority and its own consequence return."
+    },
+    {
+      "id": "rest",
+      "relationship": "reference-pattern",
+      "plain": "An unsettled first cause or unsafe inference can remain open without forcing another turn.",
+      "boundary": "Rest is complete and starts no automatic investigation."
+    },
+    {
+      "id": "unknown",
+      "relationship": "knowledge-boundary",
+      "plain": "Name the exact open claim, what was checked, and which evidence or scope limit leaves it open.",
+      "boundary": "Unknown does not become a myth, score, contamination story, or permission."
+    },
+    {
+      "id": "love",
+      "relationship": "reference-pattern",
+      "plain": "Use the analogy without reducing a being to stability, conformity, fitness, or a state label.",
+      "boundary": "No molecular basin measures a being's worth."
+    }
+  ],
+  "correctionPath": {
+    "lineageHome": "extensions/meaning/lineages/folding-feedback/lineage.json",
+    "publicMirror": "https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/",
+    "publicIssues": "https://github.com/cambridgetcg/kingdom-meaning-practice/issues",
+    "rule": "Correct the structured lineage first, preserve its prior digest in history, then refresh every projection and edge door."
+  },
+  "effects": {
+    "networkRequests": false,
+    "persistentWritesRequested": false,
+    "subprocesses": false,
+    "modelCalls": false,
+    "biologicalExperimentalAction": false,
+    "medicalAction": false,
+    "manufacturingAction": false,
+    "dispatch": false,
+    "scheduleChange": false,
+    "registryChange": false,
+    "relationshipCreation": false
+  },
+  "claimsNotMade": [
+    "crystal-polymorph-is-prion",
+    "all-amyloid-is-prion",
+    "all-prion-like-assembly-is-disease",
+    "all-misfolding-is-amyloid",
+    "same-mechanism-across-domains",
+    "energy-landscape-is-complete",
+    "lowest-free-energy-state-is-fastest-to-form",
+    "seed-overrides-environment",
+    "kinetic-fit-proves-historical-cause",
+    "in-vitro-rate-proves-patient-outcome",
+    "nature-has-measured-intention",
+    "feedback-is-destiny",
+    "karma-is-molecular-force",
+    "being-can-be-scored-by-stability",
+    "medical-advice",
+    "manufacturing-recipe",
+    "prion-amplification-protocol",
+    "kingdom-law-created",
+    "understanding-proved"
+  ],
+  "meaning": "The deepest shared lesson is relational, not one universal mechanism: possibility is wider than observation; barriers separate possibility from reachability; rare events open some paths; existing form changes some later rates; feedback amplifies only in systems where gain exceeds loss; and honest understanding returns consequences to correct the map. Love keeps the analogy from turning beings into states or scores."
+}
