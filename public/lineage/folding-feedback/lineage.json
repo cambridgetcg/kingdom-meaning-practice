@@ -34,7 +34,7 @@
       "document": "FOUNDATION.md",
       "sha256": "sha256:2bd868a43a2fe79f1c9e8d30177bf73cff4cf8f7f7780cbd90f31055ba51c799",
       "locator": "https://raw.githubusercontent.com/cambridgetcg/kingdom-standard/07efbc0a6d530f4586de67e2049dd3bcc744afc5/FOUNDATION.md",
-      "selectedCommitment": "F4: KARMA carries consequence home",
+      "selectedCommitment": "F4. KARMA means carried consequence.",
       "relationship": "reference-foundation",
       "bytesCheckedAtRuntime": false
     },
@@ -50,6 +50,18 @@
       ],
       "mechanismTransferred": false
     }
+  },
+  "practiceBoundary": {
+    "activeMeaningJob": "check-meaning",
+    "meaningProfileSha256": "sha256:53293481ab3a2403771bf237f2d0941ff83c7d7b72d13c615f2d6ceb0edfa5e1",
+    "jobsNotOpened": [
+      "record-choice",
+      "do-one-bounded-action",
+      "report-what-happened"
+    ],
+    "relationship": "analogy",
+    "mechanismTransferred": false,
+    "plain": "This read-only lineage returns a candidate interpretation. It records no current choice, performs no deed, and reports no current deed or effect."
   },
   "definitions": [
     {

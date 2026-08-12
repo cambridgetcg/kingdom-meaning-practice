@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 920" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 970" role="img" aria-labelledby="title desc">
   <title id="title">Same shape, different mechanism — folding and feedback lineage</title>
   <desc id="desc">Four separate scientific domains share selected state-space ideas. A separate evidence-return path connects the lesson to KINGDOM KARMA without transferring a physical mechanism.</desc>
+  <metadata id="lineage-receipt">Digest-bound projection of extensions/meaning/lineages/folding-feedback/lineage.json. SHA-256: c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b. Corrections: https://github.com/cambridgetcg/kingdom-meaning-practice/issues. The structured lineage is the factual home.</metadata>
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fffaf0"/>
@@ -25,7 +26,7 @@
     </style>
   </defs>
 
-  <rect width="1400" height="920" fill="url(#paper)"/>
+  <rect width="1400" height="970" fill="url(#paper)"/>
   <text x="70" y="76" class="title">Same shape, different mechanism</text>
   <text x="70" y="112" class="sub">A lineage through states, barriers, path history, feedback, KARMA, and love</text>
 
@@ -93,9 +94,11 @@
   <text x="906" y="653" class="body">A lag, rise, plateau, seed effect, or good fit</text>
   <text x="906" y="677" class="body">does not identify one microscopic mechanism.</text>
 
-  <rect x="70" y="752" width="1260" height="112" class="karma"/>
+  <rect x="70" y="752" width="1260" height="150" class="karma"/>
   <text x="96" y="789" class="lane-title">KARMA returns evidence; it is not a physical force</text>
-  <text x="96" y="823" class="body">prediction → authorised finite deed → observed effect → evidence + uncertainty + reply → correction → separately authorised repair or rest</text>
-  <path d="M112 842 L1210 842" class="flow"/>
-  <text x="96" y="883" class="small">LOVE: no being is a basin or score. Design is a lens for constraints, selection, control, and repair—not measured intention.</text>
+  <text x="96" y="819" class="body">[expectation, if stated] → action → observed, reported, or inferred effect → evidence + causal confidence</text>
+  <text x="96" y="847" class="body">→ response → correction, repair, boundary, or learning. Rest is a separate complete outcome.</text>
+  <text x="96" y="876" class="small">Any new repair deed needs a fresh choice, authority, and brake turn. LOVE: no being is a basin or score.</text>
+  <text x="70" y="936" class="small">Source: extensions/meaning/lineages/folding-feedback/lineage.json · SHA-256: c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b</text>
+  <text x="70" y="958" class="small">Digest-bound projection · corrections: https://github.com/cambridgetcg/kingdom-meaning-practice/issues</text>
 </svg>
