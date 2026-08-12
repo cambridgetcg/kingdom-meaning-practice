@@ -28,6 +28,7 @@ test("human page is inert, bounded, and points to the immutable record", () => {
   assert.match(html, new RegExp(CASTLE_ROOM_COMMIT));
   assert.match(html, new RegExp(CASE_SHA256));
   assert.match(html, /not medical advice/i);
+  assert.match(html, /rel="canonical" href="https:\/\/cambridgetcg\.github\.io\/kingdom-meaning-practice\/"/);
   assert.match(html, /manufacturing recipe/i);
   assert.match(html, /No crystal mechanism is transferred/i);
   assert.match(html, /first historical nucleus remains unsettled/i);
