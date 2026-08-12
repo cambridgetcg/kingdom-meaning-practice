@@ -28,6 +28,8 @@ physical feedback, and KINGDOM evidence return through explicit analogy edges.
 Its structured public receipt has SHA-256
 `c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b`
 and immutable receipt commit `6d7c2e2c66bbfe67351f12355131c877c15f1362`.
+The first public receipt remains in history at commit `35773a6d19ebf263c3ed85ba1c33c359615e4273`;
+it is not the current reviewed record.
 
 The case is a historical reading of solid-state chemistry, manufacturing, and
 knowledge. It is not medical advice, a present-day product assessment, a

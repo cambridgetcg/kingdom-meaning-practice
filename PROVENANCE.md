@@ -37,10 +37,16 @@ The visual has SHA-256
 
 The [current immutable receipt](https://github.com/cambridgetcg/kingdom-meaning-practice/commit/6d7c2e2c66bbfe67351f12355131c877c15f1362)
 preserves both files unchanged. It follows the original publication receipt and
-adds the bounded read-only meaning-practice boundary. The human page, Castle interpretation, Gate
+adds the bounded read-only meaning-practice boundary. The [first public
+receipt](https://github.com/cambridgetcg/kingdom-meaning-practice/commit/35773a6d19ebf263c3ed85ba1c33c359615e4273)
+remains in history; its JSON digest `467ed92c8fd340bd6337dc75c14d85f44e13d2de935dc9671a17a422d8866da0`
+is not the current reviewed record. The human page, Castle interpretation, Gate
 link, Cloudflare edge door, and Hugging Face door are separately correctable
 views or pointers. They do not become additional factual homes.
 
 The lineage links primary scientific papers and official biosafety guidance.
 No third-party article text, figure, dataset, experimental protocol, or source
 bytes are bundled. Rights remain with their authors and publishers.
+
+The lineage opens only the meaning practice's `check-meaning` job. It records
+no current choice, performs no deed, and reports no current deed or effect.

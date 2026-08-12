@@ -10,6 +10,7 @@
 - Folding-feedback lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/
 - Structured lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/lineage.json
 - Immutable lineage receipt: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/6d7c2e2c66bbfe67351f12355131c877c15f1362/public/lineage/folding-feedback/lineage.json
+- First lineage receipt, retained as history: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/35773a6d19ebf263c3ed85ba1c33c359615e4273/public/lineage/folding-feedback/lineage.json
 
 Boundaries: source-attributed historical education; no automatic action; no
 medical or manufacturing advice; no present-day product assessment; no claim
@@ -18,3 +19,4 @@ locator, not proof of source bytes, meaning, causation, or understanding.
 The Castle room is an interpretation, not another scientific source.
 The cross-domain lineage is an analogy with no mechanism transferred. It has
 no medical advice, laboratory procedure, automatic action, or feedback intake.
+It opens only Check Meaning; it records no current choice and performs no deed.

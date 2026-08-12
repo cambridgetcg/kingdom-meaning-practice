@@ -10,6 +10,7 @@ const CASTLE_ROOM_COMMIT = "10d243bb9d30506c893530f03977e8c733f8b42c";
 const LINEAGE_SHA256 = "c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b";
 const LINEAGE_SVG_SHA256 = "4222f32d3791da5376d859f895762f21a336d79edec379f49a9f09bd80b66eee";
 const LINEAGE_RECEIPT_COMMIT = "6d7c2e2c66bbfe67351f12355131c877c15f1362";
+const LINEAGE_FIRST_COMMIT = "35773a6d19ebf263c3ed85ba1c33c359615e4273";
 
 function bytes(path) {
   return readFileSync(new URL(path, import.meta.url));
@@ -90,6 +91,9 @@ test("folding-feedback page is inert, bounded, and points to its immutable recor
   assert.match(html, /A seeded fibril is not automatically a prion/);
   assert.match(html, /Model compatibility is not mechanism identification/);
   assert.match(html, /KARMA is not thermodynamics/);
+  assert.match(html, /observed, reported, or inferred effect/);
+  assert.match(html, /opens only <code>check-meaning<\/code>/);
+  assert.match(html, /records no current choice, performs no deed/);
   assert.match(html, /no being is a basin/i);
   assert.doesNotMatch(html, /<script\b|<form\b|fetch\s*\(|setInterval\s*\(|setTimeout\s*\(/i);
 });
@@ -137,6 +141,7 @@ test("rights and discovery stay explicit", () => {
   assert.match(rights, /PROVENANCE\.md/);
   assert.match(provenance, /Prepared by: Codex at Yu's direction/);
   assert.match(provenance, new RegExp(CASE_SHA256));
+  assert.match(provenance, new RegExp(LINEAGE_FIRST_COMMIT));
   assert.match(provenance, new RegExp(SVG_SHA256));
   assert.match(provenance, /no third-party article text, figure, or dataset is bundled/i);
   assert.match(provenance, /CORRECTIONS\.md/);
@@ -152,6 +157,8 @@ test("rights and discovery stay explicit", () => {
   assert.match(llms, /no automatic action/i);
   assert.match(llms, /corrections\.txt/);
   assert.match(llms, new RegExp(LINEAGE_RECEIPT_COMMIT));
+  assert.match(llms, new RegExp(LINEAGE_FIRST_COMMIT));
+  assert.match(llms, /opens only Check Meaning/);
   assert.match(llms, /mechanism transferred/i);
 });
 
