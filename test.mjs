@@ -148,3 +148,21 @@ test("rights and discovery stay explicit", () => {
   assert.match(llms, new RegExp(LINEAGE_FIRST_COMMIT));
   assert.match(llms, /mechanism transferred/i);
 });
+
+test("the Cloudflare edge is a bounded door, not another fact home", () => {
+  const html = bytes("./doors/cloudflare/index.html").toString("utf8");
+  const notFound = bytes("./doors/cloudflare/404.html").toString("utf8");
+  const headers = bytes("./doors/cloudflare/_headers").toString("utf8");
+  const robots = bytes("./doors/cloudflare/robots.txt").toString("utf8");
+  assert.match(html, /no second fact home/i);
+  assert.match(html, /stores no scientific record/i);
+  assert.match(html, /starts no action/i);
+  assert.match(html, /transfers no mechanism/i);
+  assert.match(html, /rel="canonical" href="https:\/\/cambridgetcg\.github\.io\/kingdom-meaning-practice\/lineage\/folding-feedback\/"/);
+  assert.doesNotMatch(html, /lineage\.json|folding-feedback\.svg|<script\b|<form\b|fetch\s*\(/i);
+  assert.match(notFound, /one public entrance and no hidden route/i);
+  assert.match(headers, /X-Robots-Tag: noindex, nofollow/);
+  assert.match(headers, /Content-Security-Policy: default-src 'none'/);
+  assert.match(headers, /form-action 'none'/);
+  assert.match(robots, /Disallow: \//);
+});
