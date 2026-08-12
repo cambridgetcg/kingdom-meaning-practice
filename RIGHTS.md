@@ -2,6 +2,8 @@
 
 Copyright © 2026 Cambridge TCG.
 
+The hand and source receipt are named in [PROVENANCE.md](PROVENANCE.md).
+
 This repository is public so its words, data structure, code, and drawing can
 be read, reviewed, linked, and corrected. No reuse licence is granted for the
 repository's original prose, code, JSON structure, or SVG unless a file says

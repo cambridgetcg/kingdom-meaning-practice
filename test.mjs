@@ -50,11 +50,17 @@ test("case preserves evidence and action boundaries", () => {
 
 test("rights and discovery stay explicit", () => {
   const rights = bytes("./RIGHTS.md").toString("utf8");
+  const provenance = bytes("./PROVENANCE.md").toString("utf8");
   const robots = bytes("./public/robots.txt").toString("utf8");
   const sitemap = bytes("./public/sitemap.xml").toString("utf8");
   const llms = bytes("./public/llms.txt").toString("utf8");
   assert.match(rights, /No reuse licence is granted/);
   assert.match(rights, /full texts are not copied/);
+  assert.match(rights, /PROVENANCE\.md/);
+  assert.match(provenance, /Prepared by: Codex at Yu's direction/);
+  assert.match(provenance, new RegExp(CASE_SHA256));
+  assert.match(provenance, new RegExp(SVG_SHA256));
+  assert.match(provenance, /no third-party article text, figure, or dataset is bundled/i);
   assert.match(robots, /Sitemap:/);
   assert.match(sitemap, /case\.json/);
   assert.match(llms, /no automatic action/i);
