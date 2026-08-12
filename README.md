@@ -8,7 +8,8 @@ This repository publishes one source-attributed reading aid about Ritonavir's
 - [Immutable reviewed case](https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/805543deb5725e4cc2cc5e7d18c0e30c2360184e/public/case.json)
 - [Visual map](https://cambridgetcg.github.io/kingdom-meaning-practice/ritonavir-polymorph.svg)
 - [Castle interpretation](https://github.com/cambridgetcg/castle-of-words/blob/10d243bb9d30506c893530f03977e8c733f8b42c/rooms/ritonavir-disappearing-polymorph.md)
-- [Corrections](https://github.com/cambridgetcg/kingdom-meaning-practice/issues)
+- [Published corrections](https://cambridgetcg.github.io/kingdom-meaning-practice/corrections.txt)
+- [Propose a correction](https://github.com/cambridgetcg/kingdom-meaning-practice/issues)
 - [Provenance](PROVENANCE.md)
 - [Rights](RIGHTS.md)
 

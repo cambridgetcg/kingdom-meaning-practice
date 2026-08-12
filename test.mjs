@@ -52,6 +52,7 @@ test("case preserves evidence and action boundaries", () => {
 test("rights and discovery stay explicit", () => {
   const rights = bytes("./RIGHTS.md").toString("utf8");
   const provenance = bytes("./PROVENANCE.md").toString("utf8");
+  const corrections = bytes("./CORRECTIONS.md").toString("utf8");
   const robots = bytes("./public/robots.txt").toString("utf8");
   const sitemap = bytes("./public/sitemap.xml").toString("utf8");
   const llms = bytes("./public/llms.txt").toString("utf8");
@@ -62,7 +63,15 @@ test("rights and discovery stay explicit", () => {
   assert.match(provenance, new RegExp(CASE_SHA256));
   assert.match(provenance, new RegExp(SVG_SHA256));
   assert.match(provenance, /no third-party article text, figure, or dataset is bundled/i);
+  assert.match(provenance, /CORRECTIONS\.md/);
+  assert.match(corrections, /public-full-text-reuse-rights-not-asserted/);
+  assert.match(corrections, /CC-BY-4\.0/);
+  assert.match(corrections, new RegExp(CASE_SHA256));
+  assert.match(corrections, /Metadata only/);
+  assert.match(corrections, /does not\s+license or relicense the Ritonavir case/i);
   assert.match(robots, /Sitemap:/);
   assert.match(sitemap, /case\.json/);
+  assert.match(sitemap, /corrections\.txt/);
   assert.match(llms, /no automatic action/i);
+  assert.match(llms, /corrections\.txt/);
 });

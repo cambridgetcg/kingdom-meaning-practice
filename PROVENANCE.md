@@ -19,7 +19,9 @@ the Castle room is a separately correctable interpretation.
 Rights for this repository's original work are stated in [RIGHTS.md](RIGHTS.md).
 Linked scientific papers and official records remain their authors' work.
 No third-party article text, figure, or dataset is bundled here. Corrections
-can be proposed through the [public issue path](https://github.com/cambridgetcg/kingdom-meaning-practice/issues).
+already identified are preserved in the append-only [correction
+record](CORRECTIONS.md); further corrections can be proposed through the
+[public issue path](https://github.com/cambridgetcg/kingdom-meaning-practice/issues).
 
 This provenance receipt does not prove the linked sources, the interpretation,
 causation, understanding, or present-day product behaviour.
