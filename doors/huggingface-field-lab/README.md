@@ -41,3 +41,8 @@ metadata. Owner, visibility, and any future licence remain separate choices.
 This release was published after a fresh review and a current owner choice
 using an owner-authorised credential; prefer a target-scoped token for later
 writes.
+
+The generated document carries `noindex, nofollow`. Hugging Face currently
+overrides the Space's public `/robots.txt` route with `Allow: /`, so that
+route is platform-owned and cannot prove the intended crawl boundary; the HTML
+directive is the release-controlled instruction.

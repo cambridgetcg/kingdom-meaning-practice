@@ -520,6 +520,7 @@ test("field lab platform bundles derive from the same four source files", () => 
     }
     const index = bytes(`./doors/${directory}/index.html`).toString("utf8");
     assert.match(index, /https:\/\/cambridgetcg\.github\.io\/kingdom-meaning-practice\/lineage\/folding-feedback\//);
+    assert.match(index, /<meta name="robots" content="noindex, nofollow" \/>/);
     assert.doesNotMatch(index, /href="\.\.\/lineage/);
   }
 });
