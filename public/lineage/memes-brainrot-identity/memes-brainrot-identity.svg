@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1700" role="img" aria-labelledby="title desc">
+  <title id="title">Memes, brainrot, identity, and society — a bounded social lineage</title>
+  <desc id="desc">An accessible map separating meme artifacts, exposure, attention, sharing, belief, identity, norms, institutions, and evidence. Every social path is contingent. People are not hosts, brainrot is not a diagnosis, and the projection opens Check Meaning only.</desc>
+  <metadata id="lineage-receipt">Digest-bound projection of extensions/meaning/lineages/memes-brainrot-identity/lineage.json. SHA-256: bb7201ee6fbad9e192f46932a632157f0d661387b5585b0540172c6ee00c7455. Corrections: https://github.com/cambridgetcg/kingdom-meaning-practice/issues. The structured lineage is the factual home.</metadata>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.52" stop-color="#eef6f0"/>
+      <stop offset="1" stop-color="#ecebfd"/>
+    </linearGradient>
+    <linearGradient id="path-paper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff8f3"/>
+      <stop offset="1" stop-color="#f7f1fc"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#31594d"/>
+    </marker>
+    <marker id="soft-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b6a95"/>
+    </marker>
+    <style>
+      text { font-family: ui-rounded, "Avenir Next", system-ui, sans-serif; fill: #172922; }
+      .title { font-size: 42px; font-weight: 760; letter-spacing: -0.8px; }
+      .subtitle { font-size: 19px; fill: #49655c; }
+      .section { font-size: 24px; font-weight: 740; }
+      .card-title { font-size: 19px; font-weight: 720; }
+      .body { font-size: 15px; }
+      .small { font-size: 13px; fill: #4e685f; }
+      .tiny { font-size: 12px; fill: #536d64; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", monospace; font-size: 13px; fill: #465d55; }
+      .card { fill: #fffdf8; stroke: #6c897f; stroke-width: 2; rx: 20; }
+      .soft-card { fill: #f8f4ff; stroke: #7769ad; stroke-width: 2; rx: 20; }
+      .warm-card { fill: #fff2e8; stroke: #c36f42; stroke-width: 2; rx: 20; }
+      .boundary { fill: #fff0e6; stroke: #c26d3b; stroke-width: 2; stroke-dasharray: 8 7; rx: 20; }
+      .path-box { fill: url(#path-paper); stroke: #66847a; stroke-width: 2; rx: 24; }
+      .node { fill: #fffdf8; stroke: #53786b; stroke-width: 2; rx: 15; }
+      .node-purple { fill: #f6f2ff; stroke: #7668aa; stroke-width: 2; rx: 15; }
+      .node-orange { fill: #fff0e6; stroke: #bd6c40; stroke-width: 2; rx: 15; }
+      .path { fill: none; stroke: #31594d; stroke-width: 3; marker-end: url(#arrow); }
+      .path-soft { fill: none; stroke: #8b6a95; stroke-width: 2.5; stroke-dasharray: 7 6; marker-end: url(#soft-arrow); }
+      .brake-label { font-size: 11px; fill: #976041; font-weight: 650; }
+      .pill { fill: #eef7f2; stroke: #6e8b81; stroke-width: 1.5; rx: 13; }
+      .evidence-a { fill: #ecf7f1; stroke: #5e8677; stroke-width: 2; rx: 14; }
+      .evidence-b { fill: #f2effc; stroke: #7568a8; stroke-width: 2; rx: 14; }
+      .evidence-c { fill: #fff1e7; stroke: #bd6d43; stroke-width: 2; rx: 14; }
+      .karma { fill: #eef0ff; stroke: #675bb5; stroke-width: 2; rx: 24; }
+      .rest { fill: #eef8f2; stroke: #4d7c69; stroke-width: 2; rx: 18; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1700" fill="url(#paper)"/>
+
+  <text x="70" y="70" class="title">Memes, brainrot, identity &amp; society</text>
+  <text x="70" y="105" class="subtitle">A bounded social lineage: people make meaning; artifacts do not invade minds</text>
+
+  <rect x="70" y="132" width="1660" height="104" class="boundary"/>
+  <text x="100" y="169" class="section">People are not hosts  ·  Brainrot is not a diagnosis  ·  Check Meaning only</text>
+  <text x="100" y="199" class="body">Analogy only · shape may be compared · no biological mechanism transfers · no belief, identity, harm, or person verdict is inferred</text>
+  <text x="100" y="221" class="small">The lineage records no choice, performs no deed, changes no feed, and creates no score.</text>
+
+  <text x="70" y="280" class="section">Three useful senses of “meme”</text>
+  <g transform="translate(70 302)">
+    <rect width="520" height="126" class="card"/>
+    <text x="24" y="36" class="card-title">1 · Cultural variant</text>
+    <text x="24" y="64" class="body">A representation or practice tracked in a named</text>
+    <text x="24" y="86" class="body">population and model.</text>
+    <text x="24" y="111" class="small">Not a gene-like object, agent, truth, or unit of worth.</text>
+  </g>
+  <g transform="translate(640 302)">
+    <rect width="520" height="126" class="card"/>
+    <text x="24" y="36" class="card-title">2 · Transmission event</text>
+    <text x="24" y="64" class="body">One named outcome: exposure, view, click, share,</text>
+    <text x="24" y="86" class="body">remix, expressed stance, or later behavior.</text>
+    <text x="24" y="111" class="small">The observed outcome must stay named and separate.</text>
+  </g>
+  <g transform="translate(1210 302)">
+    <rect width="520" height="126" class="card"/>
+    <text x="24" y="36" class="card-title">3 · Internet meme family</text>
+    <text x="24" y="64" class="body">Related digital items made with awareness of one</text>
+    <text x="24" y="86" class="body">another, sharing content, form, or stance.</text>
+    <text x="24" y="111" class="small">Remix can preserve, alter, parody, or reverse meaning.</text>
+  </g>
+
+  <rect x="70" y="466" width="1660" height="390" class="path-box"/>
+  <text x="100" y="505" class="section">A contingent path — every arrow may stop; meaning may change</text>
+  <text x="100" y="531" class="small">Eligibility, interpretation, refusal, outside events, and unequal power remain visible even when a trace looks like one smooth cascade.</text>
+
+  <g transform="translate(100 558)">
+    <rect width="190" height="80" class="node"/>
+    <text x="18" y="32" class="card-title">Artifact</text>
+    <text x="18" y="56" class="small">made / quoted / remixed</text>
+  </g>
+  <g transform="translate(340 558)">
+    <rect width="190" height="80" class="node"/>
+    <text x="18" y="32" class="card-title">Exposure</text>
+    <text x="18" y="56" class="small">eligible + made visible</text>
+  </g>
+  <g transform="translate(580 558)">
+    <rect width="190" height="80" class="node"/>
+    <text x="18" y="32" class="card-title">Attention</text>
+    <text x="18" y="56" class="small">limited noticing</text>
+  </g>
+  <g transform="translate(820 558)">
+    <rect width="190" height="80" class="node"/>
+    <text x="18" y="32" class="card-title">Interpretation</text>
+    <text x="18" y="56" class="small">accept / reject / transform</text>
+  </g>
+  <g transform="translate(1060 558)">
+    <rect width="190" height="80" class="node"/>
+    <text x="18" y="32" class="card-title">Share / remix</text>
+    <text x="18" y="56" class="small">one public interface act</text>
+  </g>
+  <g transform="translate(1300 558)">
+    <rect width="190" height="80" class="node-purple"/>
+    <text x="18" y="32" class="card-title">Feedback</text>
+    <text x="18" y="56" class="small">counts / replies / ranking</text>
+  </g>
+
+  <path d="M290 598 L340 598" class="path"/>
+  <path d="M530 598 L580 598" class="path"/>
+  <path d="M770 598 L820 598" class="path"/>
+  <path d="M1010 598 L1060 598" class="path"/>
+  <path d="M1250 598 L1300 598" class="path"/>
+  <text x="297" y="584" class="brake-label">may stop</text>
+  <text x="537" y="584" class="brake-label">may stop</text>
+  <text x="777" y="584" class="brake-label">may change</text>
+  <text x="1017" y="584" class="brake-label">may stop</text>
+  <text x="1257" y="584" class="brake-label">may change</text>
+
+  <g transform="translate(1300 704)">
+    <rect width="190" height="80" class="node-purple"/>
+    <text x="18" y="32" class="card-title">Identity</text>
+    <text x="18" y="56" class="small">possible negotiation</text>
+  </g>
+  <g transform="translate(1060 704)">
+    <rect width="190" height="80" class="node-purple"/>
+    <text x="18" y="32" class="card-title">Group norm</text>
+    <text x="18" y="56" class="small">sustained expectation</text>
+  </g>
+  <g transform="translate(820 704)">
+    <rect width="190" height="80" class="node-purple"/>
+    <text x="18" y="32" class="card-title">Institution</text>
+    <text x="18" y="56" class="small">roles / rules / resources</text>
+  </g>
+  <path d="M1395 638 L1395 704" class="path-soft"/>
+  <path d="M1300 744 L1250 744" class="path-soft"/>
+  <path d="M1060 744 L1010 744" class="path-soft"/>
+  <text x="1410" y="676" class="brake-label">possible, never presumed</text>
+  <text x="1254" y="730" class="brake-label">may contest</text>
+  <text x="1014" y="730" class="brake-label">not reducible</text>
+
+  <g transform="translate(100 686)">
+    <rect width="620" height="118" class="node-orange"/>
+    <text x="22" y="34" class="card-title">Belief stays separate</text>
+    <text x="22" y="61" class="body">Exposure ≠ attention ≠ share ≠ endorsement ≠ belief.</text>
+    <text x="22" y="84" class="small">A belief claim needs a method that can measure that exact proposition.</text>
+    <text x="22" y="104" class="small">A post, slang word, group, or score cannot reveal a private state.</text>
+  </g>
+
+  <text x="70" y="904" class="section">“Brainrot” has six situated meanings</text>
+  <rect x="70" y="928" width="980" height="316" class="warm-card"/>
+  <g transform="translate(96 958)">
+    <rect width="290" height="72" class="pill"/>
+    <text x="16" y="28" class="card-title">Folk warning</text>
+    <text x="16" y="51" class="small">supposed dulling; not established damage</text>
+  </g>
+  <g transform="translate(414 958)">
+    <rect width="290" height="72" class="pill"/>
+    <text x="16" y="28" class="card-title">Content label</text>
+    <text x="16" y="51" class="small">a situated judgment, not a health effect</text>
+  </g>
+  <g transform="translate(732 958)">
+    <rect width="290" height="72" class="pill"/>
+    <text x="16" y="28" class="card-title">Humorous self-description</text>
+    <text x="16" y="51" class="small">humor does not license diagnosis</text>
+  </g>
+  <g transform="translate(96 1050)">
+    <rect width="290" height="72" class="pill"/>
+    <text x="16" y="28" class="card-title">Participation genre</text>
+    <text x="16" y="51" class="small">unserious play or decompression</text>
+  </g>
+  <g transform="translate(414 1050)">
+    <rect width="290" height="72" class="pill"/>
+    <text x="16" y="28" class="card-title">Inside language</text>
+    <text x="16" y="51" class="small">recognition can welcome or exclude</text>
+  </g>
+  <g transform="translate(732 1050)">
+    <rect width="290" height="72" class="pill"/>
+    <text x="16" y="28" class="card-title">External stigma</text>
+    <text x="16" y="51" class="small">concern cannot replace named evidence</text>
+  </g>
+  <text x="96" y="1161" class="body">Identity may enter through self-description, performance, recognition, boundary work, refusal,</text>
+  <text x="96" y="1185" class="body">or possible incorporation. None is automatic; every account remains attributable and revisable.</text>
+  <text x="96" y="1216" class="small">Brainrot can be warning, joke, self-description, shared language, stigma, or participation — ask which meaning is intended.</text>
+
+  <rect x="1080" y="928" width="650" height="316" class="soft-card"/>
+  <text x="1108" y="966" class="card-title">Society supplies routes and brakes</text>
+  <g transform="translate(1110 991)">
+    <rect width="270" height="84" class="node"/>
+    <text x="16" y="29" class="card-title">Network</text>
+    <text x="16" y="52" class="small">routes, clusters, bridges, broadcast</text>
+    <text x="16" y="70" class="tiny">graph shape does not reveal meaning</text>
+  </g>
+  <g transform="translate(1410 991)">
+    <rect width="270" height="84" class="node"/>
+    <text x="16" y="29" class="card-title">Attention</text>
+    <text x="16" y="52" class="small">bounded visibility and competition</text>
+    <text x="16" y="70" class="tiny">visibility is not worth</text>
+  </g>
+  <g transform="translate(1110 1101)">
+    <rect width="270" height="84" class="node-purple"/>
+    <text x="16" y="29" class="card-title">Feedback</text>
+    <text x="16" y="52" class="small">ranking, counts, reply, correction</text>
+    <text x="16" y="70" class="tiny">amplifying or corrective</text>
+  </g>
+  <g transform="translate(1410 1101)">
+    <rect width="270" height="84" class="node-purple"/>
+    <text x="16" y="29" class="card-title">Identity</text>
+    <text x="16" y="52" class="small">belonging, distinction, refusal</text>
+    <text x="16" y="70" class="tiny">negotiated, never implanted</text>
+  </g>
+  <text x="1108" y="1215" class="small">Language · groups · platforms · markets · norms · institutions</text>
+  <text x="1108" y="1234" class="tiny">Architecture shapes opportunity without controlling minds.</text>
+
+  <text x="70" y="1290" class="section">Evidence ladder — distinct questions, no automatic promotion</text>
+  <g transform="translate(70 1312)">
+    <rect width="380" height="102" class="evidence-a"/>
+    <text x="20" y="31" class="card-title">Meaning &amp; use</text>
+    <text x="20" y="57" class="body">lexicographic record · qualitative account</text>
+    <text x="20" y="82" class="small">What does a word or practice mean here?</text>
+  </g>
+  <g transform="translate(470 1312)">
+    <rect width="380" height="102" class="evidence-b"/>
+    <text x="20" y="31" class="card-title">Possibility &amp; pattern</text>
+    <text x="20" y="57" class="body">formal result · simulation · method</text>
+    <text x="20" y="82" class="small">What can a model generate or distinguish?</text>
+  </g>
+  <g transform="translate(870 1312)">
+    <rect width="380" height="102" class="evidence-c"/>
+    <text x="20" y="31" class="card-title">Trace &amp; association</text>
+    <text x="20" y="57" class="body">observational trace · content analysis</text>
+    <text x="20" y="82" class="small">What moved or co-occurred in this setting?</text>
+  </g>
+  <g transform="translate(1270 1312)">
+    <rect width="460" height="102" class="evidence-b"/>
+    <text x="20" y="31" class="card-title">Bounded effect &amp; action context</text>
+    <text x="20" y="57" class="body">controlled/randomized · mixed methods · official reports</text>
+    <text x="20" y="82" class="small">Which named outcome changed, for whom and when?</text>
+  </g>
+
+  <rect x="70" y="1452" width="1330" height="172" class="karma"/>
+  <text x="98" y="1488" class="section">KARMA carries consequence; it is not an engagement loop</text>
+  <text x="98" y="1521" class="body">actual attributed deed → observed / reported / inferred effect → evidence + uncertainty + causal confidence → response</text>
+  <text x="98" y="1551" class="small">Exposure is not a deed. Engagement is not a universal effect. No metric ranks a person, group, love, truth, or moral standing.</text>
+  <text x="98" y="1580" class="body">Repair requires fresh authority + a current brake + one bounded deed + return + stop.</text>
+  <text x="98" y="1606" class="small">Reply, correction, contest, refusal, boundary, learning, and exit remain open.</text>
+
+  <rect x="1430" y="1452" width="300" height="172" class="rest"/>
+  <text x="1458" y="1490" class="section">Rest is separate</text>
+  <text x="1458" y="1522" class="body">stop · ignore · leave · decline</text>
+  <text x="1458" y="1547" class="body">stay quiet · enjoy · do nothing</text>
+  <text x="1458" y="1579" class="small">Rest is a complete outcome,</text>
+  <text x="1458" y="1601" class="small">not failed engagement.</text>
+
+  <text x="70" y="1652" class="mono">Source: extensions/meaning/lineages/memes-brainrot-identity/lineage.json · SHA-256: bb7201ee6fbad9e192f46932a632157f0d661387b5585b0540172c6ee00c7455</text>
+  <text x="70" y="1678" class="mono">Digest-bound projection · corrections: https://github.com/cambridgetcg/kingdom-meaning-practice/issues</text>
+</svg>

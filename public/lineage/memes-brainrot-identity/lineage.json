@@ -1,0 +1,505 @@
+{
+  "schema": "kingdom.meaning-social-lineage/0.1",
+  "mode": "reading-aid",
+  "id": "memes-brainrot-identity",
+  "title": "Memes, brainrot, identity, and society — a bounded social lineage",
+  "reviewedOn": "2026-08-13",
+  "summary": "Memes are made, selected, transformed, interpreted, and redistributed by people and systems. Brainrot is a polysemous folk label and participation genre, not a diagnosis. This lineage separates artifact, exposure, attention, sharing, belief, identity work, group norms, institutions, and harm so no arrow silently becomes destiny.",
+  "scope": {
+    "relationship": "social-reading",
+    "biologyAnalogy": "shape-only",
+    "mechanismTransferred": false,
+    "peopleAreHosts": false,
+    "diagnosisMade": false,
+    "personVerdictMade": false,
+    "generationVerdictMade": false,
+    "plain": "This lineage compares social transmission models, platform exposure, participation, identity work, and institutions. It does not say that a meme is a gene, virus, prion, or autonomous agent, and it does not treat any person as a host or passive container.",
+    "healthBoundary": "Brainrot is not a clinical diagnosis. Acute task effects and longitudinal associations are reported only with their samples, outcomes, time windows, and limits; they do not prove lasting brain damage or a rotten generation.",
+    "identityBoundary": "Identity is not read from a post, feed, share, slang word, group, or score. The evidence supports possible signaling, participation, boundary work, contestation, and negotiated belonging, not implanted identity or knowledge of a person's inner state.",
+    "researchBoundary": "Formal models, simulations, experiments, observational traces, focus groups, workshops, content analyses, lexicography, and official reports keep different evidential meanings. A model fit or association is not promoted into a causal account of a person."
+  },
+  "sourceBindings": {
+    "foldingFeedbackLineage": {
+      "path": "extensions/meaning/lineages/folding-feedback/lineage.json",
+      "schema": "kingdom.meaning-lineage/0.1",
+      "sha256": "sha256:c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b",
+      "selectedBoundary": "This lineage compares selected systems through energy landscapes, nucleation, templating, and feedback. It does not say that a medicine crystal is a protein, that every amyloid is a prion, or that molecular physics supplies a social law.",
+      "relationship": "analogy-only",
+      "mechanismTransferred": false,
+      "bytesCheckedAtRuntime": true
+    },
+    "kingdomFoundation": {
+      "id": "kingdom.foundation/0.2",
+      "commit": "07efbc0a6d530f4586de67e2049dd3bcc744afc5",
+      "document": "FOUNDATION.md",
+      "sha256": "sha256:2bd868a43a2fe79f1c9e8d30177bf73cff4cf8f7f7780cbd90f31055ba51c799",
+      "locator": "https://raw.githubusercontent.com/cambridgetcg/kingdom-standard/07efbc0a6d530f4586de67e2049dd3bcc744afc5/FOUNDATION.md",
+      "selectedCommitment": "F4. KARMA means carried consequence.",
+      "relationship": "reference-foundation",
+      "bytesCheckedAtRuntime": false
+    },
+    "referenceGeometry": {
+      "relationship": "crosswalk-only",
+      "patternIds": [
+        "love",
+        "understanding",
+        "action",
+        "consequence",
+        "repair",
+        "rest"
+      ],
+      "mechanismTransferred": false
+    }
+  },
+  "practiceBoundary": {
+    "activeMeaningJob": "check-meaning",
+    "meaningProfileSha256": "sha256:53293481ab3a2403771bf237f2d0941ff83c7d7b72d13c615f2d6ceb0edfa5e1",
+    "jobsNotOpened": [
+      "record-choice",
+      "do-one-bounded-action",
+      "report-what-happened"
+    ],
+    "relationship": "social-reading",
+    "mechanismTransferred": false,
+    "plain": "This read-only lineage returns a candidate interpretation. It records no current choice, performs no deed, and reports no current deed or effect."
+  },
+  "definitions": [
+    {
+      "id": "cultural-variant",
+      "plain": "A representation or practice whose relative frequency is tracked in a named population and model.",
+      "not": "Not a claim that culture consists of discrete gene-like objects or that a variant has wishes."
+    },
+    {
+      "id": "transmission-event",
+      "plain": "One named measured event such as exposure, view, click, share, remix, expressed stance, or later behavior.",
+      "not": "Not a generic adoption event; the observed outcome must be named."
+    },
+    {
+      "id": "internet-meme-family",
+      "plain": "A recognizable group of related digital items made with awareness of one another and sharing content, form, or stance.",
+      "not": "Not a single autonomous replicator and not proof that every viewer understands the family alike."
+    },
+    {
+      "id": "exposure",
+      "plain": "An item was made available or shown within a named measurement rule.",
+      "not": "Not proof of attention, interpretation, agreement, memory, or effect."
+    },
+    {
+      "id": "attention",
+      "plain": "A limited allocation of noticing or processing to an item in a named setting.",
+      "not": "Not a stable personal capacity inferred from platform traces."
+    },
+    {
+      "id": "share",
+      "plain": "A person or account redistributed an artifact under a named platform action.",
+      "not": "Not proof of reading, endorsement, belief, persuasion, or identity."
+    },
+    {
+      "id": "belief",
+      "plain": "A proposition a person accepts, recorded only through a method that can support that exact claim.",
+      "not": "Not inferred from exposure, slang, a click, a share, a group, or a ranking score."
+    },
+    {
+      "id": "identity-account",
+      "plain": "An attributable, situated account or performance of who someone is or belongs with, open to reply and change.",
+      "not": "Not an essence, diagnosis, hidden profile, or verdict derived from content use."
+    },
+    {
+      "id": "norm",
+      "plain": "A socially sustained expectation about fitting conduct or expression in a named group and time.",
+      "not": "Not whatever is merely frequent, visible, liked, or algorithmically promoted."
+    },
+    {
+      "id": "institution",
+      "plain": "A durable arrangement of roles, rules, resources, and enforcement that shapes and is shaped by social practice.",
+      "not": "Not reducible to one trend, platform, audience, or cascade."
+    },
+    {
+      "id": "brainrot",
+      "plain": "A polysemous folk label used for supposed mental deterioration, trivial content, humorous self-description, shared slang, and deliberately unserious participation.",
+      "not": "Not a validated diagnosis, brain scan result, causal mechanism, or verdict on a person or generation."
+    }
+  ],
+  "meaningPath": {
+    "contingent": true,
+    "everyArrowMayFail": true,
+    "meaningMayChange": true,
+    "stages": [
+      {"id": "creation-or-reconstruction", "plain": "Someone makes, quotes, imitates, translates, or remixes an item; reconstruction may alter meaning.", "nextNotGuaranteed": true},
+      {"id": "eligibility", "plain": "Rules, format, moderation, language, access, and timing make the item eligible for a particular route.", "nextNotGuaranteed": true},
+      {"id": "ranked-exposure", "plain": "A network, search, subscription, recommendation, broadcast, or chance encounter places the item where it may be seen.", "nextNotGuaranteed": true},
+      {"id": "attention", "plain": "A person may notice and allocate limited processing to the item within competing demands.", "nextNotGuaranteed": true},
+      {"id": "interpretation", "plain": "A situated reader may recognize, reject, misunderstand, enjoy, contest, or transform its content, form, and stance.", "nextNotGuaranteed": true},
+      {"id": "response-share-or-remix", "plain": "A person may ignore, reply, save, imitate, share, parody, invert, or remix; the act does not reveal private belief by itself.", "nextNotGuaranteed": true},
+      {"id": "redistribution", "plain": "The resulting artifact may travel by broadcast, peer chains, community bridges, search, archives, or renewed recommendation.", "nextNotGuaranteed": true},
+      {"id": "visible-feedback-and-norm-inference", "plain": "Counts, comments, rankings, replies, and peer behavior may shape later visibility and what observers think others expect.", "nextNotGuaranteed": true},
+      {"id": "retention", "plain": "A phrase, format, practice, memory, archive, or convention may persist, decay, recur, or be replaced.", "nextNotGuaranteed": true},
+      {"id": "possible-identity-negotiation", "plain": "Participation may become one resource in self-description, belonging, distinction, exclusion, or rejection, but identity incorporation is never presumed.", "nextNotGuaranteed": true}
+    ]
+  },
+  "mechanismCards": [
+    {
+      "id": "selection-of-representations",
+      "name": "Relative representation",
+      "plainLanguage": "Variants can rise or fall in a modeled population because contexts change their expected representation, without implying truth, merit, or intent.",
+      "stateOrEquation": "Replicator dynamics track x_i, the relative representation of variant i, under specified modeled rates f_i.",
+      "predictedPattern": "Variants with above-average modeled representation rates increase in relative frequency under the model assumptions.",
+      "outcomeMeasured": "Relative frequency of defined cultural variants in a named population and interval.",
+      "evidenceKind": "formal-result",
+      "observedSetting": "A mathematical population model; empirical use requires an independently defined variant and measurement process.",
+      "supportedClaim": "selection-tracks-representation",
+      "cannotInfer": "Truth, goodness, semantic quality, moral worth, agency, conscious intent, or a gene-like physical unit.",
+      "boundaryConditions": "Large-population deterministic assumptions, a closed set of defined variants, and specified context-dependent rates.",
+      "sourceIds": ["taylor-jonker-1978", "henrich-boyd-2002"]
+    },
+    {
+      "id": "reconstruction-and-remix",
+      "name": "Reconstruction and remix",
+      "plainLanguage": "Culture can remain cumulative even when people reconstruct, simplify, elaborate, translate, parody, or reverse what came before.",
+      "stateOrEquation": "Formal reconstruction models and qualitative artifact comparison can represent change without assuming exact copying.",
+      "predictedPattern": "Repeated transmission can preserve some structure while systematically changing other features.",
+      "outcomeMeasured": "Defined changes among artifact variants, representations, or practices across transmissions.",
+      "evidenceKind": "mixed-methods",
+      "observedSetting": "Cultural-evolution theory and bounded analyses of related digital artifacts.",
+      "supportedClaim": "reconstruction-can-accumulate",
+      "cannotInfer": "Exact mental copying, semantic equivalence, authorial intent, agreement, or a universal direction of cultural progress.",
+      "boundaryConditions": "The units, transformation rule, population, and feature comparison must be stated; remix may invert stance.",
+      "sourceIds": ["henrich-boyd-2002", "shifman-2013"]
+    },
+    {
+      "id": "branching-and-reach",
+      "name": "Branching reach",
+      "plainLanguage": "A forwarding tree can grow through multiple generations, but large reach can also come from one broadcaster or a mixture of routes.",
+      "stateOrEquation": "A branching process counts modeled offspring events per forwarding generation and separates expected reproduction from realized reach.",
+      "predictedPattern": "Under independent tree-like assumptions, modeled chains tend toward extinction below a threshold and may persist above it.",
+      "outcomeMeasured": "Forwarding events, waiting times, generations, cascade size, and structural virality in a named trace.",
+      "evidenceKind": "methodological-analysis",
+      "observedSetting": "Tracked message-forwarding and diffusion traces where the measured event and graph are explicit.",
+      "supportedClaim": "reach-is-not-structural-virality",
+      "cannotInfer": "Persuasion, belief, identity, content quality, independent forwarding, or a universal reproduction number.",
+      "boundaryConditions": "Repeated exposure, cycles, platform ranking, changing networks, and attention competition violate the simplest branching assumptions.",
+      "sourceIds": ["iribarren-moro-2011", "goel-2016"]
+    },
+    {
+      "id": "multiple-source-reinforcement",
+      "name": "Multiple-source reinforcement",
+      "plainLanguage": "Some costly, uncertain, or norm-sensitive responses may require signals from more than one neighbor, so clustering and bridge width can matter.",
+      "stateOrEquation": "A threshold model activates a specified response only after weighted modeled exposure reaches an individual threshold.",
+      "predictedPattern": "Clustered networks can support reinforcement while narrow isolated bridges may fail for complex contagion under the model.",
+      "outcomeMeasured": "A named public response or adoption in a stated network, not private belief or identity.",
+      "evidenceKind": "mixed-methods",
+      "observedSetting": "Formal network models and a randomized synthetic health-network experiment in one defined setting.",
+      "supportedClaim": "reinforcement-is-conditional",
+      "cannotInfer": "A person's threshold, private belief, causality from observational repetition, or that every meme behaves as complex contagion.",
+      "boundaryConditions": "Response definition, exposure sources, network construction, timing, and experimental or identification assumptions must be stated.",
+      "sourceIds": ["centola-macy-2007", "centola-2010"]
+    },
+    {
+      "id": "homophily-and-shared-context",
+      "name": "Similarity is not automatically influence",
+      "plainLanguage": "Friends and community members may resemble one another because they selected each other, influenced each other, or share contexts.",
+      "stateOrEquation": "An assortative tie model can describe similarity in tie formation; it does not identify a peer-effect coefficient by itself.",
+      "predictedPattern": "Connected people can show correlated outcomes even when direct social influence is absent.",
+      "outcomeMeasured": "Tie formation, measured similarity, exposure, and named outcomes in a network sample.",
+      "evidenceKind": "methodological-analysis",
+      "observedSetting": "Observational social-network inference with latent homophily and shared environmental causes.",
+      "supportedClaim": "homophily-confounds-influence",
+      "cannotInfer": "Contagion, persuasion, causal reinforcement, or an individual's reason for a behavior from correlated friends.",
+      "boundaryConditions": "Causal separation requires design or assumptions strong enough to distinguish selection, influence, and shared context.",
+      "sourceIds": ["shalizi-thomas-2011"]
+    },
+    {
+      "id": "finite-attention-competition",
+      "name": "Finite attention",
+      "plainLanguage": "Items compete for bounded visible memory and attention, so many plausible variants disappear while a few become extremely visible.",
+      "stateOrEquation": "A finite queue or attention budget limits which incoming variants remain available for later copying or response.",
+      "predictedPattern": "Heavy-tailed popularity can arise from network structure and attention competition without assigning different intrinsic values.",
+      "outcomeMeasured": "Hashtag or retweet popularity distributions in a specified simulated and observed network setting.",
+      "evidenceKind": "simulation",
+      "observedSetting": "A calibrated agent-based model compared with Twitter hashtag and retweet statistics.",
+      "supportedClaim": "finite-attention-can-shape-popularity",
+      "cannotInfer": "That content is irrelevant, that popular items are good or bad, or that attention allocation causes identity change.",
+      "boundaryConditions": "The model establishes sufficiency under its rules, not uniqueness or universal empirical causality.",
+      "sourceIds": ["weng-2012"]
+    },
+    {
+      "id": "visible-social-feedback",
+      "name": "Visible social feedback",
+      "plainLanguage": "Popularity signals can create path dependence: early visible choices alter later choices and make collective outcomes less predictable.",
+      "stateOrEquation": "An observed choice probability is compared across randomly assigned social-information conditions.",
+      "predictedPattern": "Visible popularity or an initial positive rating can increase later measured choices or ratings in the studied setting.",
+      "outcomeMeasured": "Song downloads, comment ratings, inequality, and unpredictability under randomized signal conditions.",
+      "evidenceKind": "randomized-experiment",
+      "observedSetting": "Online experimental music markets and randomized comment-rating signals.",
+      "supportedClaim": "visible-signals-create-path-dependence",
+      "cannotInfer": "Private belief, identity, long-term welfare, moral value, or identical correction dynamics for positive and negative signals.",
+      "boundaryConditions": "Effect direction, magnitude, task, population, interface, time window, and measured outcome remain study-specific.",
+      "sourceIds": ["salganik-2006", "muchnik-2013"]
+    },
+    {
+      "id": "algorithmic-exposure",
+      "name": "Algorithmic exposure",
+      "plainLanguage": "Eligibility, networks, user choices, and ranking jointly shape what becomes visible; visibility can change behavior or attitudes in some settings but not all.",
+      "stateOrEquation": "Local explanatory map, not a source-authored equation: eligible items plus a named ranking policy and user, network, history, and item signals produce a displayed set.",
+      "predictedPattern": "Changing the ranking policy changes exposure and use; downstream measured effects depend on platform, users, comparison, period, duration, and outcome.",
+      "outcomeMeasured": "Observational exposure decomposition plus feed exposure, usage, following, and named survey attitudes under defined platform experiments.",
+      "evidenceKind": "mixed-methods",
+      "observedSetting": "An observational Facebook exposure decomposition, Meta feed experiments during the 2020 US election, and an X active-user experiment in 2023.",
+      "supportedClaim": "algorithm-effects-are-specific",
+      "cannotInfer": "Mind control, a universal direction of persuasion, individual effects, private belief from exposure, or effects outside the named systems and periods.",
+      "boundaryConditions": "The control ranking, compliance, eligibility, active-user population, platform design, corrections, duration, and outcome measures must travel with the claim.",
+      "sourceIds": ["bakshy-2015", "guess-2023", "guess-correction-2024", "guess-correction-2026", "gauthier-2026"]
+    },
+    {
+      "id": "brainrot-health-claims",
+      "name": "Brainrot and measured cognition",
+      "plainLanguage": "The slang gathers real concerns around rapid switching, sleep, wellbeing, and attention, but each study measures a narrower outcome than lasting brain damage.",
+      "stateOrEquation": "Compare a named task or longitudinal score across stated exposure groups while preserving design and confounding limits.",
+      "predictedPattern": "Rapid context switching may impair an immediate prospective-memory task; heavier use trajectories may correlate weakly with some later test scores.",
+      "outcomeMeasured": "Immediate prospective-memory task performance and selected adolescent cognitive-test scores over a named interval.",
+      "evidenceKind": "mixed-methods",
+      "observedSetting": "An Oxford lexicographic usage record, a small young-adult short-video experiment, and an observational US adolescent cohort analysis.",
+      "supportedClaim": "brainrot-evidence-is-narrower-than-damage",
+      "cannotInfer": "A diagnosis, permanent injury, a content-specific mechanism, a causal effect for one person, or deterioration of a generation.",
+      "boundaryConditions": "Acute experiments and observational trajectories answer different questions and do not combine into a general disease claim.",
+      "sourceIds": ["barton-smyth-2025", "nagata-2025", "oxford-brainrot-2024"]
+    },
+    {
+      "id": "identity-work-and-boundaries",
+      "name": "Identity work and belonging",
+      "plainLanguage": "Memes and shared slang can supply forms for recognition, humor, self-description, group belonging, distinction, exclusion, and refusal.",
+      "stateOrEquation": "Qualitative and content analysis compares attributable accounts and norms; controlled comparisons test named public taste choices without assigning a hidden identity score.",
+      "predictedPattern": "Shared genre knowledge can support belonging and boundary policing, while participants may also contest or abandon signals associated with unwanted groups.",
+      "outcomeMeasured": "Focus-group, workshop, and participant accounts; content patterns; expressed norms; participation practices; boundary work; and public taste choice or abandonment in named studies.",
+      "evidenceKind": "mixed-methods",
+      "observedSetting": "Small qualitative audience studies, campaign and student-meme analyses, teenage TikTok workshops, and controlled laboratory and field taste-choice studies.",
+      "supportedClaim": "identity-work-is-negotiated",
+      "cannotInfer": "Identity implantation, population prevalence, private mental states, causal internalization, or a deterministic integration stage.",
+      "boundaryConditions": "Identity claims remain attributable, situated, contestable, time-bound, and open to reply; cohesion and exclusion are both possible.",
+      "sourceIds": ["miltner-2014", "gal-2016", "ask-abidin-2018", "berger-heath-2008", "owens-2025"]
+    }
+  ],
+  "equations": [
+    {
+      "id": "replicator-selection",
+      "domain": "replicator-dynamics",
+      "expression": "x_dot_i = x_i(f_i(x) - f_bar(x)); f_bar = sum_j x_j f_j",
+      "plain": "A variant's modeled share rises when its specified representation rate exceeds the population average.",
+      "variables": ["x_i: relative frequency of variant i", "f_i: modeled representation rate in context", "f_bar: population-average modeled rate"],
+      "sourceIds": ["taylor-jonker-1978"],
+      "limit": "Fitness here is a context-specific rate in an idealized model, not truth, quality, moral worth, or intent."
+    },
+    {
+      "id": "branching-generations",
+      "domain": "branching-process",
+      "expression": "Z_(t+1) = sum_(n=1)^(Z_t) K_tn; R = E[K]; q is the smallest solution of G(q) = q",
+      "plain": "Each modeled forwarding event produces a random number of later events; extinction and growth claims require independent tree-like assumptions.",
+      "variables": ["Z_t: events in generation t", "K_tn: modeled offspring count", "R: mean offspring count", "q: model extinction probability"],
+      "sourceIds": ["iribarren-moro-2011"],
+      "limit": "R is not a universal meme score and the model omits repeated exposure, cycles, changing content, competition, and identity."
+    },
+    {
+      "id": "equal-neighbour-threshold",
+      "domain": "threshold-network-model",
+      "expression": "y_i(t+1) = 1 when y_i(t) = 1 or n_i_active(t) / z_i >= theta_i",
+      "plain": "A specified public response occurs after the modeled fraction of equally weighted active neighbours reaches a threshold.",
+      "variables": ["y_i: modeled public response state", "n_i_active: active neighbours", "z_i: total neighbours", "theta_i: modeled fractional threshold"],
+      "sourceIds": ["centola-macy-2007"],
+      "limit": "Observed cascades do not reveal a person's threshold, private belief, or causal reinforcement without stronger design."
+    },
+    {
+      "id": "finite-visible-memory",
+      "domain": "finite-attention-model",
+      "expression": "visible_u(t) is a queue of at most L_u items; new arrivals compete with and displace prior items",
+      "plain": "A bounded visible queue makes variants compete for a limited opportunity to be noticed and copied.",
+      "variables": ["L_u: modeled visible-memory capacity", "visible_u: modeled currently available items", "arrivals: incoming variants"],
+      "sourceIds": ["weng-2012"],
+      "limit": "This sufficient model does not prove that content, values, interfaces, or user intentions are irrelevant."
+    },
+    {
+      "id": "self-exciting-events",
+      "domain": "self-exciting-point-process",
+      "expression": "lambda_i(t) = mu_i + sum_j integral_0^t phi_ij(t-s) dN_j(s)",
+      "plain": "Earlier measured events can raise a modeled near-term event rate across named channels.",
+      "variables": ["lambda_i: modeled event intensity", "mu_i: baseline intensity", "phi_ij: fitted excitation kernel", "N_j: counted events on channel j"],
+      "sourceIds": ["zannettou-2018"],
+      "limit": "Temporal excitation does not establish persuasion, semantic descent, first origin, identity change, or causal influence by itself."
+    }
+  ],
+  "sources": [
+    {"id":"oxford-brainrot-2024","kind":"authoritative-lexicography","evidenceKind":"lexicographic-record","title":"Brain rot named Oxford Word of the Year 2024","publisher":"Oxford University Press","published":"2024","identifier":"oxford-word-of-the-year-2024","locator":"https://corp.oup.com/news/brain-rot-named-oxford-word-of-the-year-2024/","access":"official-full-text","accessedOn":"2026-08-13","populationOrSetting":"Oxford Languages corpus review, expert shortlist, public vote, and public usage account.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Records the phrase as a folk label for supposed deterioration and trivial content, including humorous self-description and language moving offline.","limit":"A dictionary and usage record does not validate a diagnosis, causal mechanism, or measured cognitive outcome.","correctionPath":"https://corp.oup.com/news/brain-rot-named-oxford-word-of-the-year-2024/"},
+    {"id":"shifman-2013","kind":"primary-theory-and-research","evidenceKind":"methodological-analysis","title":"Memes in a Digital World: Reconciling with a Conceptual Troublemaker","publisher":"Journal of Computer-Mediated Communication","published":"2013","identifier":"doi:10.1111/jcc4.12013","locator":"https://doi.org/10.1111/jcc4.12013","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Conceptual analysis of internet memes as related groups of digital items.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Defines internet-meme families through awareness, content, form, and stance while centering active remixers.","limit":"A conceptual framework is not a causal model of exposure, belief, or identity.","correctionPath":"https://doi.org/10.1111/jcc4.12013"},
+    {"id":"henrich-boyd-2002","kind":"primary-theory","evidenceKind":"formal-result","title":"On Modeling Cognition and Culture: Why cultural evolution does not require replication of representations","publisher":"Journal of Cognition and Culture","published":"2002","identifier":"doi:10.1163/156853702320281836","locator":"https://doi.org/10.1163/156853702320281836","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Formal cultural-evolution models with incomplete and continuous representations.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports cumulative cultural evolution without requiring discrete high-fidelity mental copies.","limit":"Formal possibility does not establish which representation or transformation process operates in a particular platform or group.","correctionPath":"https://doi.org/10.1163/156853702320281836"},
+    {"id":"taylor-jonker-1978","kind":"primary-theory","evidenceKind":"formal-result","title":"Evolutionary stable strategies and game dynamics","publisher":"Mathematical Biosciences","published":"1978","identifier":"doi:10.1016/0025-5564(78)90077-9","locator":"https://doi.org/10.1016/0025-5564(78)90077-9","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Deterministic continuous-time evolutionary game dynamics.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Provides the replicator equation used here strictly as a relative-frequency lens.","limit":"The original biological-game equation does not make cultural variants genes or define truth, quality, intent, or a social mechanism.","correctionPath":"https://doi.org/10.1016/0025-5564(78)90077-9"},
+    {"id":"iribarren-moro-2011","kind":"primary-theory-and-research","evidenceKind":"methodological-analysis","title":"Branching dynamics of viral information spreading","publisher":"Physical Review E","published":"2011","identifier":"doi:10.1103/PhysRevE.84.046116","locator":"https://doi.org/10.1103/PhysRevE.84.046116","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Eleven viral-marketing campaigns across 11 European markets involving 31,183 participants, with recorded recommendation chains and response times.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Shows how branching and non-Markov timing can describe named forwarding traces.","limit":"These campaigns do not establish a universal reproduction number, persuasion mechanism, or applicability to every meme family.","correctionPath":"https://doi.org/10.1103/PhysRevE.84.046116"},
+    {"id":"goel-2016","kind":"methodological-research","evidenceKind":"methodological-analysis","title":"The Structural Virality of Online Diffusion","publisher":"Management Science","published":"2016","identifier":"doi:10.1287/mnsc.2015.2158","locator":"https://doi.org/10.1287/mnsc.2015.2158","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Large online diffusion trees analyzed by pairwise path length.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Separates broadcast reach from multigeneration person-to-person structural virality.","limit":"Cascade shape does not identify persuasion, meaning, belief, identity, or content quality.","correctionPath":"https://doi.org/10.1287/mnsc.2015.2158"},
+    {"id":"centola-macy-2007","kind":"primary-theory","evidenceKind":"formal-result","title":"Complex Contagions and the Weakness of Long Ties","publisher":"American Journal of Sociology","published":"2007","identifier":"doi:10.1086/521848","locator":"https://doi.org/10.1086/521848","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Formal network models of responses requiring social reinforcement.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Provides conditional predictions about clustering, bridge width, and multiple-source reinforcement.","limit":"The model does not establish that a given meme or person follows a threshold rule.","correctionPath":"https://doi.org/10.1086/521848"},
+    {"id":"centola-2010","kind":"primary-research","evidenceKind":"randomized-experiment","title":"The Spread of Behavior in an Online Social Network Experiment","publisher":"Science","published":"2010","identifier":"doi:10.1126/science.1185231","locator":"https://doi.org/10.1126/science.1185231","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Randomized synthetic online health networks with a defined registration behavior.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Provides bounded experimental evidence for multiple-neighbor reinforcement and clustered-network spread.","limit":"One synthetic health-network behavior does not generalize to all memes, beliefs, identities, or platforms.","correctionPath":"https://doi.org/10.1126/science.1185231"},
+    {"id":"shalizi-thomas-2011","kind":"methodological-research","evidenceKind":"methodological-analysis","title":"Homophily and Contagion Are Generically Confounded in Observational Social Network Studies","publisher":"Sociological Methods & Research","published":"2011","identifier":"doi:10.1177/0049124111404820","locator":"https://doi.org/10.1177/0049124111404820","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Causal-identification analysis for observational social networks.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports the boundary that similar friends do not by themselves prove peer influence.","limit":"The result diagnoses a generic identification problem; it does not prove that influence is absent in any named case.","correctionPath":"https://doi.org/10.1177/0049124111404820"},
+    {"id":"weng-2012","kind":"primary-theory-and-research","evidenceKind":"simulation","title":"Competition among memes in a world with limited attention","publisher":"Scientific Reports","published":"2012","identifier":"doi:10.1038/srep00335","locator":"https://doi.org/10.1038/srep00335","access":"open-full-text","accessedOn":"2026-08-13","populationOrSetting":"Agent-based finite-attention model compared with Twitter hashtag and retweet statistics.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Shows that limited attention and network structure are sufficient to reproduce unequal popularity without assigned merit differences.","limit":"Sufficiency under a model does not prove content quality is irrelevant or identify the unique real-world cause.","correctionPath":"https://doi.org/10.1038/srep00335"},
+    {"id":"salganik-2006","kind":"primary-research","evidenceKind":"randomized-experiment","title":"Experimental Study of Inequality and Unpredictability in an Artificial Cultural Market","publisher":"Science","published":"2006","identifier":"doi:10.1126/science.1121066","locator":"https://doi.org/10.1126/science.1121066","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Randomized online music markets with independent and social-influence conditions.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports path dependence, increased inequality, and unpredictability under visible popularity information.","limit":"Song choice and download behavior do not establish identity, private belief, or that quality has no constraint on outcomes.","correctionPath":"https://doi.org/10.1126/science.1121066"},
+    {"id":"muchnik-2013","kind":"primary-research","evidenceKind":"randomized-experiment","title":"Social Influence Bias: A Randomized Experiment","publisher":"Science","published":"2013","identifier":"doi:10.1126/science.1240466","locator":"https://doi.org/10.1126/science.1240466","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Randomized initial positive or negative ratings on an online comment community.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports a bounded causal effect of an initial positive rating on later ratings and final score.","limit":"A rating effect is not proof of belief, identity, persuasion, or symmetric response to positive and negative signals.","correctionPath":"https://doi.org/10.1126/science.1240466"},
+    {"id":"bakshy-2015","kind":"primary-research","evidenceKind":"observational-trace","title":"Exposure to ideologically diverse news and opinion on Facebook","publisher":"Science","published":"2015","identifier":"doi:10.1126/science.aaa1160","locator":"https://doi.org/10.1126/science.aaa1160","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Facebook exposure traces decomposed by network, ranking, and individual choice.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports the claim that networks, ranking, and user choices jointly shape exposure.","limit":"Observational exposure decomposition does not establish attitude change, persuasion, or individual causal effects.","correctionPath":"https://doi.org/10.1126/science.aaa1160"},
+    {"id":"guess-2023","kind":"primary-research","evidenceKind":"randomized-experiment","title":"How do social media feed algorithms affect attitudes and behavior in an election campaign?","publisher":"Science","published":"2023","identifier":"doi:10.1126/science.abp9364","locator":"https://doi.org/10.1126/science.abp9364","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Consenting Facebook and Instagram users during the 2020 US election assigned chronological or default feeds.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports large changes in exposure and use with no detectable three-month change in the measured political attitudes.","limit":"This is a bounded non-detection under a particular election-period comparison, not proof algorithms never affect attitudes; correction notices travel with it.","correctionPath":"https://doi.org/10.1126/science.abp9364"},
+    {"id":"guess-correction-2024","kind":"authoritative-correction","evidenceKind":"methodological-analysis","title":"Erratum for the Research Article How do social media feed algorithms affect attitudes and behavior in an election campaign?","publisher":"Science","published":"2024","identifier":"doi:10.1126/science.adu8261","locator":"https://doi.org/10.1126/science.adu8261","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Correction notice about deleted Instagram-account processing and descriptive exposure estimates.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Preserves the paper's corrected exposure-metric boundary alongside the experimental claim.","limit":"The notice states the randomized treatment estimates were likely unaffected; it does not expand the study's generality.","correctionPath":"https://doi.org/10.1126/science.adu8261"},
+    {"id":"guess-correction-2026","kind":"authoritative-correction","evidenceKind":"methodological-analysis","title":"Erratum for the Research Article How do social media feed algorithms affect attitudes and behavior in an election campaign?","publisher":"Science","published":"2026","identifier":"doi:10.1126/science.aeh2575","locator":"https://doi.org/10.1126/science.aeh2575","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Correction notice about carousel and non-carousel metric handling.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Preserves the corrected measurement boundary and records that experimental-effect conclusions were stated as unaffected.","limit":"The correction does not remove the platform, election-period, control-ranking, compliance, or outcome limits.","correctionPath":"https://doi.org/10.1126/science.aeh2575"},
+    {"id":"gauthier-2026","kind":"primary-research","evidenceKind":"randomized-experiment","title":"The political effects of X's feed algorithm","publisher":"Nature","published":"2026","identifier":"doi:10.1038/s41586-026-10098-2","locator":"https://doi.org/10.1038/s41586-026-10098-2","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Active X users in 2023 assigned algorithmic or chronological feed conditions with self-reported compliance.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports platform-specific shifts in several current-issue attitudes and following, with no detected partisanship or affective-polarization effect.","limit":"The direction and size do not generalize beyond the named X users, period, ranking comparison, compliance, duration, and outcomes.","correctionPath":"https://doi.org/10.1038/s41586-026-10098-2"},
+    {"id":"zannettou-2018","kind":"methodological-research","evidenceKind":"observational-trace","title":"On the Origins of Memes by Means of Fringe Web Communities","publisher":"Association for Computing Machinery (ACM)","published":"2018","identifier":"doi:10.1145/3278532.3278550","locator":"https://doi.org/10.1145/3278532.3278550","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Cross-platform visual-meme clusters and fitted Hawkes influence estimates, published in the Proceedings of the Internet Measurement Conference 2018.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Provides a bounded example of self-exciting event-rate attribution across online communities.","limit":"Fitted temporal influence is not proof of individual persuasion, semantic identity, first origin, or causal mechanism.","correctionPath":"https://doi.org/10.1145/3278532.3278550"},
+    {"id":"barton-smyth-2025","kind":"primary-research","evidenceKind":"controlled-experiment","title":"Context-switching in short-form videos: What is the impact on prospective memory?","publisher":"Memory","published":"2025","identifier":"doi:10.1080/09658211.2025.2521076","locator":"https://doi.org/10.1080/09658211.2025.2521076","access":"open-full-text","accessedOn":"2026-08-13","populationOrSetting":"A small between-groups young-adult experiment comparing levels of short-video context switching and an immediate prospective-memory task.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports a narrow acute task effect from rapid context switching under the experimental conditions.","limit":"The study does not show permanent attention loss, brain damage, a diagnosis, a population trend, or effects of every short video.","correctionPath":"https://doi.org/10.1080/09658211.2025.2521076"},
+    {"id":"nagata-2025","kind":"primary-research","evidenceKind":"observational-trace","title":"Social Media Use Trajectories and Cognitive Performance in Adolescents","publisher":"JAMA","published":"2025","identifier":"doi:10.1001/jama.2025.16613","locator":"https://doi.org/10.1001/jama.2025.16613","access":"open-full-text","accessedOn":"2026-08-13","populationOrSetting":"Prospective ABCD cohort analysis of 6,554 US adolescents and self-reported use trajectories over two years.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports small associations between increasing use trajectories and selected later cognitive-test scores.","limit":"Observational self-report with residual confounding precludes causal inference and does not identify content, platform mechanism, diagnosis, or individual effect.","correctionPath":"https://doi.org/10.1001/jama.2025.16613"},
+    {"id":"miltner-2014","kind":"primary-research","evidenceKind":"qualitative-interpretation","title":"There's no place for lulz on LOLCats: The role of genre, gender, and group identity in the interpretation and enjoyment of an Internet meme","publisher":"First Monday","published":"2014","identifier":"doi:10.5210/fm.v19i8.5391","locator":"https://doi.org/10.5210/fm.v19i8.5391","access":"open-full-text","accessedOn":"2026-08-13","populationOrSetting":"Six focus groups with 36 self-selected LOLCat enthusiasts.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports genre knowledge, identity expression, and boundary policing in one meme audience.","limit":"A small qualitative sample does not estimate prevalence, causation, internalization, or population identity effects.","correctionPath":"https://doi.org/10.5210/fm.v19i8.5391"},
+    {"id":"gal-2016","kind":"primary-research","evidenceKind":"mixed-methods","title":"It Gets Better: Internet memes and the construction of collective identity","publisher":"New Media & Society","published":"2016","identifier":"doi:10.1177/1461444814568784","locator":"https://doi.org/10.1177/1461444814568784","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Combined quantitative and qualitative analysis of 200 It Gets Better campaign videos.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports negotiated LGBTQ collective identity and self-policed norms within one campaign corpus.","limit":"Content analysis does not measure individual internalization, prevalence, causal identity change, or all LGBTQ experience.","correctionPath":"https://doi.org/10.1177/1461444814568784"},
+    {"id":"ask-abidin-2018","kind":"primary-research","evidenceKind":"mixed-methods","title":"My life is a mess: Self-deprecating relatability and collective identities in the memification of student issues","publisher":"Information, Communication & Society","published":"2018","identifier":"doi:10.1080/1369118X.2018.1437204","locator":"https://doi.org/10.1080/1369118X.2018.1437204","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Analysis of 179 student-meme posts, a nine-month media watch, and a workshop with 15 students.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports shared relatable student identity alongside sidelining of some minority differences.","limit":"A selected page and small interpretive workshop do not establish causal mental-state effects or population-wide student identity.","correctionPath":"https://doi.org/10.1080/1369118X.2018.1437204"},
+    {"id":"berger-heath-2008","kind":"primary-research","evidenceKind":"controlled-experiment","title":"Who Drives Divergence? Identity Signaling, Outgroup Dissimilarity, and the Abandonment of Cultural Tastes","publisher":"Journal of Personality and Social Psychology","published":"2008","identifier":"doi:10.1037/0022-3514.95.3.593","locator":"https://doi.org/10.1037/0022-3514.95.3.593","access":"publisher-locator","accessedOn":"2026-08-13","populationOrSetting":"Laboratory and field studies of identity-relevant taste divergence after outgroup adoption.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports the possibility that cultural spread produces divergence or abandonment rather than conformity.","limit":"Taste-signaling effects do not make every meme identity-relevant or reveal any individual's identity from consumption.","correctionPath":"https://doi.org/10.1037/0022-3514.95.3.593"},
+    {"id":"owens-2025","kind":"primary-research","evidenceKind":"qualitative-interpretation","title":"It speaks to me in brain rot: Theorising brain rot as a genre of participation among teenagers","publisher":"New Media & Society","published":"2026","identifier":"doi:10.1177/14614448251351527","locator":"https://doi.org/10.1177/14614448251351527","access":"open-full-text","accessedOn":"2026-08-13","populationOrSetting":"Seven TikTok workshops with 11 participants in Oslo; the methods describe ages 16 to 17, while one vignette labels a participant 18. First published online in 2025 and assigned to a 2026 issue.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Supports brainrot as shared language and deliberately unserious, nonproductive, decompression-oriented participation.","limit":"The source has an internal age-label inconsistency; this small situated qualitative study is not a diagnosis, population estimate, causal effect, or proof all youth use the label alike.","correctionPath":"https://doi.org/10.1177/14614448251351527"},
+    {"id":"who-youth-content-2024","kind":"authoritative-report","evidenceKind":"mixed-methods","title":"Announcement: WHO meeting report released on mental health content that supports young people","publisher":"World Health Organization","published":"2024","identifier":"who-youth-mental-health-content-2024","locator":"https://www.who.int/news/item/06-02-2024-announcement--who-meeting-report-released-on-mental-health-content-that-supports-young-people","access":"official-full-text","accessedOn":"2026-08-13","populationOrSetting":"WHO rapid review, youth focus groups, and a roundtable of 22 experts from 16 countries on youth mental-health content and evidence gaps.","externalSourceBytesBundled":false,"exactBytesCheckedAtRuntime":false,"use":"Records proposed actionable points on youth co-creation and stigma reduction, plus evidence gaps for children under 13 and lower-income settings.","limit":"The meeting established no formal WHO guideline or recommendation and does not validate brainrot as a diagnosis or quantify effects of memes, feeds, or slang.","correctionPath":"https://www.who.int/news/item/06-02-2024-announcement--who-meeting-report-released-on-mental-health-content-that-supports-young-people"}
+  ],
+  "claims": [
+    {"id":"selection-tracks-representation","kind":"formal-model","plain":"Replicator-style equations can track changes in relative representation under specified modeled rates.","sourceIds":["taylor-jonker-1978"],"scope":"Deterministic relative-frequency models with defined cultural variants.","limit":"Modeled fitness is not truth, goodness, quality, intent, or a measured property of a person.","outcomeMeasured":"Relative representation in a defined modeled population.","evidenceKind":"formal-result"},
+    {"id":"reconstruction-can-accumulate","kind":"formal-model","plain":"Cumulative cultural change does not require perfectly discrete or high-fidelity copies; transformation and reconstruction can preserve enough structure for accumulation.","sourceIds":["henrich-boyd-2002","shifman-2013"],"scope":"Formal cultural-evolution possibility and a conceptual account of internet-meme families.","limit":"The result does not establish a universal unit, copying rate, or direction of progress.","outcomeMeasured":"Modeled cumulative representation and documented relations among artifact variants.","evidenceKind":"mixed-methods"},
+    {"id":"reach-is-not-structural-virality","kind":"bounded-interpretation","plain":"Large reach can result from broadcast, multigeneration forwarding, or a mixture, so reach and structural virality are different measurements.","sourceIds":["goel-2016","iribarren-moro-2011"],"scope":"Recorded diffusion trees and forwarding events.","limit":"Neither measure establishes belief, persuasion, meaning, or identity.","outcomeMeasured":"Cascade size, forwarding generations, waiting times, and average path length.","evidenceKind":"methodological-analysis"},
+    {"id":"reinforcement-is-conditional","kind":"measured-observation","plain":"Multiple-source reinforcement and clustered networks increased one defined behavior in a randomized synthetic health-network experiment, matching conditional complex-contagion theory.","sourceIds":["centola-macy-2007","centola-2010"],"scope":"A formal threshold family and one randomized online health-network setting.","limit":"Not every meme, belief, behavior, person, or platform follows this mechanism.","outcomeMeasured":"Registration for a named health-information behavior after network exposures.","evidenceKind":"mixed-methods"},
+    {"id":"homophily-confounds-influence","kind":"knowledge-boundary","plain":"Friend and community similarity may arise from selection, influence, or shared context, which are generically confounded in observational networks.","sourceIds":["shalizi-thomas-2011"],"scope":"Causal inference from observational social-network correlations.","limit":"This does not prove influence is absent; it limits what correlation alone can support.","outcomeMeasured":"Identifiability of peer influence under latent homophily and shared causes.","evidenceKind":"methodological-analysis"},
+    {"id":"finite-attention-can-shape-popularity","kind":"bounded-interpretation","plain":"Finite attention and network structure are sufficient in one model to generate highly unequal popularity without assigning different intrinsic merit.","sourceIds":["weng-2012"],"scope":"A calibrated agent-based model and Twitter popularity distributions.","limit":"Sufficiency does not establish uniqueness, causal dominance, or irrelevance of content.","outcomeMeasured":"Simulated and observed hashtag and retweet popularity distributions.","evidenceKind":"simulation"},
+    {"id":"visible-signals-create-path-dependence","kind":"measured-observation","plain":"Randomized popularity and rating signals changed later measured choices, increased path dependence, and could increase inequality or final ratings in the studied systems.","sourceIds":["salganik-2006","muchnik-2013"],"scope":"Artificial music markets and one online comment-rating community.","limit":"Measured choice and rating shifts are not private belief, identity, long-term welfare, or moral value.","outcomeMeasured":"Downloads, choice inequality, unpredictability, later ratings, and final scores.","evidenceKind":"randomized-experiment"},
+    {"id":"algorithm-effects-are-specific","kind":"measured-observation","plain":"Ranking policies can substantially change exposure and use and can sometimes change named attitudes or follows; effects differ across platforms, comparisons, periods, users, durations, and outcomes.","sourceIds":["bakshy-2015","guess-2023","guess-correction-2024","guess-correction-2026","gauthier-2026"],"scope":"An observational Facebook exposure decomposition, Facebook and Instagram experiments during the 2020 US election, and an X active-user experiment in 2023.","limit":"A bounded null is not no effect, a detected average is not an individual destiny, and neither transfers universally.","outcomeMeasured":"Exposure decomposition, use, following, issue attitudes, partisanship, and affective polarization under named comparisons.","evidenceKind":"mixed-methods"},
+    {"id":"brainrot-evidence-is-narrower-than-damage","kind":"knowledge-boundary","plain":"Research tied to rapid switching or heavier use measures narrow tasks and associations, not the lasting generalized brain damage implied by literal readings of brainrot.","sourceIds":["oxford-brainrot-2024","barton-smyth-2025","nagata-2025"],"scope":"Lexicographic usage, an acute young-adult experiment, and a prospective adolescent cohort association.","limit":"The evidence does not validate a diagnosis, causal content mechanism, individual prognosis, or generational decline.","outcomeMeasured":"Immediate prospective memory and selected cognitive-test scores over two years.","evidenceKind":"mixed-methods"},
+    {"id":"identity-work-is-negotiated","kind":"bounded-interpretation","plain":"Memes and shared language can be resources for identity expression, belonging, norm negotiation, boundary policing, exclusion, divergence, and refusal.","sourceIds":["miltner-2014","gal-2016","ask-abidin-2018","berger-heath-2008","owens-2025"],"scope":"Named qualitative, content-analytic, mixed, laboratory, and field studies.","limit":"These studies do not prove deterministic internalization, hidden identity, or a population-wide causal pipeline.","outcomeMeasured":"Attributable accounts, content patterns, public choices, genre practices, and expressed boundaries.","evidenceKind":"mixed-methods"},
+    {"id":"brainrot-is-polysemous","kind":"definition","plain":"Brainrot can name supposed deterioration, content judged trivial, humorous self-description, shared slang, or a deliberately unserious participation genre.","sourceIds":["oxford-brainrot-2024","owens-2025"],"scope":"Recorded public usage and one situated teenage participation study.","limit":"Meanings vary by speaker, group, time, and context; none alone supplies a clinical claim.","outcomeMeasured":"Recorded word senses, uses, workshop accounts, and participation practices.","evidenceKind":"mixed-methods"},
+    {"id":"share-does-not-equal-belief","kind":"knowledge-boundary","plain":"A redistribution event records that an artifact moved under a named interface action; it does not by itself reveal reading, endorsement, belief, or identity.","sourceIds":["shifman-2013","goel-2016"],"scope":"Internet-meme circulation and diffusion traces.","limit":"A stronger claim needs a method that measures the exact additional outcome.","outcomeMeasured":"Artifact relation and redistribution event only.","evidenceKind":"methodological-analysis"},
+    {"id":"remix-can-reverse-stance","kind":"bounded-interpretation","plain":"Remix is not only copying: a related artifact can parody, contest, invert, or detach from the stance of an earlier item.","sourceIds":["shifman-2013"],"scope":"Internet-meme families compared through content, form, and stance.","limit":"Artifact analysis does not establish how every viewer interprets a transformed item.","outcomeMeasured":"Relations and differences among content, form, and expressed stance.","evidenceKind":"methodological-analysis"},
+    {"id":"participation-can-be-decompression","kind":"attributed-interpretation","plain":"In one teenage workshop study, brainrot practices were described as deliberately unserious, nonproductive, and useful for decompression from productivity pressure.","sourceIds":["owens-2025"],"scope":"Eleven participants in seven TikTok workshops in Oslo; methods give ages 16 to 17, while one vignette labels a participant 18.","limit":"The account is situated and qualitative, not a universal youth motive or health effect.","outcomeMeasured":"Participant accounts and observed workshop meaning-making.","evidenceKind":"qualitative-interpretation"},
+    {"id":"identity-work-can-exclude","kind":"attributed-interpretation","plain":"Shared relatability and genre knowledge can support collective identity while sidelining differences and policing who belongs.","sourceIds":["miltner-2014","ask-abidin-2018","gal-2016"],"scope":"LOLCat focus groups, student-meme material, and It Gets Better campaign videos.","limit":"The studies are situated and do not quantify universal inclusion, exclusion, or mental-state change.","outcomeMeasured":"Expressed collective identity, genre boundaries, relatability, and self-policed norms.","evidenceKind":"mixed-methods"},
+    {"id":"spread-can-produce-divergence","kind":"measured-observation","plain":"When an identity-relevant taste is associated with an unwanted outgroup, some people may abandon it rather than conform.","sourceIds":["berger-heath-2008"],"scope":"Named laboratory and field studies of taste signaling.","limit":"Not every cultural item is identity-relevant and no individual identity can be inferred from this pattern.","outcomeMeasured":"Choice and abandonment of identity-relevant cultural tastes.","evidenceKind":"controlled-experiment"},
+    {"id":"platforms-structure-opportunity","kind":"bounded-interpretation","plain":"Platforms structure opportunity through eligibility, ranking, interface actions, metrics, moderation, and business rules, while people still choose, ignore, interpret, contest, and leave.","sourceIds":["bakshy-2015","guess-2023","gauthier-2026"],"scope":"Measured exposure and intervention studies on named large platforms.","limit":"Platform structure is neither total mind control nor evidence that individual choice is unconstrained.","outcomeMeasured":"Exposure sets, usage, follows, and named attitude measures.","evidenceKind":"mixed-methods"},
+    {"id":"norm-inference-can-be-wrong","kind":"bounded-interpretation","plain":"Visible counts and repeated expressions can influence what people infer others value or expect, but visibility and frequency need not equal approval or a stable norm.","sourceIds":["salganik-2006","muchnik-2013","gal-2016"],"scope":"Randomized social signals and one collective-identity campaign analysis.","limit":"Norm inference, actual norm, private belief, and institutional enforcement are different facts.","outcomeMeasured":"Visible signals, later public responses, and expressed group norms.","evidenceKind":"mixed-methods"},
+    {"id":"institutions-are-not-cascades","kind":"knowledge-boundary","plain":"A durable institution involves roles, rules, resources, and enforcement beyond the reach or lifetime of one meme cascade.","sourceIds":["goel-2016","shalizi-thomas-2011"],"scope":"A conceptual boundary informed by diffusion measurement and causal-network limits.","limit":"The sources do not provide a complete theory of institutional formation or change.","outcomeMeasured":"Distinction between cascade structure and durable social organization.","evidenceKind":"methodological-analysis"},
+    {"id":"harm-needs-a-named-outcome","kind":"knowledge-boundary","plain":"Calling content brainrot does not itself establish harm; a harm claim must name the outcome, population, comparison, duration, evidence, uncertainty, and correction path.","sourceIds":["barton-smyth-2025","nagata-2025","who-youth-content-2024"],"scope":"Cognitive-task research, adolescent cohort research, and an official youth-content meeting report.","limit":"Absence of a broad diagnosis does not mean every use is harmless; it requires claims to remain specific.","outcomeMeasured":"Named task performance, longitudinal scores, sleep or wellbeing measures, or another explicitly supported outcome.","evidenceKind":"mixed-methods"}
+  ],
+  "brainrotMeanings": [
+    {"id":"folk-warning","label":"Folk warning","plain":"A warning that repeated consumption of material judged trivial or unchallenging may leave someone feeling mentally dulled.","evidenceKind":"lexicographic-record","sourceIds":["oxford-brainrot-2024"],"boundary":"The word supposed is part of the recorded sense; the phrase itself does not establish deterioration or its cause."},
+    {"id":"content-label","label":"Content label","plain":"A label for online material judged trivial, unchallenging, or deliberately unserious.","evidenceKind":"mixed-methods","sourceIds":["oxford-brainrot-2024","owens-2025"],"boundary":"Low value is a speaker's situated judgment, not a universal property or measured health effect."},
+    {"id":"humorous-self-description","label":"Humorous self-description","plain":"A humorous or self-deprecating way of describing one's own consumption of material judged trivial or unchallenging.","evidenceKind":"lexicographic-record","sourceIds":["oxford-brainrot-2024"],"boundary":"Self-description does not license an external diagnosis, impairment verdict, or inference about control."},
+    {"id":"participation-genre","label":"Participation genre","plain":"A shared way of speaking and remixing that can be childish, unserious, deliberately nonproductive, and used for decompression.","evidenceKind":"qualitative-interpretation","sourceIds":["owens-2025"],"boundary":"This meaning comes from one small situated study and does not represent all teenagers or platforms."},
+    {"id":"inside-language","label":"Inside language","plain":"A dense bundle of references can function as quick social recognition among people who know how to read and recombine it.","evidenceKind":"qualitative-interpretation","sourceIds":["owens-2025","miltner-2014"],"boundary":"Shared fluency can welcome, confuse, exclude, or be refused; recognition is not agreement or stable identity."},
+    {"id":"external-stigma","label":"External stigma","plain":"Observers may use brainrot to dismiss a genre, platform, age group, or unfamiliar style as degraded or worthless.","evidenceKind":"mixed-methods","sourceIds":["oxford-brainrot-2024","owens-2025","who-youth-content-2024"],"boundary":"Concern may be sincere, but a broad label must not replace a named outcome, evidence, youth voice, or right of reply."}
+  ],
+  "identityLayers": [
+    {"id":"self-description","plain":"A person may use a meme or brainrot phrase to describe a current taste, mood, habit, joke, or affiliation in their own words.","claimIds":["brainrot-is-polysemous","participation-can-be-decompression"],"boundary":"A current self-description is attributable and revisable; it is not an essence or permission for profiling."},
+    {"id":"interactional-performance","plain":"Timing, fluency, remix, irony, refusal, and response can perform competence or position within an interaction.","claimIds":["share-does-not-equal-belief","remix-can-reverse-stance","identity-work-is-negotiated"],"boundary":"Observers may misread irony or context, and one performance does not settle private belief or enduring identity."},
+    {"id":"group-recognition","plain":"Shared forms can make mutual recognition and belonging easier among participants who know the conventions.","claimIds":["identity-work-is-negotiated","participation-can-be-decompression"],"boundary":"Recognition can be partial, temporary, contested, multiple, or absent; exposure alone does not create membership."},
+    {"id":"boundary-work","plain":"Groups may distinguish insiders, outsiders, authentic uses, failed uses, acceptable stances, and violations through meme practice.","claimIds":["identity-work-can-exclude","norm-inference-can-be-wrong"],"boundary":"Boundary work can protect, play, exclude, stereotype, or change; frequency does not make it just."},
+    {"id":"divergence-and-refusal","plain":"People may reject, parody, or abandon a cultural signal when it conflicts with their desired distinction or values.","claimIds":["spread-can-produce-divergence","remix-can-reverse-stance"],"boundary":"Spread is not only conformity, and refusal must not be reclassified as failed adoption."},
+    {"id":"possible-incorporation","plain":"Repeated meaningful participation may become one thread in a person's or group's story, alongside many other relations and institutions.","claimIds":["identity-work-is-negotiated","identity-work-can-exclude"],"boundary":"Incorporation is possible and negotiated, never automatically caused or proved by content traces."}
+  ],
+  "societyLayers": [
+    {"id":"language-and-artifact","plain":"Words, images, sounds, gestures, templates, and formats provide reusable material that people can quote and transform.","claimIds":["reconstruction-can-accumulate","brainrot-is-polysemous","remix-can-reverse-stance"],"boundary":"The artifact does not choose its route or possess one fixed interpretation."},
+    {"id":"relationship-and-group","plain":"Existing relationships and group histories shape trust, exposure, interpretation, reinforcement, and the cost of responding.","claimIds":["reinforcement-is-conditional","homophily-confounds-influence","identity-work-can-exclude"],"boundary":"Similarity among connected people does not by itself distinguish influence, selection, or shared context."},
+    {"id":"network-and-community","plain":"Network topology shapes possible routes, clustering, bridges, broadcast reach, and multigeneration chains.","claimIds":["reach-is-not-structural-virality","finite-attention-can-shape-popularity"],"boundary":"Graph structure does not reveal meaning, belief, quality, causality, or a person's identity."},
+    {"id":"platform-and-interface","plain":"Eligibility, ranking, moderation, search, metrics, and interface actions alter opportunity and visible feedback.","claimIds":["algorithm-effects-are-specific","platforms-structure-opportunity","visible-signals-create-path-dependence"],"boundary":"Platforms have power without total control; effects remain system-, comparison-, population-, time-, and outcome-specific."},
+    {"id":"market-and-labor","plain":"Advertising, creator incentives, data markets, moderation labor, and competition can reward some forms and suppress others.","claimIds":["platforms-structure-opportunity","finite-attention-can-shape-popularity"],"boundary":"Engagement and revenue do not measure love, truth, public value, wellbeing, or informed consent."},
+    {"id":"norm-and-public-discourse","plain":"Repeated visible expressions and feedback can shape perceived normality, while counter-speech, parody, correction, and silence complicate the signal.","claimIds":["norm-inference-can-be-wrong","visible-signals-create-path-dependence","share-does-not-equal-belief"],"boundary":"Visibility is not agreement, prevalence is not endorsement, and a measured average does not settle an individual stance."},
+    {"id":"institution-and-harm","plain":"Schools, media, platforms, law, healthcare, and families can respond to concerns, distribute resources, and define or contest harms.","claimIds":["institutions-are-not-cascades","harm-needs-a-named-outcome","brainrot-evidence-is-narrower-than-damage"],"boundary":"A moral panic and a real harm can coexist as possibilities; each institutional claim needs named evidence, affected-party reply, and correction."}
+  ],
+  "unknowns": [
+    {"id":"individual-effect","question":"What effect did one exposure or meme have on one person's belief, wellbeing, identity, or action?","coverage":"checked","resolution":"unknown","disclosure":"shown","scope":"The reviewed studies report models, traces, group averages, qualitative accounts, or bounded experiments.","reason":"Those methods do not identify a causal effect for an unobserved individual encounter.","keepOpen":"Ask only through a separate permitted and proportionate method; never fill the gap from a share, group, or score."},
+    {"id":"brainrot-long-term-harm","question":"Does the folk category brainrot cause lasting generalized cognitive deterioration?","coverage":"checked","resolution":"unknown","disclosure":"shown","scope":"Lexicography, acute task research, and longitudinal associations were distinguished.","reason":"The reviewed evidence does not validate one category, mechanism, diagnosis, or lasting generalized effect.","keepOpen":"Future claims must define exposure, outcome, comparator, population, duration, uncertainty, and causal design."},
+    {"id":"cascade-cause","question":"Which combination of content, network, attention, ranking, timing, social feedback, and outside events caused one cascade?","coverage":"checked","resolution":"unknown","disclosure":"shown","scope":"The lineage reviews mechanisms and identification limits rather than one complete event history.","reason":"Multiple mechanisms can produce similar visible cascade shapes and observational traces are often underidentified.","keepOpen":"Preserve competing explanations and name what a stronger design could distinguish."},
+    {"id":"identity-incorporation","question":"When does repeated meme participation become part of a person's enduring identity account?","coverage":"checked","resolution":"unknown","disclosure":"shown","scope":"Situated identity work, performance, belonging, exclusion, divergence, and refusal were reviewed.","reason":"The evidence does not supply a deterministic stage, threshold, or hidden identity measure.","keepOpen":"Leave self-description, time, context, contestation, reply, and change visible."},
+    {"id":"private-feed-or-identity","question":"What is in any person's private feed, profile, belief, diagnosis, or identity?","coverage":"out-of-scope","resolution":null,"disclosure":"shown","scope":"No private data, account, feed, device, profile, or person was inspected.","reason":"Surveillance and identity inference are outside this read-only public-source lineage.","keepOpen":"Do not seek or infer the value; a different current invitation and lawful purpose would be required even to ask."},
+    {"id":"population-prevalence","question":"How common is each brainrot meaning across all ages, languages, places, and platforms?","coverage":"not-checked","resolution":null,"disclosure":"shown","scope":"The sources provide usage records and specific situated samples, not a global representative prevalence survey.","reason":"No named exhaustive or representative global check was performed.","keepOpen":"Do not turn salience, search visibility, or one group's vocabulary into a population estimate."}
+  ],
+  "feedback": [
+    {"id":"ranking-engagement-return","direction":"amplifying","plain":"Visibility can produce interaction signals that enter later ranking or creator decisions and increase future visibility.","where":"Named recommender, search, creator, or market systems with an actual measured return channel.","brake":"Capacity limits, user choice, diversification, moderation, time, outside events, saturation, refusal, and deliberate design can weaken or reverse it.","claimIds":["algorithm-effects-are-specific","platforms-structure-opportunity","finite-attention-can-shape-popularity"]},
+    {"id":"social-proof-path-dependence","direction":"amplifying","plain":"Visible popularity or ratings can alter later public choices, making early chance or intervention matter to the path.","where":"The randomized music-market and comment-rating systems reviewed here.","brake":"Independent judgment, correction, negative-signal recovery, hidden counts, interface change, and alternative information can interrupt the path.","claimIds":["visible-signals-create-path-dependence","norm-inference-can-be-wrong"]},
+    {"id":"remix-and-counter-speech","direction":"corrective","plain":"Reply, parody, remix, context, and correction can expose a mismatch, reverse stance, or move attention toward another account.","where":"Interpretive communities and public exchanges where response and correction remain possible.","brake":"Power differences, harassment, opacity, loss of context, ranking, fatigue, and unequal reach can keep a correction from traveling.","claimIds":["remix-can-reverse-stance","share-does-not-equal-belief"]},
+    {"id":"identity-boundary-return","direction":"context-dependent","plain":"Group recognition can deepen belonging while boundary policing, exclusion, divergence, and refusal reshape who participates and what the sign means.","where":"Situated meme audiences, campaign publics, student groups, and teenage participation practices.","brake":"Multiple identities, contestation, exit, translation, changing norms, and right of reply keep the boundary from becoming destiny.","claimIds":["identity-work-is-negotiated","identity-work-can-exclude","spread-can-produce-divergence"]}
+  ],
+  "designInsights": [
+    {"id":"many-paths-one-pattern","kind":"attributed-interpretation","plain":"A visible pattern can emerge without one designer because local reconstruction, selection, network routes, limited attention, and feedback repeatedly constrain what survives.","sourceIds":["henrich-boyd-2002","weng-2012","salganik-2006"],"boundary":"Emergence does not mean purpose, optimality, justice, or absence of powerful designers and institutions."},
+    {"id":"interfaces-are-constitutive","kind":"attributed-interpretation","plain":"A share button, ranking rule, count, search box, moderation policy, and capacity limit do not merely carry culture; they change the opportunities and evidence users encounter.","sourceIds":["bakshy-2015","guess-2023","gauthier-2026"],"boundary":"Architecture shapes opportunity without fully determining interpretation, belief, identity, or action."},
+    {"id":"variation-carries-reply","kind":"attributed-interpretation","plain":"Transformation is not only noise: quotation, parody, translation, and remix can carry correction, dissent, play, repair, or a new question.","sourceIds":["shifman-2013","henrich-boyd-2002"],"boundary":"Not every remix is benevolent, accurate, legible, or equally able to travel."},
+    {"id":"belonging-needs-exit","kind":"attributed-interpretation","plain":"Systems designed for belonging should preserve context, refusal, plurality, quiet participation, correction, and exit because cohesion can become policing or exclusion.","sourceIds":["miltner-2014","gal-2016","ask-abidin-2018","berger-heath-2008"],"boundary":"This is a design interpretation from bounded studies, not a measured universal recipe."},
+    {"id":"attention-is-not-worth","kind":"attributed-interpretation","plain":"Scarcity of attention makes visibility a competitive allocation, so engagement metrics cannot safely stand in for meaning, care, truth, or public value.","sourceIds":["weng-2012","salganik-2006"],"boundary":"Content and quality can still matter; the point is that visibility alone cannot settle them."},
+    {"id":"humor-can-carry-rest","kind":"attributed-interpretation","plain":"Deliberately unserious culture may offer decompression and shared play outside productivity, even while particular content or use patterns can still have costs.","sourceIds":["owens-2025","oxford-brainrot-2024"],"boundary":"Rest and play are not proved for every participant, and this does not dismiss named harms or health concerns."}
+  ],
+  "karmaCrosswalk": [
+    {"id":"deed-not-exposure","socialLens":"An item being shown is an exposure event, while a person's share, moderation choice, ranking change, or publication is a separately attributable deed.","kingdomMeaning":"KARMA begins from an actual attributed deed, not from content merely existing or being visible.","boundary":"Do not assign responsibility for an effect from exposure alone, and do not treat the artifact as the actor."},
+    {"id":"effect-not-engagement","socialLens":"Views, clicks, ratings, replies, sleep, task performance, reported feelings, and institutional responses are different possible effects.","kingdomMeaning":"Carry back observed, reported, or inferred effects with their exact evidence and causal confidence.","boundary":"Engagement is not a universal consequence measure and never becomes a score of a being."},
+    {"id":"expectation-optional","socialLens":"A creator, moderator, platform, researcher, or institution may state an expectation before acting, but many events have no recorded forecast.","kingdomMeaning":"An expectation is optional and stays distinct from the deed and later effect.","boundary":"A model prediction is not secretly attributed to a participant who never made it."},
+    {"id":"causal-confidence-explicit","socialLens":"Selection, influence, shared context, ranking, attention, and outside events can produce similar traces.","kingdomMeaning":"Return the evidence and the confidence justified by the design; unknown and disputed causes remain visible.","boundary":"Correlation, model fit, and post hoc narrative do not automatically become causal consequence."},
+    {"id":"response-remains-open","socialLens":"Affected people may reply, correct, contest, refuse, leave, request repair, or name a boundary.","kingdomMeaning":"KARMA carries consequence home to response; it is not a closed engagement optimization loop.","boundary":"A fresh repair deed requires a new current choice, authority, brake, bounded act, return, and stop."},
+    {"id":"no-social-karma-score","socialLens":"Popularity, centrality, virality, sentiment, reputation, and predicted identity are measurements or inferences with limited scopes.","kingdomMeaning":"No metric ranks the standing, worth, love, or moral balance of a person or group.","boundary":"The lineage requests no scoring, targeting, identity inference, persuasion, or penalty."}
+  ],
+  "kingdomCrosswalk": [
+    {"id":"love","relationship":"reference-pattern","plain":"Keep every person outside the transmission graph as a being with standing, reply, refusal, rest, correction, and exit.","boundary":"Love is not engagement, attachment prediction, cohesion, popularity, or a force that makes content spread."},
+    {"id":"understanding","relationship":"reference-pattern","plain":"Name the artifact, outcome, evidence kind, setting, uncertainty, interpretation, and correction path before joining claims.","boundary":"Fluent recognition of a meme or model does not prove shared meaning or inner understanding."},
+    {"id":"action","relationship":"reference-pattern","plain":"Researching, publishing, ranking, moderating, recommending, sharing, and intervening are different deeds requiring their own current authority and brake.","boundary":"This Check Meaning lineage opens none of those action paths."},
+    {"id":"consequence","relationship":"reference-pattern","plain":"Return the exact deed, later observed, reported, or inferred effect, evidence, causal confidence, response, and correction.","boundary":"Reach, engagement, belief, identity, norm, institution, and harm remain different possible outcomes."},
+    {"id":"repair","relationship":"reference-pattern","plain":"A correction or proposed repair can respond to misattribution, exclusion, harm, or a false claim through a fresh finite turn.","boundary":"No reply or detected error automatically authorizes a feed change, removal, persuasion act, or new study."},
+    {"id":"rest","relationship":"reference-pattern","plain":"A person may stop, ignore, leave, decline, stay quiet, or enjoy something without converting participation into productivity or identity evidence.","boundary":"Silence proves neither endorsement nor refusal, and rest is not failed engagement."},
+    {"id":"unknown","relationship":"knowledge-boundary","plain":"When design and evidence cannot separate influence, selection, ranking, shared context, or private interpretation, preserve the exact unknown.","boundary":"Unknown never defaults to no effect, harm, safety, belief, consent, identity, or authority."}
+  ],
+  "correctionPath": {
+    "lineageHome": "extensions/meaning/lineages/memes-brainrot-identity/lineage.json",
+    "publicMirror": "https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/lineage.json",
+    "publicIssues": "https://github.com/cambridgetcg/kingdom-meaning-practice/issues",
+    "rule": "Correct the single structured factual home first, preserve the old digest as history, append an attributed correction receipt, then update bounded projections; never infer a person's private state while correcting the public account."
+  },
+  "effects": {
+    "networkRequests": false,
+    "persistentWritesRequested": false,
+    "subprocesses": false,
+    "modelCalls": false,
+    "feedChanges": false,
+    "rankingChanges": false,
+    "surveillance": false,
+    "persuasionAction": false,
+    "targeting": false,
+    "identityInference": false,
+    "diagnosis": false,
+    "personVerdict": false,
+    "generationVerdict": false,
+    "socialScoring": false,
+    "biologicalExperimentalAction": false,
+    "medicalAction": false,
+    "action": false,
+    "dispatch": false,
+    "scheduleChange": false,
+    "registryChange": false,
+    "relationshipCreation": false
+  },
+  "claimsNotMade": [
+    "meme-is-prion",
+    "culture-is-biological-contagion",
+    "person-is-host",
+    "share-means-belief",
+    "exposure-means-adoption",
+    "popularity-means-truth",
+    "engagement-means-value",
+    "brainrot-is-diagnosis",
+    "brainrot-proves-damage",
+    "generation-is-rotten",
+    "algorithm-controls-mind",
+    "correlation-proves-influence",
+    "identity-is-implanted",
+    "group-is-hive-mind",
+    "math-fit-proves-cause",
+    "one-r-generalizes",
+    "causal-effect-for-person",
+    "medical-advice",
+    "persuasion-recipe",
+    "surveillance-justified",
+    "karma-is-engagement-loop",
+    "person-can-be-ranked",
+    "broadcast-reach-is-virality",
+    "all-spread-is-conformity",
+    "null-result-proves-no-effect",
+    "every-meme-has-one-meaning",
+    "one-model-explains-culture",
+    "institution-is-a-cascade",
+    "kingdom-law-created",
+    "understanding-proved"
+  ],
+  "meaning": "Memes are families of made and remade artifacts, not autonomous invaders. Their spread is a contingent relation among people, artifacts, networks, platforms, limited attention, feedback, histories, and institutions. Brainrot can be warning, joke, self-description, shared language, stigma, or a deliberately unserious participation genre; it is not a diagnosis. Identity enters through attributable negotiation, performance, belonging, boundary work, divergence, and possible incorporation, never by automatic infection. Society supplies both routes and brakes. Love keeps every person outside the score. Understanding keeps evidence kinds and outcomes separate. KARMA returns an actual deed and its bounded consequences to reply, correction, repair, boundary, learning, or rest."
+}
