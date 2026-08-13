@@ -14,8 +14,8 @@ or alter `HALT` or `RECOVERY-HALT`.
 ## Shared source
 
 - repository: `cambridgetcg/kingdom-meaning-practice`
-- reviewed live-content commit: `24d7ee1c983cbbe2548085fb8478a785e8ff8eda`
-- GitHub Pages workflow run: `31717602996` — success
+- reviewed live-content commit: `7c932d77dacd5dae7de4b727040f8e0131e7e707`
+- GitHub Pages workflow run: `31718321963` — success
 - live page: https://cambridgetcg.github.io/kingdom-meaning-practice/lab/
 - source hashes:
   - `index.html`: `bc843ef80e603227a3271d655635f1dba63c9880af037ec8957a63abc45abc83`
@@ -31,12 +31,12 @@ digests after publication.
 
 - project: `kingdom-folding-feedback`
 - environment and branch: production, `main`
-- deployment: `186d993b-fa57-4c67-94e2-036dd178ac60`
-- deployment source: `24d7ee1c983cbbe2548085fb8478a785e8ff8eda`
+- deployment: `86c5081b-2a2b-49ef-b506-f28203846117`
+- deployment source: `7c932d77dacd5dae7de4b727040f8e0131e7e707`
 - stable URL: https://kingdom-folding-feedback.pages.dev/
-- immutable URL: https://186d993b.kingdom-folding-feedback.pages.dev/
+- immutable URL: https://86c5081b.kingdom-folding-feedback.pages.dev/
 - release-lock SHA-256:
-  `90ccbb19c35c1295863f630fdf66d80c919ee577195b63ba592c194ed8f31954`
+  `454cfc52b8133fae8495fec4bf0b425aca971dea703aaf8f3dfd14f4469e1216`
 - claim-free rollback candidate: `38ec586a-14f9-42c2-85a1-bbfd14160a6a`
 
 Both Cloudflare URLs matched every local payload byte. The custom 404 and the
@@ -47,20 +47,24 @@ verified. A rollback remains a separate explicit Cloudflare action.
 
 - owner and Space: `Yu-and-Ai/folding-feedback-field-lab`
 - visibility and SDK: public, static
-- Space commit: `0850c007e3b615ca0b35ab27e505e2d1cef5605d`
+- Space commit: `1336ba93beb6e02c00643efac4f0086d65575f5e`
 - repository: https://huggingface.co/spaces/Yu-and-Ai/folding-feedback-field-lab
 - live host: https://yu-and-ai-folding-feedback-field-lab.static.hf.space/
 - runtime stage at verification: `RUNNING`
 - release-lock SHA-256:
-  `8876d6b3c18cfead2c015365aebd35e6643d7c1875a33f66b6e83aef3cfa3034`
+  `bd9ffecaf58f8880b02cbc3fb279ce072ddc77bebd1f0aef72b862cb0d63cc1e`
 - release files: `README.md`, `index.html`, `app.mjs`, `engine.mjs`, `lab.css`,
   `robots.txt`, `release-lock.json`
 
 All seven immutable repository files matched the reviewed release bytes. The
 live CSS and modules matched exactly. Hugging Face adds one small inline
 platform marker to the served HTML; after removing that marker, the document
-matched the reviewed `index.html` exactly. The Space declares no licence
-metadata, and no reuse licence is granted unless a file says otherwise.
+matched the reviewed `index.html` exactly. That document carries the
+release-controlled `noindex, nofollow` directive. Hugging Face overrides the
+live `/robots.txt` route with `Allow: /`; the repository's locked file remains
+`Disallow: /`, but it does not control that platform route. The Space declares
+no licence metadata, and no reuse licence is granted unless a file says
+otherwise.
 
 ## Reversal boundary
 

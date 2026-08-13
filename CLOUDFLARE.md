@@ -6,7 +6,8 @@ Project: `kingdom-folding-feedback`
 
 | Role | Production deployment | Source commit | Local bundle |
 |---|---|---|---|
-| current field lab | `186d993b-fa57-4c67-94e2-036dd178ac60` | `24d7ee1c983cbbe2548085fb8478a785e8ff8eda` | `doors/cloudflare-field-lab/` |
+| current field lab | `86c5081b-2a2b-49ef-b506-f28203846117` | `7c932d77dacd5dae7de4b727040f8e0131e7e707` | `doors/cloudflare-field-lab/` |
+| prior field-lab release | `186d993b-fa57-4c67-94e2-036dd178ac60` | `24d7ee1c983cbbe2548085fb8478a785e8ff8eda` | historical release |
 | first field-lab release | `738f0274-291b-4bc6-8ea9-bd75a3db3ed7` | `14a4f8074bacd477b2bb1f8b38a0a8de60467d09` | historical release |
 | previous link-only door | `a63bad18-bb46-429d-8e7c-d2275aec000a` | `a75415f` | `doors/cloudflare/` |
 | claim-free resting rollback | `38ec586a-14f9-42c2-85a1-bbfd14160a6a` | `a75415f` | `doors/cloudflare-resting-baseline/` |
@@ -14,10 +15,10 @@ Project: `kingdom-folding-feedback`
 
 The field lab is live at `https://kingdom-folding-feedback.pages.dev/` and its
 immutable deployment URL is
-`https://186d993b.kingdom-folding-feedback.pages.dev/`. Every served payload
+`https://86c5081b.kingdom-folding-feedback.pages.dev/`. Every served payload
 byte, the custom 404, and the security headers were checked against the local
 release. The release-lock SHA-256 is
-`90ccbb19c35c1295863f630fdf66d80c919ee577195b63ba592c194ed8f31954`.
+`454cfc52b8133fae8495fec4bf0b425aca971dea703aaf8f3dfd14f4469e1216`.
 The reviewed GitHub lineage remains the factual home.
 
 Cloudflare rollback is an external production action, not a local `HALT`.

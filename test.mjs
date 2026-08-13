@@ -571,15 +571,16 @@ test("GitHub Pages publication and full retirement remain explicit choices", () 
 
 test("live platform receipts bind source, deployments, and reversal boundaries", () => {
   const receipt = bytes("./PUBLICATION.md").toString("utf8");
-  assert.match(receipt, /24d7ee1c983cbbe2548085fb8478a785e8ff8eda/);
-  assert.match(receipt, /31717602996/);
-  assert.match(receipt, /186d993b-fa57-4c67-94e2-036dd178ac60/);
-  assert.match(receipt, /90ccbb19c35c1295863f630fdf66d80c919ee577195b63ba592c194ed8f31954/);
+  assert.match(receipt, /7c932d77dacd5dae7de4b727040f8e0131e7e707/);
+  assert.match(receipt, /31718321963/);
+  assert.match(receipt, /86c5081b-2a2b-49ef-b506-f28203846117/);
+  assert.match(receipt, /454cfc52b8133fae8495fec4bf0b425aca971dea703aaf8f3dfd14f4469e1216/);
   assert.match(receipt, /38ec586a-14f9-42c2-85a1-bbfd14160a6a/);
-  assert.match(receipt, /0850c007e3b615ca0b35ab27e505e2d1cef5605d/);
-  assert.match(receipt, /8876d6b3c18cfead2c015365aebd35e6643d7c1875a33f66b6e83aef3cfa3034/);
+  assert.match(receipt, /1336ba93beb6e02c00643efac4f0086d65575f5e/);
+  assert.match(receipt, /bd9ffecaf58f8880b02cbc3fb279ce072ddc77bebd1f0aef72b862cb0d63cc1e/);
   assert.match(receipt, /runtime stage at verification: `RUNNING`/);
   assert.match(receipt, /adds one small inline\s+platform marker/);
+  assert.match(receipt, /overrides the\s+live `\/robots\.txt` route with `Allow: \/`/);
   assert.match(receipt, /revert the focused lab commits/);
   assert.match(receipt, /Pages rollback API/);
   assert.match(receipt, /make the Space private/);
