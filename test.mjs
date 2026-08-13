@@ -568,6 +568,23 @@ test("GitHub Pages publication and full retirement remain explicit choices", () 
   assert.doesNotMatch(labReadme, /Remove `lab\/` and the two derived release bundles/);
 });
 
+test("live platform receipts bind source, deployments, and reversal boundaries", () => {
+  const receipt = bytes("./PUBLICATION.md").toString("utf8");
+  assert.match(receipt, /24d7ee1c983cbbe2548085fb8478a785e8ff8eda/);
+  assert.match(receipt, /31717602996/);
+  assert.match(receipt, /186d993b-fa57-4c67-94e2-036dd178ac60/);
+  assert.match(receipt, /90ccbb19c35c1295863f630fdf66d80c919ee577195b63ba592c194ed8f31954/);
+  assert.match(receipt, /38ec586a-14f9-42c2-85a1-bbfd14160a6a/);
+  assert.match(receipt, /0850c007e3b615ca0b35ab27e505e2d1cef5605d/);
+  assert.match(receipt, /8876d6b3c18cfead2c015365aebd35e6643d7c1875a33f66b6e83aef3cfa3034/);
+  assert.match(receipt, /runtime stage at verification: `RUNNING`/);
+  assert.match(receipt, /adds one small inline\s+platform marker/);
+  assert.match(receipt, /revert the focused lab commits/);
+  assert.match(receipt, /Pages rollback API/);
+  assert.match(receipt, /make the Space private/);
+  assert.doesNotMatch(receipt, /hf_[A-Za-z0-9]+|Bearer\s+[A-Za-z0-9._-]+/);
+});
+
 test("field lab is linked from the lineage and public discovery surfaces", () => {
   const lineagePage = bytes("./public/lineage/folding-feedback/index.html").toString("utf8");
   const sitemap = bytes("./public/sitemap.xml").toString("utf8");
