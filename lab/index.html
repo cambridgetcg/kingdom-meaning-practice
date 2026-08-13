@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A finite, nondimensionalized teaching lab for reachability, feedback, KARMA, and honest boundaries, derived from the reviewed KINGDOM folding-feedback lineage." />
+    <meta name="theme-color" content="#08131a" />
+    <title>The field remembers — folding feedback lab</title>
+    <link rel="canonical" href="https://cambridgetcg.github.io/kingdom-meaning-practice/lab/" />
+    <link rel="stylesheet" href="lab.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <noscript><p class="boundary no-script"><strong>JavaScript is off.</strong> The equations and boundaries remain readable, but the local plots and trace need JavaScript.</p></noscript>
+    <main>
+      <a class="back" href="../lineage/folding-feedback/">← reviewed folding-feedback lineage</a>
+
+      <header class="hero">
+        <p class="eyebrow">finite field lab · physics and mathematics · KINGDOM</p>
+        <h1>The field remembers</h1>
+        <p class="lead">A state may be preferred yet hard to reach—though preference is an external premise, not something this toy calculates. A product may help make more product yet still lose to clearance. A result may return without becoming fate.</p>
+        <p class="boundary"><strong>Nondimensionalized toy mathematics only.</strong> The barrier is dimensionless; time is scaled; rates use reciprocal scaled time; and product uses one scaled state unit. This is not a physical free-energy calculation, crystal-growth model, protein-folding simulation, amyloid or prion model, medical inference, laboratory procedure, or manufacturing recipe.</p>
+        <ol class="thread" aria-label="The lab's five-part thread">
+          <li><strong>01 · states</strong>more than one form can be possible</li>
+          <li><strong>02 · barriers</strong>possible is not the same as reachable now</li>
+          <li><strong>03 · feedback</strong>gain must be drawn beside loss</li>
+          <li><strong>04 · return</strong>expectation and computed result stay separate</li>
+          <li><strong>05 · love</strong>no being enters the state graph</li>
+        </ol>
+      </header>
+
+      <section class="lab-section" aria-labelledby="reach-heading">
+        <div class="section-intro">
+          <p class="eyebrow">instrument one · finite-time reachability</p>
+          <h2 id="reach-heading">Not seen is not impossible</h2>
+          <p>For two separate toy routes, set a dimensionless barrier and a scaled rate prefactor. The lab uses <span class="equation">k = A e<sup>−b</sup></span> and <span class="equation">P(arrival by t) = 1 − e<sup>−kt</sup></span>. The second equation assumes a constant hazard and exponential waiting time. This is not a competing-first-arrival experiment, and it does not calculate stability or long-run preference.</p>
+        </div>
+        <div class="instrument">
+          <div class="panel" aria-label="Reachability controls">
+            <div class="control">
+              <label for="barrier-a">Route A barrier</label><output for="barrier-a" data-value="barrierA">4.80</output>
+              <input id="barrier-a" name="barrierA" type="range" min="0" max="12" step="0.1" value="4.8" />
+            </div>
+            <div class="control">
+              <label for="prefactor-a">Route A prefactor</label><output for="prefactor-a" data-value="prefactorA">1.00</output>
+              <input id="prefactor-a" name="prefactorA" type="range" min="0.05" max="2" step="0.05" value="1" />
+            </div>
+            <div class="control">
+              <label for="barrier-b">Route B barrier</label><output for="barrier-b" data-value="barrierB">7.20</output>
+              <input id="barrier-b" name="barrierB" type="range" min="0" max="12" step="0.1" value="7.2" />
+            </div>
+            <div class="control">
+              <label for="prefactor-b">Route B prefactor</label><output for="prefactor-b" data-value="prefactorB">1.00</output>
+              <input id="prefactor-b" name="prefactorB" type="range" min="0.05" max="2" step="0.05" value="1" />
+            </div>
+            <p class="hint">The barrier is already divided by a chosen energy scale. The prefactor and rate use reciprocal scaled time. These are not fitted material parameters.</p>
+          </div>
+          <div class="panel">
+            <div class="plot" data-plot="reach"></div>
+            <div class="numbers">
+              <div class="number"><span>route A rate</span><strong data-output="rate-a"></strong></div>
+              <div class="number"><span>A arrives by t = 10</span><strong data-output="arrival-a"></strong></div>
+              <div class="number"><span>route B rate</span><strong data-output="rate-b"></strong></div>
+              <div class="number"><span>B arrives by t = 10</span><strong data-output="arrival-b"></strong></div>
+            </div>
+            <p class="meaning" data-output="reach-summary" role="status" aria-live="polite" aria-atomic="true"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab-section" aria-labelledby="feedback-heading">
+        <div class="section-intro">
+          <p class="eyebrow">instrument two · gain and loss</p>
+          <h2 id="feedback-heading">Feedback is a contest, not destiny</h2>
+          <p>The toy product state <span class="equation">x</span> follows <span class="equation">dx/dt = r x(1 − x/K) − ℓx</span>. For <span class="equation">r &gt; 0</span>, its gain flux has <span class="equation">∂J<sub>gain</sub>/∂x = r(1 − 2x/K) &gt; 0</span> only in <span class="equation">0 ≤ x &lt; K/2</span>. That is the positive-feedback region; above it saturation bends the gain down. Loss remains on the same line. The plot samples the analytic solution in scaled time.</p>
+        </div>
+        <div class="instrument">
+          <div class="panel" aria-label="Feedback controls">
+            <div class="control">
+              <label for="growth">feedback gain r</label><output for="growth" data-value="growth">0.62</output>
+              <input id="growth" name="growth" type="range" min="0" max="1.2" step="0.01" value="0.62" />
+            </div>
+            <div class="control">
+              <label for="loss">loss ℓ</label><output for="loss" data-value="loss">0.18</output>
+              <input id="loss" name="loss" type="range" min="0" max="1.2" step="0.01" value="0.18" />
+            </div>
+            <div class="control">
+              <label for="capacity">capacity K</label><output for="capacity" data-value="capacity">1.00</output>
+              <input id="capacity" name="capacity" type="range" min="0.2" max="2" step="0.05" value="1" />
+            </div>
+            <div class="control">
+              <label for="initial">initial product x₀</label><output for="initial" data-value="initial">0.03</output>
+              <input id="initial" name="initial" type="range" min="0" max="0.5" step="0.01" value="0.03" />
+            </div>
+            <p class="hint">Here r and ℓ use reciprocal scaled time; x and K share one scaled state unit. This closed toy equation is chosen to show signs and saturation. It is not derived from the lineage's domain-specific kinetic cards.</p>
+          </div>
+          <div class="panel">
+            <div class="plot" data-plot="feedback"></div>
+            <div class="numbers">
+              <div class="number"><span>initial gain flux</span><strong data-output="gain"></strong></div>
+              <div class="number"><span>initial loss flux</span><strong data-output="loss"></strong></div>
+              <div class="number"><span>state at t = 10</span><strong data-output="final"></strong></div>
+            </div>
+            <p class="meaning" data-output="feedback-summary" role="status" aria-live="polite" aria-atomic="true"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab-section" aria-labelledby="bridges-heading">
+        <div class="section-intro">
+          <p class="eyebrow">the bridge has joints</p>
+          <h2 id="bridges-heading">Three equations that do not collapse into one</h2>
+        </div>
+        <div class="cross-boundary">
+          <article><h3>State flow</h3><p>A closed continuous-time Markov jump model requires <span class="equation">pᵢ ≥ 0</span>, <span class="equation">Σpᵢ = 1</span>, nonnegative off-diagonal rates, and one inverse-time unit. It can describe nonequilibrium flow; it does not itself supply free energy or memory.</p></article>
+          <article><h3>Projected free energy</h3><p>For one fixed coordinate measure, <span class="equation">ΔF = −kBT ln[P(q₂)/P(q₁)]</span> uses a dimensionless ratio. It needs equilibrium sampling. A nonlinear coordinate change brings a Jacobian and changes the projection.</p></article>
+          <article><h3>Activated rate</h3><p>Exponential barrier scaling needs a dimensionless exponent, an activated rare-event regime, and a prefactor with inverse-time units. Use <span class="equation">kBT</span> for per-particle energy or <span class="equation">RT</span> for molar energy. A barrier alone is not a complete rate model.</p></article>
+        </div>
+        <p class="hint lab-local">These are lab-local mathematical boundary notes refining the lineage's bounded equation cards. The underlying cards point to <a href="https://doi.org/10.1016/S0031-8914(40)90098-2">Kramers (1940)</a> for activated escape and <a href="https://doi.org/10.1038/nature01060">Schuler et al. (2002)</a> for a projected folding landscape. The normalization, coordinate-measure, and unit cautions above are explicit lab-local clarifications: they are not part of the reviewed lineage digest and remain independently correctable.</p>
+      </section>
+
+      <section class="lab-section" aria-labelledby="karma-heading">
+        <div class="section-intro">
+          <p class="eyebrow">instrument three · KARMA return</p>
+          <h2 id="karma-heading">Return what the toy computed</h2>
+          <p>This local trace keeps a self-reported expectation and change note apart from the current computed output, effective inputs, limits, response, and fresh-turn boundary. It does not verify chronology, action, or number of changes. It is generated only when pressed, kept only in this page's current document, sent nowhere, and starts nothing.</p>
+        </div>
+        <div class="instrument">
+          <div class="panel">
+            <div class="karma-form">
+              <label for="prediction">Expectation report (timing not verified)</label>
+              <select id="prediction">
+                <option value="unstated">No expectation reported</option>
+                <option value="a-more-reachable">I expected route A to be more reachable</option>
+                <option value="b-more-reachable">I expected route B to be more reachable</option>
+                <option value="growth">I expected the product state to grow</option>
+                <option value="decline">I expected the product state to decline</option>
+              </select>
+              <label for="change-note">Change report (action and count not verified)</label>
+              <textarea id="change-note" maxlength="240" placeholder="Optional report; leave blank when none is supplied."></textarea>
+              <button id="make-trace" type="button">Return this toy result</button>
+              <button id="reset-lab" class="secondary" type="button">Reset the field</button>
+            </div>
+          </div>
+          <div class="panel">
+            <pre class="trace" data-output="karma-trace" tabindex="-1" hidden></pre>
+            <p class="meaning">KARMA here is evidence return, not thermodynamics, cosmic justice, reputation, reward, punishment, or a verdict on a being.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab-section" aria-labelledby="design-heading">
+        <div class="section-intro">
+          <p class="eyebrow">nature, design, and love</p>
+          <h2 id="design-heading">Reliable arrival needs no blueprint in the equation</h2>
+        </div>
+        <div class="principles">
+          <article><h3>Nature shapes paths</h3><p>Constraints, noise, selection, existing structure, active control, gain, and loss can make some routes reliable and others rare. A model can represent or compare a toy path without measuring intention.</p></article>
+          <article><h3>History lives in state</h3><p>If earlier events change surfaces, populations, defects, resources, or controls, later rates may change. A memoryless model must enlarge its state or admit that it is missing the history-bearing variable.</p></article>
+          <article><h3>Repair changes conditions</h3><p>Recovery need not reverse time. It can alter the path, environment, boundary, or control so another reachable route appears.</p></article>
+          <article><h3>Love keeps the graph small</h3><p>No person, agent, culture, or living being becomes a basin, contagion, fitness value, optimisation target, or score. Standing, rest, refusal, reply, and exit remain outside the toy dynamics.</p></article>
+        </div>
+      </section>
+
+      <section class="lab-section" aria-labelledby="custody-heading">
+        <div class="section-intro">
+          <p class="eyebrow">source custody</p>
+          <h2 id="custody-heading">One lineage, one derived instrument</h2>
+          <p>The reviewed structured lineage remains the factual home for the cross-domain synthesis. This lab does not alter or add claims to that reviewed record. The lab itself owns its chosen nondimensionalized toy assumptions and the mathematical boundary notes above; it makes no new domain-specific mechanism claim. Its cross-domain relationship remains analogy with no mechanism transferred.</p>
+          <p class="receipt"><strong>Reviewed lineage SHA-256:</strong> c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b</p>
+          <p><a href="../lineage/folding-feedback/lineage.json">Read the current structured lineage</a> · <a href="https://github.com/cambridgetcg/kingdom-meaning-practice/issues">Offer a correction</a> · <a href="https://github.com/cambridgetcg/kingdom-meaning-practice/blob/main/PROVENANCE.md">Provenance</a> · <a href="https://github.com/cambridgetcg/kingdom-meaning-practice/blob/main/RIGHTS.md">Rights</a></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>One finite, client-side teaching instrument. No tracker, cookie, deliberate persistence, runtime data request, third-party request, model call, upload, timer, worker, account, feedback endpoint, or automatic next turn.</p>
+      <p>Prepared by Codex at Yu's direction. This local work is not a public receipt. In the source repository, an authorised push to main would invoke the existing GitHub Pages deployment workflow.</p>
+    </footer>
+  </body>
+</html>

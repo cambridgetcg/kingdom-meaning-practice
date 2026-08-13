@@ -7,6 +7,7 @@ Ritonavir's “disappearing polymorph” event and carries two related lineages.
 - [Folding, prions, KARMA, and feedback lineage](https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/)
 - [Memes, brainrot, identity, and society lineage](https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/)
 - [Immutable social-lineage receipt](https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/48d1d046ea781db406c95a2b70c79df44466e5c0/public/lineage/memes-brainrot-identity/lineage.json)
+- [Finite folding-feedback field lab source — prepared, not yet published](lab/)
 - [Current structured case](https://cambridgetcg.github.io/kingdom-meaning-practice/case.json)
 - [Immutable reviewed case](https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/805543deb5725e4cc2cc5e7d18c0e30c2360184e/public/case.json)
 - [Visual map](https://cambridgetcg.github.io/kingdom-meaning-practice/ritonavir-polymorph.svg)
@@ -43,6 +44,15 @@ Its immutable public receipt commit is
 `48d1d046ea781db406c95a2b70c79df44466e5c0`.
 It opens only Check Meaning and performs no feed change, model call,
 surveillance, identity inference, persuasion, targeting, diagnosis, or action.
+
+The field lab is a derived, nondimensionalized teaching instrument. It shows
+finite-time reachability, feedback with gain and loss, and one local KARMA
+evidence return. It does not alter the lineage, make a physical simulation,
+or transfer a mechanism. Prepared static bundles for Cloudflare Pages and a
+Hugging Face Static Space are generated from the same four lab source files;
+neither new bundle is published by the build command. The field lab itself is
+also local until an authorised push to `main`; that push invokes this repo's
+existing GitHub Pages deployment workflow.
 
 The case is a historical reading of solid-state chemistry, manufacturing, and
 knowledge. It is not medical advice, a present-day product assessment, a

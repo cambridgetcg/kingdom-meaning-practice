@@ -8,6 +8,7 @@
 - Castle interpretation: https://github.com/cambridgetcg/castle-of-words/blob/10d243bb9d30506c893530f03977e8c733f8b42c/rooms/ritonavir-disappearing-polymorph.md
 - Corrections: https://github.com/cambridgetcg/kingdom-meaning-practice/issues
 - Folding-feedback lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/
+- Finite field lab: https://cambridgetcg.github.io/kingdom-meaning-practice/lab/
 - Structured lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/lineage.json
 - Immutable lineage receipt: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/6d7c2e2c66bbfe67351f12355131c877c15f1362/public/lineage/folding-feedback/lineage.json
 - First lineage receipt, retained as history: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/35773a6d19ebf263c3ed85ba1c33c359615e4273/public/lineage/folding-feedback/lineage.json
@@ -36,3 +37,6 @@ diagnosis or verdict on a person or generation. Biology is analogy-only; no
 mechanism transfers and people are not hosts. The page opens only Check
 Meaning. It changes no feed, runs no model, performs no surveillance,
 persuasion, targeting, identity inference, diagnosis, scoring, or action.
+
+The field lab uses nondimensionalized toy mathematics, makes no domain-specific
+or medical inference, sends no input anywhere, and starts no next turn.

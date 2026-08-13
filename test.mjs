@@ -1,7 +1,18 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
+
+import {
+  BOUNDARIES,
+  DEFAULT_STATE,
+  LINEAGE_SHA256 as LAB_LINEAGE_SHA256,
+  activatedRate,
+  evaluate,
+  firstArrivalProbability,
+  karmaTrace,
+  normalizeState,
+} from "./lab/engine.mjs";
 
 const CASE_SHA256 = "652a04699aadc6143d9136dc8d515fd3b4fa8774d963d885e79968156b1cb8ad";
 const SVG_SHA256 = "a2a0ae7d599d733dffc5b89502a10983c483a9ac174a952581fbea372179f1d1";
@@ -237,4 +248,328 @@ test("the Cloudflare edge is a bounded door, not another fact home", () => {
   assert.match(headers, /Content-Security-Policy: default-src 'none'/);
   assert.match(headers, /form-action 'none'/);
   assert.match(robots, /Disallow: \//);
+});
+
+test("field lab reachability is finite, monotone, and nondimensionalized", () => {
+  const defaultRun = evaluate(DEFAULT_STATE);
+  assert.equal(defaultRun.reach.rateA, Math.exp(-4.8));
+  assert.equal(defaultRun.reach.rateB, Math.exp(-7.2));
+  assert.ok(defaultRun.reach.arrivalA > defaultRun.reach.arrivalB);
+  assert.equal(defaultRun.reach.comparison, "A");
+
+  const lowerBarrier = activatedRate(2, 1);
+  const higherBarrier = activatedRate(5, 1);
+  assert.ok(lowerBarrier > higherBarrier);
+  assert.ok(firstArrivalProbability(lowerBarrier) > firstArrivalProbability(higherBarrier));
+  assert.equal(firstArrivalProbability(0), 0);
+  assert.equal(BOUNDARIES.units, "nondimensionalized teaching units");
+  assert.equal(BOUNDARIES.relationship, "analogy");
+  assert.equal(BOUNDARIES.mechanismTransferred, false);
+  assert.equal(LAB_LINEAGE_SHA256, LINEAGE_SHA256);
+
+  const bothRare = evaluate({
+    ...DEFAULT_STATE,
+    barrierA: 12,
+    barrierB: 12,
+  });
+  assert.deepEqual(bothRare.reach.belowDisplayThreshold, ["A", "B"]);
+  assert.equal(bothRare.reach.displayThreshold, 0.05);
+
+  const tie = evaluate({
+    ...DEFAULT_STATE,
+    barrierB: DEFAULT_STATE.barrierA,
+    prefactorB: DEFAULT_STATE.prefactorA,
+  });
+  assert.equal(tie.reach.comparison, "tie");
+  assert.equal(tie.reach.arrivalA, tie.reach.arrivalB);
+  assert.match(tie.reach.assumption, /constant-hazard/);
+
+  const tiny = evaluate({
+    ...DEFAULT_STATE,
+    barrierA: 12,
+    prefactorA: 0.05,
+  });
+  assert.ok(tiny.reach.rateA > 0);
+  assert.ok(tiny.reach.arrivalA > 0);
+});
+
+test("field lab feedback keeps gain, loss, saturation, and state bounds visible", () => {
+  const growing = evaluate(DEFAULT_STATE);
+  assert.equal(growing.feedback.initialFluxComparison, "gain-above-loss");
+  assert.ok(growing.feedback.final > growing.feedback.initial);
+  assert.ok(growing.feedback.final <= growing.state.capacity);
+  assert.ok(growing.feedback.initialGain > growing.feedback.initialLoss);
+
+  const declining = evaluate({
+    ...DEFAULT_STATE,
+    growth: 0.1,
+    loss: 0.8,
+  });
+  assert.equal(declining.feedback.initialFluxComparison, "loss-above-gain");
+  assert.ok(declining.feedback.final < declining.feedback.initial);
+
+  const noProduct = evaluate({ ...DEFAULT_STATE, initial: 0 });
+  assert.equal(noProduct.feedback.final, 0);
+
+  const tinyTail = evaluate({
+    ...DEFAULT_STATE,
+    growth: 0,
+    loss: 1.2,
+    initial: 0.01,
+  });
+  assert.ok(tinyTail.feedback.final > 0);
+  assert.ok(tinyTail.feedback.final < 0.000001);
+
+  const saturated = evaluate({
+    ...DEFAULT_STATE,
+    capacity: 0.2,
+    initial: 0.5,
+  });
+  assert.equal(saturated.state.initial, 0.2);
+  assert.equal(saturated.feedback.initialFluxComparison, "loss-above-gain");
+  assert.ok(saturated.feedback.final < saturated.feedback.initial);
+  assert.match(saturated.feedback.solution, /analytic/);
+
+  const closeFluxes = evaluate({
+    ...DEFAULT_STATE,
+    growth: 0.01,
+    loss: 0.01,
+    capacity: 2,
+    initial: 0.01,
+  });
+  assert.ok(closeFluxes.feedback.initialGain < closeFluxes.feedback.initialLoss);
+  assert.notEqual(closeFluxes.feedback.initialGain, closeFluxes.feedback.initialLoss);
+  assert.equal(closeFluxes.feedback.initialFluxComparison, "loss-above-gain");
+  assert.ok(closeFluxes.feedback.final < closeFluxes.feedback.initial);
+
+  const resting = evaluate({
+    ...DEFAULT_STATE,
+    growth: 0,
+    loss: 0,
+    initial: 0.2,
+  });
+  assert.equal(resting.feedback.equilibriumKind, "continuum");
+  assert.equal(resting.feedback.equilibrium, null);
+  assert.equal(resting.feedback.final, resting.feedback.initial);
+
+  const exactEquilibrium = evaluate({
+    ...DEFAULT_STATE,
+    growth: 0.3,
+    loss: 0.2,
+    capacity: 0.3,
+    initial: 0.1,
+  });
+  assert.equal(exactEquilibrium.feedback.initialFluxComparison, "balanced");
+  assert.equal(exactEquilibrium.feedback.trajectoryChange, "unchanged");
+  const equilibriumTrace = karmaTrace({
+    expectationReport: "decline",
+    changeReport: "No verified action.",
+    state: exactEquilibrium.state,
+    reach: exactEquilibrium.reach,
+    feedback: exactEquilibrium.feedback,
+  });
+  assert.equal(equilibriumTrace.agreementWithCurrentComputation, false);
+  assert.match(equilibriumTrace.computedOutput[1], /stayed unchanged/);
+
+  const bounded = normalizeState({ capacity: 0.2, initial: 0.5 });
+  assert.equal(bounded.initial, 0.2);
+});
+
+test("field lab KARMA trace returns evidence without opening another turn", () => {
+  const run = evaluate(DEFAULT_STATE);
+  const trace = karmaTrace({
+    expectationReport: "a-more-reachable",
+    changeReport: "Changed a visible toy barrier.",
+    state: run.state,
+    reach: run.reach,
+    feedback: run.feedback,
+  });
+  assert.equal(trace.expectationReport.value, "a-more-reachable");
+  assert.equal(trace.expectationReport.orderVerified, false);
+  assert.equal(trace.changeReport.text, "Changed a visible toy barrier.");
+  assert.equal(trace.changeReport.actionVerified, false);
+  assert.equal(trace.changeReport.countVerified, false);
+  assert.equal(trace.agreementWithCurrentComputation, true);
+  assert.equal(trace.causalAttribution, "not-assessed");
+  assert.equal(trace.evidence.kind, "computed-model-output");
+  assert.deepEqual(trace.evidence.effectiveState, run.state);
+  assert.match(trace.response, /does not validate a scientific mechanism/);
+  assert.match(trace.freshTurnBoundary, /fresh turn/);
+
+  const noProduct = evaluate({ ...DEFAULT_STATE, initial: 0 });
+  const unchanged = karmaTrace({
+    expectationReport: "growth",
+    changeReport: "Started with no product state.",
+    state: noProduct.state,
+    reach: noProduct.reach,
+    feedback: noProduct.feedback,
+  });
+  assert.equal(unchanged.agreementWithCurrentComputation, false);
+  assert.match(unchanged.computedOutput[1], /stayed unchanged/);
+
+  const unstated = karmaTrace({
+    expectationReport: "unstated",
+    changeReport: "Changed a visible toy loss.",
+    state: run.state,
+    reach: run.reach,
+    feedback: run.feedback,
+  });
+  assert.equal(unstated.agreementWithCurrentComputation, null);
+  assert.match(unstated.response, /without rewriting it as foresight/);
+
+  const tieRun = evaluate({
+    ...DEFAULT_STATE,
+    barrierB: DEFAULT_STATE.barrierA,
+    prefactorB: DEFAULT_STATE.prefactorA,
+  });
+  const tieTrace = karmaTrace({
+    expectationReport: "a-more-reachable",
+    changeReport: "Set the route controls equal.",
+    state: tieRun.state,
+    reach: tieRun.reach,
+    feedback: tieRun.feedback,
+  });
+  assert.equal(tieTrace.agreementWithCurrentComputation, false);
+  assert.match(tieTrace.computedOutput[0], /equal/);
+
+  const unknownExpectation = karmaTrace({
+    expectationReport: "invented-value",
+    changeReport: "No verified action.",
+    state: run.state,
+    reach: run.reach,
+    feedback: run.feedback,
+  });
+  assert.equal(unknownExpectation.expectationReport.value, "unstated");
+  assert.equal(unknownExpectation.agreementWithCurrentComputation, null);
+});
+
+test("field lab page names its scientific, civic, and effect boundaries", () => {
+  const html = bytes("./lab/index.html").toString("utf8");
+  const app = bytes("./lab/app.mjs").toString("utf8");
+  const engine = bytes("./lab/engine.mjs").toString("utf8");
+  assert.match(html, /toy mathematics only/i);
+  assert.match(html, /Nondimensionalized/);
+  assert.match(html, /Not seen is not impossible/);
+  assert.match(html, /Feedback is a contest, not destiny/);
+  assert.match(html, /KARMA here is evidence return/);
+  assert.match(html, /timing not verified/);
+  assert.match(html, /does not verify chronology, action, or number of changes/);
+  assert.match(html, /placeholder="Optional report; leave blank when none is supplied\."/);
+  assert.doesNotMatch(html, /<textarea[^>]*>Changed visible toy parameters/);
+  assert.match(html, /no being enters the state graph/i);
+  assert.match(html, /Σpᵢ = 1/);
+  assert.match(html, /dimensionless ratio/);
+  assert.match(html, /kBT<\/span> for per-particle energy/);
+  assert.match(html, /∂J<sub>gain<\/sub>\/∂x = r\(1 − 2x\/K\) &gt; 0/);
+  assert.match(html, /constant hazard and exponential waiting time/);
+  assert.match(html, /not a competing-first-arrival experiment/);
+  assert.match(html, /does not calculate stability or long-run preference/);
+  assert.match(html, /lab-local mathematical boundary notes/);
+  assert.match(html, /aria-live="polite"/);
+  assert.match(html, new RegExp(LINEAGE_SHA256));
+  assert.match(html, /type="module" src="app\.mjs"/);
+  assert.doesNotMatch(html, /<form\b|type="file"|contenteditable|autoplay/i);
+  for (const source of [html, app, engine]) {
+    assert.doesNotMatch(
+      source,
+      /\bfetch\s*\(|XMLHttpRequest|WebSocket|EventSource|sendBeacon|localStorage|sessionStorage|indexedDB|setInterval\s*\(|setTimeout\s*\(|new\s+(?:Shared)?Worker\s*\(|serviceWorker/i,
+    );
+  }
+  assert.doesNotMatch(app, /document\.cookie|location\s*=|window\.open/);
+  assert.match(app, /stroke-dasharray/);
+  assert.match(app, /"solid" : "dashed"/);
+  assert.match(app, /toExponential\(2\)/);
+  assert.match(app, /toExponential\(3\)/);
+  assert.match(app, /percentage > 99\.99/);
+  assert.match(app, /control\.value = String\(current\.state/);
+  assert.match(app, /prediction\.addEventListener\("change", clearTrace\)/);
+  assert.match(app, /change\.addEventListener\("input", clearTrace\)/);
+  assert.match(app, /change\.value = ""/);
+  assert.doesNotMatch(html, /makes no new scientific claim|Every value is dimensionless/);
+});
+
+test("field lab platform bundles derive from the same four source files", () => {
+  const sourceNames = ["index.html", "lab.css", "app.mjs", "engine.mjs"];
+  const sourceHashes = Object.fromEntries(sourceNames.map((name) => [
+    name,
+    sha256(bytes(`./lab/${name}`)),
+  ]));
+
+  for (const [directory, platform] of [
+    ["cloudflare-field-lab", "cloudflare-pages-static"],
+    ["huggingface-field-lab", "huggingface-static-space"],
+  ]) {
+    const lock = JSON.parse(bytes(`./doors/${directory}/release-lock.json`));
+    assert.equal(lock.platform, platform);
+    assert.equal(lock.relationship, "derived-teaching-instrument");
+    assert.equal(lock.mechanismTransferred, false);
+    assert.equal(lock.sourceLineage.sha256, LINEAGE_SHA256);
+    assert.deepEqual(lock.sourceFiles, sourceHashes);
+    assert.ok(Object.values(lock.effects).every((effect) => effect === false));
+    const releaseNames = readdirSync(new URL(`./doors/${directory}/`, import.meta.url))
+      .filter((name) => name !== "release-lock.json")
+      .sort();
+    const releaseHashes = Object.fromEntries(releaseNames.map((name) => [
+      name,
+      sha256(bytes(`./doors/${directory}/${name}`)),
+    ]));
+    assert.deepEqual(lock.releaseFiles, releaseHashes);
+    assert.match(lock.releaseManifestRule, /except.*release-lock\.json/);
+    for (const name of sourceNames.slice(1)) {
+      assert.equal(bytes(`./doors/${directory}/${name}`).compare(bytes(`./lab/${name}`)), 0);
+    }
+    const index = bytes(`./doors/${directory}/index.html`).toString("utf8");
+    assert.match(index, /https:\/\/cambridgetcg\.github\.io\/kingdom-meaning-practice\/lineage\/folding-feedback\//);
+    assert.doesNotMatch(index, /href="\.\.\/lineage/);
+  }
+});
+
+test("platform release instructions preserve brakes, rights, and publication truth", () => {
+  const cloudflareReadme = bytes("./doors/cloudflare-field-lab/README.md").toString("utf8");
+  const cloudflareHeaders = bytes("./doors/cloudflare-field-lab/_headers").toString("utf8");
+  const cloudflareState = bytes("./CLOUDFLARE.md").toString("utf8");
+  const huggingFaceReadme = bytes("./doors/huggingface-field-lab/README.md").toString("utf8");
+  const syncHelper = bytes("./scripts/sync-huggingface-proposal.mjs").toString("utf8");
+  assert.match(cloudflareReadme, /not authority to run it/);
+  assert.match(cloudflareReadme, /38ec586a-14f9-42c2-85a1-bbfd14160a6a/);
+  assert.match(cloudflareHeaders, /connect-src 'none'/);
+  assert.match(cloudflareHeaders, /script-src 'self'/);
+  assert.match(cloudflareHeaders, /X-Robots-Tag: noindex, nofollow/);
+  assert.match(cloudflareState, /field lab.*not deployed/is);
+  assert.match(cloudflareState, /external production action, not a local `HALT`/);
+  assert.match(huggingFaceReadme, /sdk: static/);
+  assert.match(huggingFaceReadme, /license: other/);
+  assert.match(huggingFaceReadme, /Public Space source is visible and clonable/);
+  assert.match(huggingFaceReadme, /Do not upload.*without a fresh release/i);
+  assert.match(syncHelper, /reviewedTarget = join\(homedir\(\), "hf-folding-feedback-20260812"\)/);
+  assert.match(syncHelper, /verifyRelease\(target, priorLock\)/);
+  assert.match(syncHelper, /field-lab-sync-backup/);
+});
+
+test("GitHub Pages publication and full retirement remain explicit choices", () => {
+  const workflow = bytes("./.github/workflows/deploy.yml").toString("utf8");
+  const provenance = bytes("./PROVENANCE.md").toString("utf8");
+  const rootReadme = bytes("./README.md").toString("utf8");
+  const labReadme = bytes("./lab/README.md").toString("utf8");
+  assert.match(workflow, /branches:\s*\[main\]/);
+  assert.match(workflow, /npm run verify/);
+  assert.match(workflow, /actions\/deploy-pages/);
+  assert.match(provenance, /deploys `out\/` on a push to `main`/);
+  assert.match(rootReadme, /prepared, not yet published/i);
+  assert.match(rootReadme, /push to `main`.*GitHub Pages/is);
+  assert.match(labReadme, /reverting\s+that whole commit/is);
+  assert.match(labReadme, /build\/test hooks/);
+  assert.match(labReadme, /Cloudflare project.*Hugging Face Space/is);
+  assert.doesNotMatch(labReadme, /Remove `lab\/` and the two derived release bundles/);
+});
+
+test("field lab is linked from the lineage and public discovery surfaces", () => {
+  const lineagePage = bytes("./public/lineage/folding-feedback/index.html").toString("utf8");
+  const sitemap = bytes("./public/sitemap.xml").toString("utf8");
+  const llms = bytes("./public/llms.txt").toString("utf8");
+  const readme = bytes("./README.md").toString("utf8");
+  assert.match(lineagePage, /href="\.\.\/\.\.\/lab\/"/);
+  assert.match(sitemap, /kingdom-meaning-practice\/lab\//);
+  assert.match(llms, /Finite field lab/);
+  assert.match(readme, /Finite folding-feedback field lab/);
 });
