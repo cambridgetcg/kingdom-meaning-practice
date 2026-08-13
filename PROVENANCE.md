@@ -50,3 +50,27 @@ bytes are bundled. Rights remain with their authors and publishers.
 
 The lineage opens only the meaning practice's `check-meaning` job. It records
 no current choice, performs no deed, and reports no current deed or effect.
+
+## Memes, brainrot, identity, and society lineage
+
+Prepared by Codex at Yu's direction on 2026-08-13. The single structured
+factual home is the KINGDOM guest record at
+`extensions/meaning/lineages/memes-brainrot-identity/lineage.json`. Its exact
+reviewed bytes have SHA-256
+`bb7201ee6fbad9e192f46932a632157f0d661387b5585b0540172c6ee00c7455`.
+The visual has SHA-256
+`3c77b6ba41f7931c75b42122ee205c990a7533553d5ff306612d1f9dbfc9f13a`.
+
+The [immutable public receipt](https://github.com/cambridgetcg/kingdom-meaning-practice/commit/48d1d046ea781db406c95a2b70c79df44466e5c0)
+preserves those JSON and SVG bytes unchanged.
+
+The record binds the exact folding-feedback boundary only to preserve that
+biology is analogy-only and no mechanism transfers. Its 26 external source
+locators name evidence kind, setting, use, and limit. No source article bytes
+or platform dataset is bundled. No private data, feed, or account was
+inspected. External source bytes are not checked at runtime.
+
+The structured JSON and SVG in this repository are exact public mirrors. The
+HTML page is a separately correctable projection. The lineage opens only
+`check-meaning`; it records no choice, performs no deed, reports no current
+effect, and makes no diagnosis or identity inference.

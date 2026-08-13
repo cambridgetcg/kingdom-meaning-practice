@@ -11,6 +11,9 @@ const LINEAGE_SHA256 = "c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c
 const LINEAGE_SVG_SHA256 = "4222f32d3791da5376d859f895762f21a336d79edec379f49a9f09bd80b66eee";
 const LINEAGE_RECEIPT_COMMIT = "6d7c2e2c66bbfe67351f12355131c877c15f1362";
 const LINEAGE_FIRST_COMMIT = "35773a6d19ebf263c3ed85ba1c33c359615e4273";
+const SOCIAL_LINEAGE_SHA256 = "bb7201ee6fbad9e192f46932a632157f0d661387b5585b0540172c6ee00c7455";
+const SOCIAL_SVG_SHA256 = "3c77b6ba41f7931c75b42122ee205c990a7533553d5ff306612d1f9dbfc9f13a";
+const SOCIAL_RECEIPT_COMMIT = "48d1d046ea781db406c95a2b70c79df44466e5c0";
 
 function bytes(path) {
   return readFileSync(new URL(path, import.meta.url));
@@ -129,6 +132,54 @@ test("folding-feedback record keeps domains, inference, unknown, and safety sepa
   assert.match(value.scope.biosafety, /institutional risk assessment/);
 });
 
+test("memes and brainrot lineage bytes stay exact and the social path stays contingent", () => {
+  assert.equal(
+    sha256(bytes("./public/lineage/memes-brainrot-identity/lineage.json")),
+    SOCIAL_LINEAGE_SHA256,
+  );
+  assert.equal(
+    sha256(bytes("./public/lineage/memes-brainrot-identity/memes-brainrot-identity.svg")),
+    SOCIAL_SVG_SHA256,
+  );
+  const value = JSON.parse(bytes("./public/lineage/memes-brainrot-identity/lineage.json"));
+  assert.equal(value.schema, "kingdom.meaning-social-lineage/0.1");
+  assert.equal(value.practiceBoundary.activeMeaningJob, "check-meaning");
+  assert.deepEqual(value.practiceBoundary.jobsNotOpened, [
+    "record-choice",
+    "do-one-bounded-action",
+    "report-what-happened",
+  ]);
+  assert.equal(value.scope.biologyAnalogy, "shape-only");
+  assert.equal(value.scope.mechanismTransferred, false);
+  assert.equal(value.scope.peopleAreHosts, false);
+  assert.equal(value.sourceBindings.foldingFeedbackLineage.relationship, "analogy-only");
+  assert.equal(value.sourceBindings.foldingFeedbackLineage.mechanismTransferred, false);
+  assert.equal(value.meaningPath.contingent, true);
+  assert.equal(value.meaningPath.everyArrowMayFail, true);
+  assert.equal(value.meaningPath.meaningMayChange, true);
+  assert.ok(value.meaningPath.stages.every((stage) => stage.nextNotGuaranteed === true));
+  assert.equal(value.equations.length, 5);
+  assert.ok(value.claimsNotMade.includes("brainrot-is-diagnosis"));
+  assert.ok(value.claimsNotMade.includes("person-is-host"));
+  assert.ok(value.claimsNotMade.includes("share-means-belief"));
+  assert.ok(Object.values(value.effects).every((effect) => effect === false));
+});
+
+test("memes and brainrot page is inert and preserves identity and evidence boundaries", () => {
+  const html = bytes("./public/lineage/memes-brainrot-identity/index.html").toString("utf8");
+  assert.match(html, new RegExp(SOCIAL_LINEAGE_SHA256));
+  assert.match(html, new RegExp(SOCIAL_RECEIPT_COMMIT));
+  assert.match(html, /Brainrot is not a diagnosis/i);
+  assert.match(html, /People are not hosts/i);
+  assert.match(html, /No automatic funnel into identity/i);
+  assert.match(html, /Belonging is negotiated, not implanted/i);
+  assert.match(html, /opens only <code>check-meaning<\/code>/i);
+  assert.match(html, /records no current choice, performs no deed/i);
+  assert.match(html, /five bounded equation cards/i);
+  assert.match(html, /correction path/i);
+  assert.doesNotMatch(html, /<script\b|<form\b|fetch\s*\(|setInterval\s*\(|setTimeout\s*\(/i);
+});
+
 test("rights and discovery stay explicit", () => {
   const rights = bytes("./RIGHTS.md").toString("utf8");
   const provenance = bytes("./PROVENANCE.md").toString("utf8");
@@ -143,6 +194,9 @@ test("rights and discovery stay explicit", () => {
   assert.match(provenance, new RegExp(CASE_SHA256));
   assert.match(provenance, new RegExp(LINEAGE_FIRST_COMMIT));
   assert.match(provenance, new RegExp(SVG_SHA256));
+  assert.match(provenance, new RegExp(SOCIAL_LINEAGE_SHA256));
+  assert.match(provenance, new RegExp(SOCIAL_SVG_SHA256));
+  assert.match(provenance, new RegExp(SOCIAL_RECEIPT_COMMIT));
   assert.match(provenance, /no third-party article text, figure, or dataset is bundled/i);
   assert.match(provenance, /CORRECTIONS\.md/);
   assert.match(corrections, /public-full-text-reuse-rights-not-asserted/);
@@ -154,12 +208,17 @@ test("rights and discovery stay explicit", () => {
   assert.match(sitemap, /case\.json/);
   assert.match(sitemap, /corrections\.txt/);
   assert.match(sitemap, /lineage\/folding-feedback/);
+  assert.match(sitemap, /lineage\/memes-brainrot-identity/);
   assert.match(llms, /no automatic action/i);
   assert.match(llms, /corrections\.txt/);
   assert.match(llms, new RegExp(LINEAGE_RECEIPT_COMMIT));
   assert.match(llms, new RegExp(LINEAGE_FIRST_COMMIT));
   assert.match(llms, /opens only Check Meaning/);
   assert.match(llms, /mechanism transferred/i);
+  assert.match(llms, /polysemous folk term/i);
+  assert.match(llms, /people are not hosts/i);
+  assert.match(llms, /changes no feed/i);
+  assert.match(llms, new RegExp(SOCIAL_RECEIPT_COMMIT));
 });
 
 test("the Cloudflare edge is a bounded door, not another fact home", () => {

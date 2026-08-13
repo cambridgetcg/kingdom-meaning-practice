@@ -20,3 +20,19 @@ The Castle room is an interpretation, not another scientific source.
 The cross-domain lineage is an analogy with no mechanism transferred. It has
 no medical advice, laboratory procedure, automatic action, or feedback intake.
 It opens only Check Meaning; it records no current choice and performs no deed.
+
+# Memes, brainrot, identity, and society — bounded social lineage
+
+- Human page: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/
+- Structured lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/lineage.json
+- Immutable lineage receipt: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/48d1d046ea781db406c95a2b70c79df44466e5c0/public/lineage/memes-brainrot-identity/lineage.json
+- Visual map: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/memes-brainrot-identity.svg
+- Corrections: https://github.com/cambridgetcg/kingdom-meaning-practice/issues
+
+Boundaries: the KINGDOM guest JSON is the single structured factual home.
+Meme artifact, exposure, attention, sharing, belief, identity, norm,
+institution, and harm stay separate. Brainrot is a polysemous folk term, not a
+diagnosis or verdict on a person or generation. Biology is analogy-only; no
+mechanism transfers and people are not hosts. The page opens only Check
+Meaning. It changes no feed, runs no model, performs no surveillance,
+persuasion, targeting, identity inference, diagnosis, scoring, or action.

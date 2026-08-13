@@ -1,10 +1,12 @@
-# KINGDOM meaning practice — Ritonavir polymorph case
+# KINGDOM meaning practice — bounded source-attributed readings
 
-This repository publishes one source-attributed reading aid about Ritonavir's
-“disappearing polymorph” event.
+This repository publishes bounded, source-attributed readings. It begins with
+Ritonavir's “disappearing polymorph” event and carries two related lineages.
 
 - [Human reading](https://cambridgetcg.github.io/kingdom-meaning-practice/)
 - [Folding, prions, KARMA, and feedback lineage](https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/)
+- [Memes, brainrot, identity, and society lineage](https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/)
+- [Immutable social-lineage receipt](https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/48d1d046ea781db406c95a2b70c79df44466e5c0/public/lineage/memes-brainrot-identity/lineage.json)
 - [Current structured case](https://cambridgetcg.github.io/kingdom-meaning-practice/case.json)
 - [Immutable reviewed case](https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/805543deb5725e4cc2cc5e7d18c0e30c2360184e/public/case.json)
 - [Visual map](https://cambridgetcg.github.io/kingdom-meaning-practice/ritonavir-polymorph.svg)
@@ -30,6 +32,17 @@ Its structured public receipt has SHA-256
 and immutable receipt commit `6d7c2e2c66bbfe67351f12355131c877c15f1362`.
 The first public receipt remains in history at commit `35773a6d19ebf263c3ed85ba1c33c359615e4273`;
 it is not the current reviewed record.
+
+The social lineage keeps artifact, exposure, attention, sharing, belief,
+identity, norm, institution, and harm separate. Brainrot remains a folk word,
+not a diagnosis or verdict. Its single structured factual home is the KINGDOM
+guest record; this repository is its exact public mirror and bounded human
+projection. The reviewed JSON has SHA-256
+`bb7201ee6fbad9e192f46932a632157f0d661387b5585b0540172c6ee00c7455`.
+Its immutable public receipt commit is
+`48d1d046ea781db406c95a2b70c79df44466e5c0`.
+It opens only Check Meaning and performs no feed change, model call,
+surveillance, identity inference, persuasion, targeting, diagnosis, or action.
 
 The case is a historical reading of solid-state chemistry, manufacturing, and
 knowledge. It is not medical advice, a present-day product assessment, a
