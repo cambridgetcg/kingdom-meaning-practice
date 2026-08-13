@@ -541,11 +541,13 @@ test("platform release instructions preserve brakes, rights, and publication tru
   assert.doesNotMatch(huggingFaceReadme, /^license:/m);
   assert.match(huggingFaceReadme, /intentionally declares no licence\s+metadata/);
   assert.match(huggingFaceReadme, /Public Space source is visible and clonable/);
-  assert.match(huggingFaceReadme, /Publish only after a fresh release review/i);
+  assert.match(huggingFaceReadme, /published after a fresh review/i);
   assert.match(huggingFaceReadme, /owner-authorised credential/);
   assert.match(syncHelper, /reviewedTarget = join\(homedir\(\), "hf-folding-feedback-20260812"\)/);
   assert.match(syncHelper, /verifyRelease\(target, priorLock\)/);
   assert.match(syncHelper, /field-lab-sync-backup/);
+  assert.match(syncHelper, /publishedRemote = "https:\/\/huggingface\.co\/spaces\/Yu-and-Ai\/folding-feedback-field-lab"/);
+  assert.match(syncHelper, /remotes\.length > 1/);
 });
 
 test("GitHub Pages publication and full retirement remain explicit choices", () => {
@@ -556,9 +558,10 @@ test("GitHub Pages publication and full retirement remain explicit choices", () 
   assert.match(workflow, /branches:\s*\[main\]/);
   assert.match(workflow, /npm run verify/);
   assert.match(workflow, /actions\/deploy-pages/);
-  assert.match(provenance, /deploys `out\/` on a push to `main`/);
-  assert.match(rootReadme, /prepared, not yet published/i);
-  assert.match(rootReadme, /push to `main`.*GitHub Pages/is);
+  assert.match(provenance, /deploys `out\/` on each push to `main`/);
+  assert.match(rootReadme, /field lab — GitHub Pages/i);
+  assert.match(rootReadme, /Cloudflare Pages, and the Hugging Face\s+Static Space now publish projections/i);
+  assert.match(labReadme, /This source is public/);
   assert.match(labReadme, /reverting\s+that whole commit/is);
   assert.match(labReadme, /build\/test hooks/);
   assert.match(labReadme, /Cloudflare project.*Hugging Face Space/is);

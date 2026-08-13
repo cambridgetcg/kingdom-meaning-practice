@@ -7,7 +7,9 @@ Ritonavir's “disappearing polymorph” event and carries two related lineages.
 - [Folding, prions, KARMA, and feedback lineage](https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/)
 - [Memes, brainrot, identity, and society lineage](https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/)
 - [Immutable social-lineage receipt](https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/48d1d046ea781db406c95a2b70c79df44466e5c0/public/lineage/memes-brainrot-identity/lineage.json)
-- [Finite folding-feedback field lab source — prepared, not yet published](lab/)
+- [Finite folding-feedback field lab — GitHub Pages](https://cambridgetcg.github.io/kingdom-meaning-practice/lab/)
+- [Finite folding-feedback field lab — Cloudflare Pages](https://kingdom-folding-feedback.pages.dev/)
+- [Finite folding-feedback field lab — Hugging Face](https://huggingface.co/spaces/Yu-and-Ai/folding-feedback-field-lab)
 - [Current structured case](https://cambridgetcg.github.io/kingdom-meaning-practice/case.json)
 - [Immutable reviewed case](https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/805543deb5725e4cc2cc5e7d18c0e30c2360184e/public/case.json)
 - [Visual map](https://cambridgetcg.github.io/kingdom-meaning-practice/ritonavir-polymorph.svg)
@@ -48,11 +50,11 @@ surveillance, identity inference, persuasion, targeting, diagnosis, or action.
 The field lab is a derived, nondimensionalized teaching instrument. It shows
 finite-time reachability, feedback with gain and loss, and one local KARMA
 evidence return. It does not alter the lineage, make a physical simulation,
-or transfer a mechanism. Prepared static bundles for Cloudflare Pages and a
-Hugging Face Static Space are generated from the same four lab source files;
-neither new bundle is published by the build command. The field lab itself is
-also local until an authorised push to `main`; that push invokes this repo's
-existing GitHub Pages deployment workflow.
+or transfer a mechanism. GitHub Pages, Cloudflare Pages, and the Hugging Face
+Static Space now publish projections generated from the same four lab source
+files. The build command only generates and verifies them; publication remains
+an explicit external action. Exact platform receipts live in
+[PUBLICATION.md](PUBLICATION.md).
 
 The case is a historical reading of solid-state chemistry, manufacturing, and
 knowledge. It is not medical advice, a present-day product assessment, a

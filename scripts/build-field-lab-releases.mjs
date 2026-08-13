@@ -121,15 +121,16 @@ accepts only local range, select, button, and short note input. It deliberately
 persists nothing; browser history or session restoration may retain page
 state, and the reset button clears the visible field.
 
-\`release-lock.json\` hashes every other payload file. A future deployment
-receipt must record that lock's own SHA-256 together with the deployment ID.
+\`release-lock.json\` hashes every other payload file. Each deployment receipt
+must record that lock's own SHA-256 together with the deployment ID.
 
-Publication remains a separate current choice. The project is
-\`kingdom-folding-feedback\`. Before any active deployment, confirm the known
+The first verified field-lab production deployment is
+\`738f0274-291b-4bc6-8ea9-bd75a3db3ed7\`, sourced from commit
+\`14a4f8074bacd477b2bb1f8b38a0a8de60467d09\`. The project is
+\`kingdom-folding-feedback\`. Before any replacement, confirm the known
 claim-free production rollback \`38ec586a-14f9-42c2-85a1-bbfd14160a6a\`
-still exists. The current link-only deployment observed on 2026-08-13 is
-\`a63bad18-bb46-429d-8e7c-d2275aec000a\`. See \`CLOUDFLARE.md\` at the
-repository root for the bounded observation.
+still exists. See \`CLOUDFLARE.md\` and \`PUBLICATION.md\` at the repository
+root for the bounded receipts.
 
 After a fresh review of one exact clean commit, a future deployment command is:
 
@@ -159,7 +160,7 @@ short_description: A finite bench for reachability, feedback, and evidence.
 
 # Folding feedback field lab
 
-This Static Space proposal is a deterministic teaching instrument derived
+This public Static Space is a deterministic teaching instrument derived
 from one reviewed KINGDOM folding-feedback lineage. It is not another
 scientific fact home, dataset, model, training run, benchmark score,
 laboratory tool, or submission endpoint.
@@ -179,14 +180,14 @@ accepts no upload; and sends no trace anywhere. Browser history or session
 restoration may retain page state, and the reset button clears the visible
 field.
 
-\`release-lock.json\` hashes every other payload file. A future publication
-receipt must record that lock's own SHA-256 together with the Space commit.
+\`release-lock.json\` hashes every other payload file. The publication receipt
+records that lock's own SHA-256 together with the Space commit.
 
 Public Space source is visible and clonable. No reuse licence is granted unless
 a file says otherwise, so this Space intentionally declares no licence
-metadata. Publication, owner, visibility, and any future licence remain
-separate choices. Publish only after a fresh release review and a current owner
-choice using an owner-authorised credential; prefer a target-scoped token for
-later writes once the Space exists.
+metadata. Owner, visibility, and any future licence remain separate choices.
+This release was published after a fresh review and a current owner choice
+using an owner-authorised credential; prefer a target-scoped token for later
+writes.
 `);
 write(huggingFace, "release-lock.json", lock("huggingface-static-space", huggingFace));

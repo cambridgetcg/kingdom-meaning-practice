@@ -22,9 +22,9 @@ implement a physical free-energy calculation, crystal growth, protein folding,
 amyloid or prion kinetics, a laboratory procedure, medical inference, or
 manufacturing advice.
 
-This checkout is not a public receipt. The existing repository workflow builds
-`out/` and deploys it on a push to `main`, so an authorised push of the field
-lab would also be the GitHub Pages publication choice.
+This source is public. The existing repository workflow builds `out/` and
+deploys it on a push to `main`; the reviewed derived bundles are also live on
+Cloudflare Pages and Hugging Face. Exact receipts are in `PUBLICATION.md`.
 
 ## Local reading
 
@@ -49,7 +49,7 @@ Each generated `release-lock.json` hashes every other file in its release.
 Because a manifest cannot hash itself without recursion, a future external
 receipt must record the lock's own SHA-256 with its deployment or Space commit.
 
-The local, no-remote Hugging Face proposal can be synced only by an explicit
+The reviewed local Hugging Face checkout can be synced only by an explicit
 effectful command after the generated bundle and target are both reviewed:
 
 ```sh
@@ -57,9 +57,10 @@ npm run sync:huggingface-proposal -- ~/hf-folding-feedback-20260812
 ```
 
 The sync is pinned to the real path `~/hf-folding-feedback-20260812`. It
-refuses a dirty target, a target with a remote, unexpected files, a symlinked
-path or repository boundary, or release bytes that do not match their exact
-manifest. It does not commit or publish.
+accepts either no remote before publication or exactly one `hf` remote pointing
+to the published Space. It refuses every other remote, unexpected files, a
+symlinked path or repository boundary, or release bytes that do not match their
+exact manifest. It does not commit or publish.
 
 After this script has generated the proposal once, a later reviewed source
 change can replace only that dirty generated surface with the explicit

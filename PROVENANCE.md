@@ -41,9 +41,8 @@ adds the bounded read-only meaning-practice boundary. The [first public
 receipt](https://github.com/cambridgetcg/kingdom-meaning-practice/commit/35773a6d19ebf263c3ed85ba1c33c359615e4273)
 remains in history; its JSON digest `467ed92c8fd340bd6337dc75c14d85f44e13d2de935dc9671a17a422d8866da0`
 is not the current reviewed record. The human page, Castle interpretation, Gate
-link and Cloudflare edge door are separately correctable views or pointers.
-The Hugging Face field-lab bundle remains a local proposal until a separate
-publication choice and receipt exist. None becomes an additional factual home.
+link, field-lab pages, and platform releases are separately correctable views
+or teaching instruments. None becomes an additional factual home.
 
 The lineage links primary scientific papers and official biosafety guidance.
 No third-party article text, figure, dataset, experimental protocol, or source
@@ -91,7 +90,9 @@ persistent write, storage read, timer, worker, upload, analytics event, or
 automatic next turn. A local trace exists only in the current page document;
 a browser may restore page state through its own history or session features.
 
-The Cloudflare field-lab bundle and Hugging Face Space proposal are not
-deployment receipts. This local GitHub Pages work is also unpublished: the
-existing workflow deploys `out/` on a push to `main`, so that push would itself
-be a separate publication choice.
+Yu made the separate publication choice on 2026-08-13. The existing GitHub
+workflow deploys `out/` on each push to `main`; the same reviewed lab is also
+published through a direct-upload Cloudflare Pages project and one public
+Hugging Face Static Space. Their source commits, release-lock hashes,
+deployment identifiers, live endpoints, and rollback boundary are recorded in
+[PUBLICATION.md](PUBLICATION.md).

@@ -29,6 +29,7 @@ if (target !== reviewedTarget) {
 
 const source = new URL("../doors/huggingface-field-lab/", import.meta.url);
 const sourcePath = fileURLToPath(source);
+const publishedRemote = "https://huggingface.co/spaces/Yu-and-Ai/folding-feedback-field-lab";
 const files = [
   "README.md",
   "index.html",
@@ -123,9 +124,22 @@ if (status.trim() !== "") {
 const remotes = execFileSync("git", ["remote"], {
   cwd: target,
   encoding: "utf8",
-});
-if (remotes.trim() !== "") {
-  throw new Error("Refusing to sync a proposal that already has a remote.");
+}).trim().split(/\r?\n/u).filter(Boolean);
+if (remotes.length > 1 || (remotes.length === 1 && remotes[0] !== "hf")) {
+  throw new Error("Refusing every remote except the one reviewed Hugging Face Space.");
+}
+if (remotes[0] === "hf") {
+  const fetchUrl = execFileSync("git", ["remote", "get-url", "hf"], {
+    cwd: target,
+    encoding: "utf8",
+  }).trim();
+  const pushUrl = execFileSync("git", ["remote", "get-url", "--push", "hf"], {
+    cwd: target,
+    encoding: "utf8",
+  }).trim();
+  if (fetchUrl !== publishedRemote || pushUrl !== publishedRemote) {
+    throw new Error("The hf remote does not match the one reviewed public Space.");
+  }
 }
 
 const parent = dirname(target);

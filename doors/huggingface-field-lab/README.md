@@ -12,7 +12,7 @@ short_description: A finite bench for reachability, feedback, and evidence.
 
 # Folding feedback field lab
 
-This Static Space proposal is a deterministic teaching instrument derived
+This public Static Space is a deterministic teaching instrument derived
 from one reviewed KINGDOM folding-feedback lineage. It is not another
 scientific fact home, dataset, model, training run, benchmark score,
 laboratory tool, or submission endpoint.
@@ -32,12 +32,12 @@ accepts no upload; and sends no trace anywhere. Browser history or session
 restoration may retain page state, and the reset button clears the visible
 field.
 
-`release-lock.json` hashes every other payload file. A future publication
-receipt must record that lock's own SHA-256 together with the Space commit.
+`release-lock.json` hashes every other payload file. The publication receipt
+records that lock's own SHA-256 together with the Space commit.
 
 Public Space source is visible and clonable. No reuse licence is granted unless
 a file says otherwise, so this Space intentionally declares no licence
-metadata. Publication, owner, visibility, and any future licence remain
-separate choices. Publish only after a fresh release review and a current owner
-choice using an owner-authorised credential; prefer a target-scoped token for
-later writes once the Space exists.
+metadata. Owner, visibility, and any future licence remain separate choices.
+This release was published after a fresh review and a current owner choice
+using an owner-authorised credential; prefer a target-scoped token for later
+writes.

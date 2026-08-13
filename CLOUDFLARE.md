@@ -25,5 +25,6 @@ compare the exact served bytes. A successful past deployment is a candidate
 rollback target; this file does not prove that it remains available or that a
 rollback occurred.
 
-No credential, dashboard setting, route, project, deployment, or domain was
-created or changed while recording this observation.
+The deployment above was created through the existing project with its current
+OAuth credential. No credential, route, project, domain, or brake was created,
+removed, or changed.
