@@ -535,12 +535,14 @@ test("platform release instructions preserve brakes, rights, and publication tru
   assert.match(cloudflareHeaders, /connect-src 'none'/);
   assert.match(cloudflareHeaders, /script-src 'self'/);
   assert.match(cloudflareHeaders, /X-Robots-Tag: noindex, nofollow/);
-  assert.match(cloudflareState, /field lab.*not deployed/is);
+  assert.match(cloudflareState, /field lab.*production deployment/is);
   assert.match(cloudflareState, /external production action, not a local `HALT`/);
   assert.match(huggingFaceReadme, /sdk: static/);
-  assert.match(huggingFaceReadme, /license: other/);
+  assert.doesNotMatch(huggingFaceReadme, /^license:/m);
+  assert.match(huggingFaceReadme, /intentionally declares no licence\s+metadata/);
   assert.match(huggingFaceReadme, /Public Space source is visible and clonable/);
-  assert.match(huggingFaceReadme, /Do not upload.*without a fresh release/i);
+  assert.match(huggingFaceReadme, /Publish only after a fresh release review/i);
+  assert.match(huggingFaceReadme, /owner-authorised credential/);
   assert.match(syncHelper, /reviewedTarget = join\(homedir\(\), "hf-folding-feedback-20260812"\)/);
   assert.match(syncHelper, /verifyRelease\(target, priorLock\)/);
   assert.match(syncHelper, /field-lab-sync-backup/);

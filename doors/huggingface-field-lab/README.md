@@ -7,8 +7,7 @@ sdk: static
 app_file: index.html
 fullWidth: true
 pinned: false
-license: other
-short_description: A finite boundary bench for reachability, feedback, and evidence return.
+short_description: A finite bench for reachability, feedback, and evidence.
 ---
 
 # Folding feedback field lab
@@ -36,8 +35,9 @@ field.
 `release-lock.json` hashes every other payload file. A future publication
 receipt must record that lock's own SHA-256 together with the Space commit.
 
-Public Space source is visible and clonable. The upstream repository grants
-no reuse licence unless a file says otherwise, so this proposal declares
-`license: other`. Publication, owner, visibility, and any future licence
-remain separate choices. Do not upload this proposal without a fresh release
-review and repository-scoped publisher authority.
+Public Space source is visible and clonable. No reuse licence is granted unless
+a file says otherwise, so this Space intentionally declares no licence
+metadata. Publication, owner, visibility, and any future licence remain
+separate choices. Publish only after a fresh release review and a current owner
+choice using an owner-authorised credential; prefer a target-scoped token for
+later writes once the Space exists.

@@ -17,7 +17,7 @@
   },
   "releaseManifestRule": "releaseFiles hashes every release payload file except this self-describing release-lock.json",
   "releaseFiles": {
-    "README.md": "7e195d261e4e01ba3ff5bf83a17fceeb9f06df936ae227c92b7c8d80742d8ee5",
+    "README.md": "c8b81e79a02d58bafd25fa02e553aeab038b79aac836f3cba1cc8d2ce9b3bb68",
     "app.mjs": "716a77e4aa04050fc4fff60fa10781aeee1a780b7fb51297c46579a0ccc7776a",
     "engine.mjs": "9e41bab4c851a70eb0e8a1fdb47fa268b7fa5f9d1c0d3b385240de7c8d509768",
     "index.html": "0f16d55b8b8cdee0edcf815bc94f39690e924a22ee2172fb6c84c836d3ca8bce",
